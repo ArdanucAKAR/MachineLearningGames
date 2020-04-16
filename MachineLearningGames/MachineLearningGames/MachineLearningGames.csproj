@@ -33,8 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\Ardanuc AKAR\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,8 +51,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ardanuc\Classes\Singleton.cs" />
+    <Compile Include="Ardanuc\Snap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ardanuc\Snap.Designer.cs">
+      <DependentUpon>Snap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ardanuc\Tabs\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ardanuc\Tabs\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ardanuc\Tabs\LearnTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ardanuc\Tabs\LearnTest.Designer.cs">
+      <DependentUpon>LearnTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ardanuc\Tabs\Make.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ardanuc\Tabs\Make.Designer.cs">
+      <DependentUpon>Make.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ardanuc\Tabs\Train.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ardanuc\Tabs\Train.Designer.cs">
+      <DependentUpon>Train.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ardanuc\Snap.resx">
+      <DependentUpon>Snap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ardanuc\Tabs\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ardanuc\Tabs\LearnTest.resx">
+      <DependentUpon>LearnTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ardanuc\Tabs\Make.resx">
+      <DependentUpon>Make.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ardanuc\Tabs\Train.resx">
+      <DependentUpon>Train.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -69,6 +129,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Alihan\" />
+    <Folder Include="Alperen\" />
+    <Folder Include="Ayberk\" />
+    <Folder Include="Buse\" />
+    <Folder Include="Mehmetcik\" />
+    <Folder Include="Ulas\" />
+    <Folder Include="Yenercan\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
