@@ -29,7 +29,7 @@ namespace MachineLearningGames
             DialogResult dr = ofd.ShowDialog();
             if (dr == DialogResult.OK)
             {
-                if (ofd.FileNames.Length <= 21)
+                if (ofd.FileNames.Length <= 18)
                 {
                     string[] fileNames = ofd.FileNames;
                     int x = 5, y = 15, maxHeight = -1;
@@ -51,7 +51,7 @@ namespace MachineLearningGames
                     }
                 }
                 else
-                    MessageBox.Show("21 Adet Resim Seçiniz");
+                    MessageBox.Show("21 Adet Resim Seçilebilir");
             }
             return ofd.FileNames.Count();
         }
@@ -74,6 +74,15 @@ namespace MachineLearningGames
         private void btnUploadClubs_Click(object sender, EventArgs e)
         {
             db.club = Dialog(cardClubs, "Lütfen Sinek Resimlerini Seçiniz");
+        }
+
+        private void btnTrain_Click(object sender, EventArgs e)
+        {
+            LearnTest learnTest = new LearnTest();
+            pnlTrain.Controls.Clear();
+            pnlTrain.Visible = false;
+            pnlTrain.Controls.Add(learnTest);
+            transitionTrain.ShowSync(pnlTrain);
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MachineLearningGames
 {
@@ -13,6 +14,7 @@ namespace MachineLearningGames
                    diamond = 0,
                    heart = 0,
                    club = 0;
+        public Form main = new Main();
 
         private Singleton()
         {

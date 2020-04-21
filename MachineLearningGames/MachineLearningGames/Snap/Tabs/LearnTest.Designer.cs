@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation12 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LearnTest));
             this.btnProgressAnimation = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.pbClubs = new System.Windows.Forms.PictureBox();
@@ -49,6 +49,7 @@
             this.btnLearnTest = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pnlLearnTest = new System.Windows.Forms.Panel();
             this.tmrLearnTest = new System.Windows.Forms.Timer(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbClubs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDiamonds)).BeginInit();
             this.pnlSpadesCount.SuspendLayout();
@@ -62,24 +63,24 @@
             // 
             // btnProgressAnimation
             // 
-            this.btnProgressAnimation.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
+            this.btnProgressAnimation.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.btnProgressAnimation.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.btnProgressAnimation.DefaultAnimation = animation2;
+            animation12.AnimateOnlyDifferences = true;
+            animation12.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.BlindCoeff")));
+            animation12.LeafCoeff = 0F;
+            animation12.MaxTime = 1F;
+            animation12.MinTime = 0F;
+            animation12.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicCoeff")));
+            animation12.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicShift")));
+            animation12.MosaicSize = 0;
+            animation12.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation12.RotateCoeff = 0F;
+            animation12.RotateLimit = 0F;
+            animation12.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.ScaleCoeff")));
+            animation12.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.SlideCoeff")));
+            animation12.TimeCoeff = 0F;
+            animation12.TransparencyCoeff = 1F;
+            this.btnProgressAnimation.DefaultAnimation = animation12;
             this.btnProgressAnimation.MaxAnimationTime = 1000;
             // 
             // pbClubs
@@ -108,11 +109,11 @@
             // 
             this.lblDiamondsCount.AutoSize = true;
             this.btnProgressAnimation.SetDecoration(this.lblDiamondsCount, BunifuAnimatorNS.DecorationType.None);
-            this.lblDiamondsCount.Font = new System.Drawing.Font("TR Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiamondsCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDiamondsCount.ForeColor = System.Drawing.Color.White;
             this.lblDiamondsCount.Location = new System.Drawing.Point(114, 58);
             this.lblDiamondsCount.Name = "lblDiamondsCount";
-            this.lblDiamondsCount.Size = new System.Drawing.Size(30, 32);
+            this.lblDiamondsCount.Size = new System.Drawing.Size(29, 31);
             this.lblDiamondsCount.TabIndex = 2;
             this.lblDiamondsCount.Text = "0";
             // 
@@ -120,20 +121,21 @@
             // 
             this.lblHeartsCount.AutoSize = true;
             this.btnProgressAnimation.SetDecoration(this.lblHeartsCount, BunifuAnimatorNS.DecorationType.None);
-            this.lblHeartsCount.Font = new System.Drawing.Font("TR Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeartsCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeartsCount.ForeColor = System.Drawing.Color.White;
             this.lblHeartsCount.Location = new System.Drawing.Point(114, 58);
             this.lblHeartsCount.Name = "lblHeartsCount";
-            this.lblHeartsCount.Size = new System.Drawing.Size(30, 32);
+            this.lblHeartsCount.Size = new System.Drawing.Size(29, 31);
             this.lblHeartsCount.TabIndex = 2;
             this.lblHeartsCount.Text = "0";
             // 
             // pnlSpadesCount
             // 
+            this.pnlSpadesCount.BackColor = System.Drawing.Color.Transparent;
             this.pnlSpadesCount.Controls.Add(this.pbSpades);
             this.pnlSpadesCount.Controls.Add(this.lblSpadesCount);
             this.btnProgressAnimation.SetDecoration(this.pnlSpadesCount, BunifuAnimatorNS.DecorationType.None);
-            this.pnlSpadesCount.Location = new System.Drawing.Point(533, 40);
+            this.pnlSpadesCount.Location = new System.Drawing.Point(799, 88);
             this.pnlSpadesCount.Name = "pnlSpadesCount";
             this.pnlSpadesCount.Size = new System.Drawing.Size(150, 150);
             this.pnlSpadesCount.TabIndex = 8;
@@ -153,11 +155,11 @@
             // 
             this.lblSpadesCount.AutoSize = true;
             this.btnProgressAnimation.SetDecoration(this.lblSpadesCount, BunifuAnimatorNS.DecorationType.None);
-            this.lblSpadesCount.Font = new System.Drawing.Font("TR Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpadesCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSpadesCount.ForeColor = System.Drawing.Color.White;
             this.lblSpadesCount.Location = new System.Drawing.Point(114, 58);
             this.lblSpadesCount.Name = "lblSpadesCount";
-            this.lblSpadesCount.Size = new System.Drawing.Size(30, 32);
+            this.lblSpadesCount.Size = new System.Drawing.Size(29, 31);
             this.lblSpadesCount.TabIndex = 2;
             this.lblSpadesCount.Text = "0";
             // 
@@ -174,10 +176,11 @@
             // 
             // pnlHeartsCount
             // 
+            this.pnlHeartsCount.BackColor = System.Drawing.Color.Transparent;
             this.pnlHeartsCount.Controls.Add(this.pbHearts);
             this.pnlHeartsCount.Controls.Add(this.lblHeartsCount);
             this.btnProgressAnimation.SetDecoration(this.pnlHeartsCount, BunifuAnimatorNS.DecorationType.None);
-            this.pnlHeartsCount.Location = new System.Drawing.Point(65, 40);
+            this.pnlHeartsCount.Location = new System.Drawing.Point(331, 88);
             this.pnlHeartsCount.Name = "pnlHeartsCount";
             this.pnlHeartsCount.Size = new System.Drawing.Size(150, 150);
             this.pnlHeartsCount.TabIndex = 8;
@@ -186,9 +189,9 @@
             // 
             this.lblProgress.AutoSize = true;
             this.btnProgressAnimation.SetDecoration(this.lblProgress, BunifuAnimatorNS.DecorationType.None);
-            this.lblProgress.Font = new System.Drawing.Font("TR Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProgress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProgress.ForeColor = System.Drawing.Color.White;
-            this.lblProgress.Location = new System.Drawing.Point(489, 455);
+            this.lblProgress.Location = new System.Drawing.Point(755, 508);
             this.lblProgress.Name = "lblProgress";
             this.lblProgress.Size = new System.Drawing.Size(0, 20);
             this.lblProgress.TabIndex = 2;
@@ -196,10 +199,11 @@
             // 
             // pnlDiamondsCount
             // 
+            this.pnlDiamondsCount.BackColor = System.Drawing.Color.Transparent;
             this.pnlDiamondsCount.Controls.Add(this.pbDiamonds);
             this.pnlDiamondsCount.Controls.Add(this.lblDiamondsCount);
             this.btnProgressAnimation.SetDecoration(this.pnlDiamondsCount, BunifuAnimatorNS.DecorationType.None);
-            this.pnlDiamondsCount.Location = new System.Drawing.Point(299, 39);
+            this.pnlDiamondsCount.Location = new System.Drawing.Point(565, 87);
             this.pnlDiamondsCount.Name = "pnlDiamondsCount";
             this.pnlDiamondsCount.Size = new System.Drawing.Size(150, 150);
             this.pnlDiamondsCount.TabIndex = 8;
@@ -217,7 +221,7 @@
             this.prgssbLearnTest.LabelVisible = true;
             this.prgssbLearnTest.LineProgressThickness = 8;
             this.prgssbLearnTest.LineThickness = 5;
-            this.prgssbLearnTest.Location = new System.Drawing.Point(389, 235);
+            this.prgssbLearnTest.Location = new System.Drawing.Point(655, 283);
             this.prgssbLearnTest.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.prgssbLearnTest.MaxValue = 100;
             this.prgssbLearnTest.Name = "prgssbLearnTest";
@@ -230,10 +234,11 @@
             // 
             // pnlClubsCount
             // 
+            this.pnlClubsCount.BackColor = System.Drawing.Color.Transparent;
             this.pnlClubsCount.Controls.Add(this.pbClubs);
             this.pnlClubsCount.Controls.Add(this.lblClubsCount);
             this.btnProgressAnimation.SetDecoration(this.pnlClubsCount, BunifuAnimatorNS.DecorationType.None);
-            this.pnlClubsCount.Location = new System.Drawing.Point(767, 40);
+            this.pnlClubsCount.Location = new System.Drawing.Point(1033, 88);
             this.pnlClubsCount.Name = "pnlClubsCount";
             this.pnlClubsCount.Size = new System.Drawing.Size(150, 150);
             this.pnlClubsCount.TabIndex = 8;
@@ -242,11 +247,11 @@
             // 
             this.lblClubsCount.AutoSize = true;
             this.btnProgressAnimation.SetDecoration(this.lblClubsCount, BunifuAnimatorNS.DecorationType.None);
-            this.lblClubsCount.Font = new System.Drawing.Font("TR Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClubsCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClubsCount.ForeColor = System.Drawing.Color.White;
             this.lblClubsCount.Location = new System.Drawing.Point(114, 58);
             this.lblClubsCount.Name = "lblClubsCount";
-            this.lblClubsCount.Size = new System.Drawing.Size(30, 32);
+            this.lblClubsCount.Size = new System.Drawing.Size(29, 31);
             this.lblClubsCount.TabIndex = 2;
             this.lblClubsCount.Text = "0";
             // 
@@ -257,19 +262,19 @@
             this.btnLearnTest.ActiveFillColor = System.Drawing.Color.DarkGreen;
             this.btnLearnTest.ActiveForecolor = System.Drawing.Color.Silver;
             this.btnLearnTest.ActiveLineColor = System.Drawing.Color.ForestGreen;
-            this.btnLearnTest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnLearnTest.BackColor = System.Drawing.Color.Transparent;
             this.btnLearnTest.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLearnTest.BackgroundImage")));
             this.btnLearnTest.ButtonText = "Öğret ve Test Et";
             this.btnLearnTest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProgressAnimation.SetDecoration(this.btnLearnTest, BunifuAnimatorNS.DecorationType.None);
-            this.btnLearnTest.Font = new System.Drawing.Font("TR Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLearnTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLearnTest.ForeColor = System.Drawing.Color.White;
             this.btnLearnTest.IdleBorderThickness = 3;
             this.btnLearnTest.IdleCornerRadius = 20;
             this.btnLearnTest.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnLearnTest.IdleForecolor = System.Drawing.Color.Silver;
             this.btnLearnTest.IdleLineColor = System.Drawing.Color.Silver;
-            this.btnLearnTest.Location = new System.Drawing.Point(382, 306);
+            this.btnLearnTest.Location = new System.Drawing.Point(648, 354);
             this.btnLearnTest.Margin = new System.Windows.Forms.Padding(5);
             this.btnLearnTest.Name = "btnLearnTest";
             this.btnLearnTest.Size = new System.Drawing.Size(214, 59);
@@ -279,6 +284,8 @@
             // 
             // pnlLearnTest
             // 
+            this.pnlLearnTest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
+            this.pnlLearnTest.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlLearnTest.BackgroundImage")));
             this.pnlLearnTest.Controls.Add(this.pnlSpadesCount);
             this.pnlLearnTest.Controls.Add(this.pnlHeartsCount);
             this.pnlLearnTest.Controls.Add(this.pnlDiamondsCount);
@@ -290,22 +297,24 @@
             this.pnlLearnTest.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlLearnTest.Location = new System.Drawing.Point(0, 0);
             this.pnlLearnTest.Name = "pnlLearnTest";
-            this.pnlLearnTest.Size = new System.Drawing.Size(985, 667);
+            this.pnlLearnTest.Size = new System.Drawing.Size(1500, 605);
             this.pnlLearnTest.TabIndex = 8;
             // 
             // tmrLearnTest
             // 
-            this.tmrLearnTest.Interval = 1000;
+            this.tmrLearnTest.Tick += new System.EventHandler(this.tmrLearnTest_Tick);
             // 
             // LearnTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.pnlLearnTest);
             this.btnProgressAnimation.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.Name = "LearnTest";
-            this.Size = new System.Drawing.Size(985, 667);
+            this.Size = new System.Drawing.Size(1500, 605);
+            this.Load += new System.EventHandler(this.LearnTest_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbClubs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDiamonds)).EndInit();
             this.pnlSpadesCount.ResumeLayout(false);
@@ -344,5 +353,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnLearnTest;
         private System.Windows.Forms.Panel pnlLearnTest;
         private System.Windows.Forms.Timer tmrLearnTest;
+        private System.Windows.Forms.Timer timer1;
     }
 }

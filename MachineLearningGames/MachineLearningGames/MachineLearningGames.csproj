@@ -51,35 +51,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ardanuc\Classes\Singleton.cs" />
-    <Compile Include="Ardanuc\Snap.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Games.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ardanuc\Snap.Designer.cs">
+    <Compile Include="Games.Designer.cs">
+      <DependentUpon>Games.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Snap\Classes\Singleton.cs" />
+    <Compile Include="Snap\Snap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Snap\Snap.Designer.cs">
       <DependentUpon>Snap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ardanuc\Tabs\Home.cs">
+    <Compile Include="Snap\Tabs\LearnTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ardanuc\Tabs\Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ardanuc\Tabs\LearnTest.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Ardanuc\Tabs\LearnTest.Designer.cs">
+    <Compile Include="Snap\Tabs\LearnTest.Designer.cs">
       <DependentUpon>LearnTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ardanuc\Tabs\Make.cs">
+    <Compile Include="Snap\Tabs\Make.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ardanuc\Tabs\Make.Designer.cs">
+    <Compile Include="Snap\Tabs\Make.Designer.cs">
       <DependentUpon>Make.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ardanuc\Tabs\Train.cs">
+    <Compile Include="Snap\Tabs\Train.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ardanuc\Tabs\Train.Designer.cs">
+    <Compile Include="Snap\Tabs\Train.Designer.cs">
       <DependentUpon>Train.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
@@ -90,19 +90,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Ardanuc\Snap.resx">
+    <EmbeddedResource Include="Games.resx">
+      <DependentUpon>Games.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Snap\Snap.resx">
       <DependentUpon>Snap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ardanuc\Tabs\Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ardanuc\Tabs\LearnTest.resx">
+    <EmbeddedResource Include="Snap\Tabs\LearnTest.resx">
       <DependentUpon>LearnTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ardanuc\Tabs\Make.resx">
+    <EmbeddedResource Include="Snap\Tabs\Make.resx">
       <DependentUpon>Make.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ardanuc\Tabs\Train.resx">
+    <EmbeddedResource Include="Snap\Tabs\Train.resx">
       <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">

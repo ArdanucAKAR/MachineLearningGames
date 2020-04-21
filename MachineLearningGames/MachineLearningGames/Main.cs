@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace MachineLearningGames
 {
@@ -15,6 +16,11 @@ namespace MachineLearningGames
         public Main()
         {
             InitializeComponent();
+        }
+
+        public void GoToMain()
+        {
+            pnlMain.Controls.Clear();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -29,9 +35,24 @@ namespace MachineLearningGames
 
         private void btnSnap_Click(object sender, EventArgs e)
         {
-            Snap snap = new Snap();
-            snap.Show();
-            this.Hide();
+            //UserControl snap = new Snap();
+            //snap.Show();
+            //this.Hide();
+        }
+
+        private void Main_Shown(object sender, EventArgs e)
+        {
+            transitionLogo.ShowSync(pbLogo);
+            transtionText.ShowSync(lblText);
+            Thread.Sleep(1000);
+            transitionLogo.HideSync(pbLogo);
+            transtionText.HideSync(lblText);
+            Thread.Sleep(500);
+            Games games = new Games();
+            games.main = this;
+            pnlMain.Visible = false;
+            pnlMain.Controls.Add(games);
+            transitionPages.ShowSync(pnlMain);
         }
     }
 }
