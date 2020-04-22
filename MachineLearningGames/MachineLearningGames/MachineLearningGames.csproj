@@ -72,6 +72,24 @@
     <Compile Include="Games.Designer.cs">
       <DependentUpon>Games.cs</DependentUpon>
     </Compile>
+    <Compile Include="SchoolLibrary\SchoolLibrary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SchoolLibrary\SchoolLibrary.Designer.cs">
+      <DependentUpon>SchoolLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolLibrary\Tabs\TestSchoolLibrary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SchoolLibrary\Tabs\TestSchoolLibrary.Designer.cs">
+      <DependentUpon>TestSchoolLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolLibrary\Tabs\TrainSchoolLibrary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SchoolLibrary\Tabs\TrainSchoolLibrary.Designer.cs">
+      <DependentUpon>TrainSchoolLibrary.cs</DependentUpon>
+    </Compile>
     <Compile Include="Snap\Classes\Singleton.cs" />
     <Compile Include="Snap\Snap.cs">
       <SubType>UserControl</SubType>
@@ -107,6 +125,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Games.resx">
       <DependentUpon>Games.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolLibrary\SchoolLibrary.resx">
+      <DependentUpon>SchoolLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolLibrary\Tabs\TestSchoolLibrary.resx">
+      <DependentUpon>TestSchoolLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolLibrary\Tabs\TrainSchoolLibrary.resx">
+      <DependentUpon>TrainSchoolLibrary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Snap\Snap.resx">
       <DependentUpon>Snap.cs</DependentUpon>
@@ -152,7 +179,6 @@
     <Folder Include="Buse\" />
     <Folder Include="Mehmetcik\" />
     <Folder Include="Ulas\" />
-    <Folder Include="Yenercan\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
