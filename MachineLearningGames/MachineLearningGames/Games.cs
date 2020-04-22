@@ -28,5 +28,10 @@ namespace MachineLearningGames
             pnlMain.Controls.Add(snap);
             transitionGames.ShowSync(snap);
         }
+
+        private void btnSchoolLibrary_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

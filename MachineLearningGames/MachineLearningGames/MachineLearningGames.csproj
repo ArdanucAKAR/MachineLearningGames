@@ -57,6 +57,12 @@
     <Compile Include="Games.Designer.cs">
       <DependentUpon>Games.cs</DependentUpon>
     </Compile>
+    <Compile Include="School Library\SchoolLibrary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="School Library\SchoolLibrary.Designer.cs">
+      <DependentUpon>SchoolLibrary.cs</DependentUpon>
+    </Compile>
     <Compile Include="Snap\Classes\Singleton.cs" />
     <Compile Include="Snap\Snap.cs">
       <SubType>UserControl</SubType>
@@ -136,8 +142,8 @@
     <Folder Include="Ayberk\" />
     <Folder Include="Buse\" />
     <Folder Include="Mehmetcik\" />
+    <Folder Include="School Library\Tabs\" />
     <Folder Include="Ulas\" />
-    <Folder Include="Yenercan\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
