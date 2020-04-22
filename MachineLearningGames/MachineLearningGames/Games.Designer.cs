@@ -72,8 +72,9 @@
             this.transitionGames.SetDecoration(this.pnlMain, BunifuAnimatorNS.DecorationType.None);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
+            this.pnlMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(2000, 868);
+            this.pnlMain.Size = new System.Drawing.Size(1500, 705);
             this.pnlMain.TabIndex = 5;
             // 
             // btnSnap
@@ -82,9 +83,10 @@
             this.transitionGames.SetDecoration(this.btnSnap, BunifuAnimatorNS.DecorationType.None);
             this.btnSnap.Image = ((System.Drawing.Image)(resources.GetObject("btnSnap.Image")));
             this.btnSnap.ImageActive = null;
-            this.btnSnap.Location = new System.Drawing.Point(60, 162);
+            this.btnSnap.Location = new System.Drawing.Point(46, 164);
+            this.btnSnap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSnap.Name = "btnSnap";
-            this.btnSnap.Size = new System.Drawing.Size(333, 218);
+            this.btnSnap.Size = new System.Drawing.Size(250, 177);
             this.btnSnap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSnap.TabIndex = 14;
             this.btnSnap.TabStop = false;
@@ -97,9 +99,10 @@
             this.transitionGames.SetDecoration(this.bunifuImageButton10, BunifuAnimatorNS.DecorationType.None);
             this.bunifuImageButton10.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton10.Image")));
             this.bunifuImageButton10.ImageActive = null;
-            this.bunifuImageButton10.Location = new System.Drawing.Point(1191, 365);
+            this.bunifuImageButton10.Location = new System.Drawing.Point(1178, 365);
+            this.bunifuImageButton10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton10.Name = "bunifuImageButton10";
-            this.bunifuImageButton10.Size = new System.Drawing.Size(333, 218);
+            this.bunifuImageButton10.Size = new System.Drawing.Size(250, 177);
             this.bunifuImageButton10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton10.TabIndex = 8;
             this.bunifuImageButton10.TabStop = false;
@@ -111,9 +114,10 @@
             this.transitionGames.SetDecoration(this.bunifuImageButton5, BunifuAnimatorNS.DecorationType.None);
             this.bunifuImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton5.Image")));
             this.bunifuImageButton5.ImageActive = null;
-            this.bunifuImageButton5.Location = new System.Drawing.Point(1191, 162);
+            this.bunifuImageButton5.Location = new System.Drawing.Point(1178, 164);
+            this.bunifuImageButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton5.Name = "bunifuImageButton5";
-            this.bunifuImageButton5.Size = new System.Drawing.Size(333, 218);
+            this.bunifuImageButton5.Size = new System.Drawing.Size(250, 177);
             this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton5.TabIndex = 9;
             this.bunifuImageButton5.TabStop = false;
@@ -125,9 +129,10 @@
             this.transitionGames.SetDecoration(this.bunifuImageButton9, BunifuAnimatorNS.DecorationType.None);
             this.bunifuImageButton9.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton9.Image")));
             this.bunifuImageButton9.ImageActive = null;
-            this.bunifuImageButton9.Location = new System.Drawing.Point(908, 365);
+            this.bunifuImageButton9.Location = new System.Drawing.Point(895, 365);
+            this.bunifuImageButton9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton9.Name = "bunifuImageButton9";
-            this.bunifuImageButton9.Size = new System.Drawing.Size(333, 218);
+            this.bunifuImageButton9.Size = new System.Drawing.Size(250, 177);
             this.bunifuImageButton9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton9.TabIndex = 10;
             this.bunifuImageButton9.TabStop = false;
@@ -139,9 +144,10 @@
             this.transitionGames.SetDecoration(this.bunifuImageButton4, BunifuAnimatorNS.DecorationType.None);
             this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
             this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(908, 162);
+            this.bunifuImageButton4.Location = new System.Drawing.Point(895, 164);
+            this.bunifuImageButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
-            this.bunifuImageButton4.Size = new System.Drawing.Size(333, 218);
+            this.bunifuImageButton4.Size = new System.Drawing.Size(250, 177);
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton4.TabIndex = 11;
             this.bunifuImageButton4.TabStop = false;
@@ -153,9 +159,10 @@
             this.transitionGames.SetDecoration(this.bunifuImageButton8, BunifuAnimatorNS.DecorationType.None);
             this.bunifuImageButton8.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton8.Image")));
             this.bunifuImageButton8.ImageActive = null;
-            this.bunifuImageButton8.Location = new System.Drawing.Point(625, 365);
+            this.bunifuImageButton8.Location = new System.Drawing.Point(612, 365);
+            this.bunifuImageButton8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton8.Name = "bunifuImageButton8";
-            this.bunifuImageButton8.Size = new System.Drawing.Size(333, 218);
+            this.bunifuImageButton8.Size = new System.Drawing.Size(250, 177);
             this.bunifuImageButton8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton8.TabIndex = 12;
             this.bunifuImageButton8.TabStop = false;
@@ -167,9 +174,10 @@
             this.transitionGames.SetDecoration(this.bunifuImageButton3, BunifuAnimatorNS.DecorationType.None);
             this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
             this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(625, 162);
+            this.bunifuImageButton3.Location = new System.Drawing.Point(612, 164);
+            this.bunifuImageButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(333, 218);
+            this.bunifuImageButton3.Size = new System.Drawing.Size(250, 177);
             this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton3.TabIndex = 13;
             this.bunifuImageButton3.TabStop = false;
@@ -181,9 +189,10 @@
             this.transitionGames.SetDecoration(this.bunifuImageButton7, BunifuAnimatorNS.DecorationType.None);
             this.bunifuImageButton7.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton7.Image")));
             this.bunifuImageButton7.ImageActive = null;
-            this.bunifuImageButton7.Location = new System.Drawing.Point(342, 365);
+            this.bunifuImageButton7.Location = new System.Drawing.Point(329, 365);
+            this.bunifuImageButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton7.Name = "bunifuImageButton7";
-            this.bunifuImageButton7.Size = new System.Drawing.Size(333, 218);
+            this.bunifuImageButton7.Size = new System.Drawing.Size(250, 177);
             this.bunifuImageButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton7.TabIndex = 6;
             this.bunifuImageButton7.TabStop = false;
@@ -195,7 +204,8 @@
             this.transitionGames.SetDecoration(this.btnSchoolLibrary, BunifuAnimatorNS.DecorationType.None);
             this.btnSchoolLibrary.Image = ((System.Drawing.Image)(resources.GetObject("btnSchoolLibrary.Image")));
             this.btnSchoolLibrary.ImageActive = null;
-            this.btnSchoolLibrary.Location = new System.Drawing.Point(60, 365);
+            this.btnSchoolLibrary.Location = new System.Drawing.Point(46, 365);
+            this.btnSchoolLibrary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSchoolLibrary.Name = "btnSchoolLibrary";
             this.btnSchoolLibrary.Size = new System.Drawing.Size(250, 177);
             this.btnSchoolLibrary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -209,9 +219,10 @@
             this.transitionGames.SetDecoration(this.bunifuImageButton2, BunifuAnimatorNS.DecorationType.None);
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(342, 162);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(329, 164);
+            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(333, 218);
+            this.bunifuImageButton2.Size = new System.Drawing.Size(250, 177);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton2.TabIndex = 7;
             this.bunifuImageButton2.TabStop = false;
@@ -240,14 +251,15 @@
             // 
             // Games
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.pnlMain);
             this.transitionGames.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Games";
-            this.Size = new System.Drawing.Size(2000, 868);
+            this.Size = new System.Drawing.Size(1500, 705);
             this.pnlMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnSnap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton10)).EndInit();
