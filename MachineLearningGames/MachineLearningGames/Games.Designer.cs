@@ -191,17 +191,17 @@
             // 
             // btnSchoolLibrary
             // 
-            this.bunifuImageButton6.BackColor = System.Drawing.Color.Transparent;
-            this.transitionGames.SetDecoration(this.bunifuImageButton6, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton6.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton6.Image")));
-            this.bunifuImageButton6.ImageActive = null;
-            this.bunifuImageButton6.Location = new System.Drawing.Point(60, 365);
-            this.bunifuImageButton6.Name = "bunifuImageButton6";
-            this.bunifuImageButton6.Size = new System.Drawing.Size(250, 177);
-            this.bunifuImageButton6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton6.TabIndex = 5;
-            this.bunifuImageButton6.TabStop = false;
-            this.bunifuImageButton6.Zoom = 10;
+            this.btnSchoolLibrary.BackColor = System.Drawing.Color.Transparent;
+            this.transitionGames.SetDecoration(this.btnSchoolLibrary, BunifuAnimatorNS.DecorationType.None);
+            this.btnSchoolLibrary.ImageActive = null;
+            this.btnSchoolLibrary.Location = new System.Drawing.Point(60, 365);
+            this.btnSchoolLibrary.Name = "btnSchoolLibrary";
+            this.btnSchoolLibrary.Size = new System.Drawing.Size(250, 177);
+            this.btnSchoolLibrary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSchoolLibrary.TabIndex = 5;
+            this.btnSchoolLibrary.TabStop = false;
+            this.btnSchoolLibrary.Zoom = 10;
+            this.btnSchoolLibrary.Click += new System.EventHandler(this.btnSchoolLibrary_Click);
             // 
             // bunifuImageButton2
             // 
