@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>C:\Users\Ardanuc AKAR\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -56,12 +71,6 @@
     </Compile>
     <Compile Include="Games.Designer.cs">
       <DependentUpon>Games.cs</DependentUpon>
-    </Compile>
-    <Compile Include="School Library\SchoolLibrary.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="School Library\SchoolLibrary.Designer.cs">
-      <DependentUpon>SchoolLibrary.cs</DependentUpon>
     </Compile>
     <Compile Include="Snap\Classes\Singleton.cs" />
     <Compile Include="Snap\Snap.cs">
@@ -98,6 +107,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Games.resx">
       <DependentUpon>Games.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolLibrary\SchoolLibrary.resx">
+      <DependentUpon>SchoolLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolLibrary\Tabs\Train.resx">
+      <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Snap\Snap.resx">
       <DependentUpon>Snap.cs</DependentUpon>
@@ -144,6 +159,7 @@
     <Folder Include="Mehmetcik\" />
     <Folder Include="School Library\Tabs\" />
     <Folder Include="Ulas\" />
+    <Folder Include="Yenercan\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
