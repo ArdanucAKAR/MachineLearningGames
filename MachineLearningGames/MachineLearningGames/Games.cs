@@ -28,5 +28,12 @@ namespace MachineLearningGames
             pnlMain.Controls.Add(snap);
             transitionGames.ShowSync(snap);
         }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            ChatbotMainForm cb= new ChatbotMainForm();
+            cb.Show();
+            this.Hide();
+        }
     }
 }
