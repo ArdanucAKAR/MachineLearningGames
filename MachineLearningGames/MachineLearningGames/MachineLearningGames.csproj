@@ -108,12 +108,6 @@
     <EmbeddedResource Include="Games.resx">
       <DependentUpon>Games.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SchoolLibrary\SchoolLibrary.resx">
-      <DependentUpon>SchoolLibrary.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SchoolLibrary\Tabs\Train.resx">
-      <DependentUpon>Train.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Snap\Snap.resx">
       <DependentUpon>Snap.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,7 +151,6 @@
     <Folder Include="Ayberk\" />
     <Folder Include="Buse\" />
     <Folder Include="Mehmetcik\" />
-    <Folder Include="School Library\Tabs\" />
     <Folder Include="Ulas\" />
     <Folder Include="Yenercan\" />
   </ItemGroup>
