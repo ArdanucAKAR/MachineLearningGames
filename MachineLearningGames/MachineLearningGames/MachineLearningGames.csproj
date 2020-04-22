@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -71,12 +71,6 @@
     </Compile>
     <Compile Include="Games.Designer.cs">
       <DependentUpon>Games.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SchoolLibrary\SchoolLibrary.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="SchoolLibrary\SchoolLibrary.Designer.cs">
-      <DependentUpon>SchoolLibrary.cs</DependentUpon>
     </Compile>
     <Compile Include="Snap\Classes\Singleton.cs" />
     <Compile Include="Snap\Snap.cs">
@@ -113,9 +107,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Games.resx">
       <DependentUpon>Games.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SchoolLibrary\SchoolLibrary.resx">
-      <DependentUpon>SchoolLibrary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Snap\Snap.resx">
       <DependentUpon>Snap.cs</DependentUpon>
@@ -160,8 +151,8 @@
     <Folder Include="Ayberk\" />
     <Folder Include="Buse\" />
     <Folder Include="Mehmetcik\" />
-    <Folder Include="SchoolLibrary\Tabs\" />
     <Folder Include="Ulas\" />
+    <Folder Include="Yenercan\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

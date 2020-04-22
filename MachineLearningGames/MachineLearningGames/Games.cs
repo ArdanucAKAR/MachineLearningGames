@@ -28,15 +28,5 @@ namespace MachineLearningGames
             pnlMain.Controls.Add(snap);
             transitionGames.ShowSync(snap);
         }
-
-        private void btnSchoolLibrary_Click(object sender, EventArgs e)
-        {
-            SchoolLibrary school_library = new SchoolLibrary();
-            school_library.main = main;
-            pnlMain.Controls.Clear();
-            school_library.Visible = false;
-            pnlMain.Controls.Add(school_library);
-            transitionGames.ShowSync(school_library);
-        }
     }
 }
