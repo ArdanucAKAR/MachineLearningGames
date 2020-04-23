@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MachineLearningGames.Ayberk;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,18 @@ namespace MachineLearningGames
             InitializeComponent();
         }
 
-    
+        private void trainButton_Click(object sender, EventArgs e)
+        {
+            ChatBotTrain cs = new ChatBotTrain();
+            mainPanel.Controls.Clear();
+            
+            mainPanel.Controls.Add(cs);
+            
+        }
+
+        private void testButton_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

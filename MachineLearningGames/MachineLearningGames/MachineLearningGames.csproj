@@ -79,6 +79,8 @@
     <Compile Include="Ayberk\ChatBotTrain.Designer.cs">
       <DependentUpon>ChatBotTrain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ayberk\Konu.cs" />
+    <Compile Include="Ayberk\Soru.cs" />
     <Compile Include="Games.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,6 +160,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\MachineLearningGames.Ayberk.Konu.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
