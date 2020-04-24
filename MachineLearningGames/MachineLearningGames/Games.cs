@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MachineLearningGames.JudgeBook;
 
 namespace MachineLearningGames
 {
@@ -37,6 +38,16 @@ namespace MachineLearningGames
             school_library.Visible = false;
             pnlMain.Controls.Add(school_library);
             transitionGames.ShowSync(school_library);
+        }
+
+        private void btnJudgeBook_Click(object sender, EventArgs e)
+        {
+            JudgeBookMain judgeBook = new JudgeBookMain();
+            judgeBook.main = main;
+            pnlMain.Controls.Clear();
+            judgeBook.Visible = false;
+            pnlMain.Controls.Add(judgeBook);
+            transitionGames.ShowSync(judgeBook);
         }
     }
 }

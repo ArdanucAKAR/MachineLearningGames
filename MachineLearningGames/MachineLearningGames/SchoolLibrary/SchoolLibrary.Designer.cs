@@ -80,9 +80,9 @@
             this.pnlBottom.Controls.Add(this.btnTest);
             this.pnlBottom.Controls.Add(this.btnTrain);
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(0, 605);
+            this.pnlBottom.Location = new System.Drawing.Point(0, 604);
             this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(1500, 100);
+            this.pnlBottom.Size = new System.Drawing.Size(1500, 101);
             this.pnlBottom.TabIndex = 2;
             // 
             // btnHome

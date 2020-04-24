@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>C:\Users\Buse\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -71,6 +71,25 @@
     </Compile>
     <Compile Include="Games.Designer.cs">
       <DependentUpon>Games.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JudgeBook\Class\JB_Singleton.cs" />
+    <Compile Include="JudgeBook\JudgeBookMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JudgeBook\JudgeBookMain.Designer.cs">
+      <DependentUpon>JudgeBookMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JudgeBook\Tabs\JudgeBookTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JudgeBook\Tabs\JudgeBookTest.Designer.cs">
+      <DependentUpon>JudgeBookTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JudgeBook\Tabs\JudgeBookTrain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JudgeBook\Tabs\JudgeBookTrain.Designer.cs">
+      <DependentUpon>JudgeBookTrain.cs</DependentUpon>
     </Compile>
     <Compile Include="SchoolLibrary\SchoolLibrary.cs">
       <SubType>UserControl</SubType>
@@ -126,6 +145,9 @@
     <EmbeddedResource Include="Games.resx">
       <DependentUpon>Games.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="JudgeBook\JudgeBookMain.resx">
+      <DependentUpon>JudgeBookMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SchoolLibrary\SchoolLibrary.resx">
       <DependentUpon>SchoolLibrary.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,7 +198,6 @@
     <Folder Include="Alihan\" />
     <Folder Include="Alperen\" />
     <Folder Include="Ayberk\" />
-    <Folder Include="Buse\" />
     <Folder Include="Mehmetcik\" />
     <Folder Include="Ulas\" />
   </ItemGroup>

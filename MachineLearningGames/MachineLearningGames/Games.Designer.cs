@@ -36,7 +36,7 @@
             this.bunifuImageButton10 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton9 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnJudgeBook = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton8 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton7 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -48,7 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnJudgeBook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).BeginInit();
@@ -63,7 +63,7 @@
             this.pnlMain.Controls.Add(this.bunifuImageButton10);
             this.pnlMain.Controls.Add(this.bunifuImageButton5);
             this.pnlMain.Controls.Add(this.bunifuImageButton9);
-            this.pnlMain.Controls.Add(this.bunifuImageButton4);
+            this.pnlMain.Controls.Add(this.btnJudgeBook);
             this.pnlMain.Controls.Add(this.bunifuImageButton8);
             this.pnlMain.Controls.Add(this.bunifuImageButton3);
             this.pnlMain.Controls.Add(this.bunifuImageButton7);
@@ -138,20 +138,21 @@
             this.bunifuImageButton9.TabStop = false;
             this.bunifuImageButton9.Zoom = 10;
             // 
-            // bunifuImageButton4
+            // btnJudgeBook
             // 
-            this.bunifuImageButton4.BackColor = System.Drawing.Color.Transparent;
-            this.transitionGames.SetDecoration(this.bunifuImageButton4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
-            this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(895, 164);
-            this.bunifuImageButton4.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuImageButton4.Name = "bunifuImageButton4";
-            this.bunifuImageButton4.Size = new System.Drawing.Size(250, 177);
-            this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton4.TabIndex = 11;
-            this.bunifuImageButton4.TabStop = false;
-            this.bunifuImageButton4.Zoom = 10;
+            this.btnJudgeBook.BackColor = System.Drawing.Color.Transparent;
+            this.transitionGames.SetDecoration(this.btnJudgeBook, BunifuAnimatorNS.DecorationType.None);
+            this.btnJudgeBook.Image = ((System.Drawing.Image)(resources.GetObject("btnJudgeBook.Image")));
+            this.btnJudgeBook.ImageActive = null;
+            this.btnJudgeBook.Location = new System.Drawing.Point(895, 164);
+            this.btnJudgeBook.Margin = new System.Windows.Forms.Padding(2);
+            this.btnJudgeBook.Name = "btnJudgeBook";
+            this.btnJudgeBook.Size = new System.Drawing.Size(250, 177);
+            this.btnJudgeBook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnJudgeBook.TabIndex = 11;
+            this.btnJudgeBook.TabStop = false;
+            this.btnJudgeBook.Zoom = 10;
+            this.btnJudgeBook.Click += new System.EventHandler(this.btnJudgeBook_Click);
             // 
             // bunifuImageButton8
             // 
@@ -266,7 +267,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnJudgeBook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).EndInit();
@@ -283,7 +284,7 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton10;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton5;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton9;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
+        private Bunifu.Framework.UI.BunifuImageButton btnJudgeBook;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton8;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton7;
