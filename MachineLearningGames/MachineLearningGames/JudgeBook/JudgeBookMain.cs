@@ -66,5 +66,12 @@ namespace MachineLearningGames.JudgeBook
             JudgeBookTrain train = new JudgeBookTrain();
             pnlJudgeBookMain.Controls.Add(train);
         }
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+            JudgeBookTest test = new JudgeBookTest();
+            pnlJudgeBookMain.Controls.Clear();
+            pnlJudgeBookMain.Controls.Add(test);
+        }
     }
 }
