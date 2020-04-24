@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JudgeBookMain));
             this.pnlBottom = new System.Windows.Forms.Panel();
-            this.pnlJudgeBookMain = new System.Windows.Forms.Panel();
-            this.pbHome = new System.Windows.Forms.PictureBox();
-            this.lblHome = new System.Windows.Forms.Label();
-            this.btnHome = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnTrain = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnTest = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnTrain = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnHome = new Bunifu.Framework.UI.BunifuTileButton();
+            this.pnlJudgeBookMain = new System.Windows.Forms.Panel();
+            this.lblHome = new System.Windows.Forms.Label();
+            this.pbHome = new System.Windows.Forms.PictureBox();
             this.pnlBottom.SuspendLayout();
             this.pnlJudgeBookMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
@@ -53,36 +53,48 @@
             this.pnlBottom.Size = new System.Drawing.Size(1500, 100);
             this.pnlBottom.TabIndex = 0;
             // 
-            // pnlJudgeBookMain
+            // btnTest
             // 
-            this.pnlJudgeBookMain.BackColor = System.Drawing.Color.Transparent;
-            this.pnlJudgeBookMain.Controls.Add(this.lblHome);
-            this.pnlJudgeBookMain.Controls.Add(this.pbHome);
-            this.pnlJudgeBookMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlJudgeBookMain.Location = new System.Drawing.Point(0, 0);
-            this.pnlJudgeBookMain.Name = "pnlJudgeBookMain";
-            this.pnlJudgeBookMain.Size = new System.Drawing.Size(1500, 605);
-            this.pnlJudgeBookMain.TabIndex = 1;
+            this.btnTest.BackColor = System.Drawing.Color.Transparent;
+            this.btnTest.color = System.Drawing.Color.Transparent;
+            this.btnTest.colorActive = System.Drawing.Color.Transparent;
+            this.btnTest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.btnTest.ForeColor = System.Drawing.Color.White;
+            this.btnTest.Image = ((System.Drawing.Image)(resources.GetObject("btnTest.Image")));
+            this.btnTest.ImagePosition = 18;
+            this.btnTest.ImageZoom = 50;
+            this.btnTest.LabelPosition = 38;
+            this.btnTest.LabelText = "";
+            this.btnTest.Location = new System.Drawing.Point(812, 0);
+            this.btnTest.Margin = new System.Windows.Forms.Padding(6);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.Size = new System.Drawing.Size(100, 100);
+            this.btnTest.TabIndex = 2;
+            this.btnTest.MouseLeave += new System.EventHandler(this.btnTest_MouseLeave);
+            this.btnTest.MouseHover += new System.EventHandler(this.btnTest_MouseHover);
             // 
-            // pbHome
+            // btnTrain
             // 
-            this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
-            this.pbHome.Location = new System.Drawing.Point(457, 119);
-            this.pbHome.Name = "pbHome";
-            this.pbHome.Size = new System.Drawing.Size(517, 317);
-            this.pbHome.TabIndex = 0;
-            this.pbHome.TabStop = false;
-            // 
-            // lblHome
-            // 
-            this.lblHome.AutoSize = true;
-            this.lblHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.lblHome.ForeColor = System.Drawing.Color.White;
-            this.lblHome.Location = new System.Drawing.Point(466, 472);
-            this.lblHome.Name = "lblHome";
-            this.lblHome.Size = new System.Drawing.Size(508, 37);
-            this.lblHome.TabIndex = 1;
-            this.lblHome.Text = "Judge a Book - Makine Öğrenmesi";
+            this.btnTrain.BackColor = System.Drawing.Color.Transparent;
+            this.btnTrain.color = System.Drawing.Color.Transparent;
+            this.btnTrain.colorActive = System.Drawing.Color.Transparent;
+            this.btnTrain.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTrain.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.btnTrain.ForeColor = System.Drawing.Color.White;
+            this.btnTrain.Image = ((System.Drawing.Image)(resources.GetObject("btnTrain.Image")));
+            this.btnTrain.ImagePosition = 18;
+            this.btnTrain.ImageZoom = 50;
+            this.btnTrain.LabelPosition = 38;
+            this.btnTrain.LabelText = "";
+            this.btnTrain.Location = new System.Drawing.Point(700, 0);
+            this.btnTrain.Margin = new System.Windows.Forms.Padding(6);
+            this.btnTrain.Name = "btnTrain";
+            this.btnTrain.Size = new System.Drawing.Size(100, 100);
+            this.btnTrain.TabIndex = 1;
+            this.btnTrain.Click += new System.EventHandler(this.btnTrain_Click);
+            this.btnTrain.MouseLeave += new System.EventHandler(this.btnTrain_MouseLeave);
+            this.btnTrain.MouseHover += new System.EventHandler(this.btnTrain_MouseHover);
             // 
             // btnHome
             // 
@@ -90,7 +102,7 @@
             this.btnHome.color = System.Drawing.Color.Transparent;
             this.btnHome.colorActive = System.Drawing.Color.Transparent;
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImagePosition = 18;
@@ -103,44 +115,39 @@
             this.btnHome.Size = new System.Drawing.Size(100, 100);
             this.btnHome.TabIndex = 0;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            this.btnHome.MouseLeave += new System.EventHandler(this.btnHome_MouseLeave);
+            this.btnHome.MouseHover += new System.EventHandler(this.btnHome_MouseHover);
             // 
-            // btnTrain
+            // pnlJudgeBookMain
             // 
-            this.btnTrain.BackColor = System.Drawing.Color.Transparent;
-            this.btnTrain.color = System.Drawing.Color.Transparent;
-            this.btnTrain.colorActive = System.Drawing.Color.Transparent;
-            this.btnTrain.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTrain.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.btnTrain.ForeColor = System.Drawing.Color.White;
-            this.btnTrain.Image = ((System.Drawing.Image)(resources.GetObject("btnTrain.Image")));
-            this.btnTrain.ImagePosition = 18;
-            this.btnTrain.ImageZoom = 50;
-            this.btnTrain.LabelPosition = 38;
-            this.btnTrain.LabelText = "";
-            this.btnTrain.Location = new System.Drawing.Point(700, 0);
-            this.btnTrain.Margin = new System.Windows.Forms.Padding(6);
-            this.btnTrain.Name = "btnTrain";
-            this.btnTrain.Size = new System.Drawing.Size(100, 100);
-            this.btnTrain.TabIndex = 1;
+            this.pnlJudgeBookMain.BackColor = System.Drawing.Color.Transparent;
+            this.pnlJudgeBookMain.Controls.Add(this.lblHome);
+            this.pnlJudgeBookMain.Controls.Add(this.pbHome);
+            this.pnlJudgeBookMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlJudgeBookMain.Location = new System.Drawing.Point(0, 0);
+            this.pnlJudgeBookMain.Name = "pnlJudgeBookMain";
+            this.pnlJudgeBookMain.Size = new System.Drawing.Size(1500, 605);
+            this.pnlJudgeBookMain.TabIndex = 1;
             // 
-            // btnTest
+            // lblHome
             // 
-            this.btnTest.BackColor = System.Drawing.Color.Transparent;
-            this.btnTest.color = System.Drawing.Color.Transparent;
-            this.btnTest.colorActive = System.Drawing.Color.Transparent;
-            this.btnTest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTest.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.btnTest.ForeColor = System.Drawing.Color.White;
-            this.btnTest.Image = ((System.Drawing.Image)(resources.GetObject("btnTest.Image")));
-            this.btnTest.ImagePosition = 18;
-            this.btnTest.ImageZoom = 50;
-            this.btnTest.LabelPosition = 38;
-            this.btnTest.LabelText = "";
-            this.btnTest.Location = new System.Drawing.Point(812, 0);
-            this.btnTest.Margin = new System.Windows.Forms.Padding(6);
-            this.btnTest.Name = "btnTest";
-            this.btnTest.Size = new System.Drawing.Size(100, 100);
-            this.btnTest.TabIndex = 2;
+            this.lblHome.AutoSize = true;
+            this.lblHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.lblHome.ForeColor = System.Drawing.Color.White;
+            this.lblHome.Location = new System.Drawing.Point(466, 472);
+            this.lblHome.Name = "lblHome";
+            this.lblHome.Size = new System.Drawing.Size(508, 37);
+            this.lblHome.TabIndex = 1;
+            this.lblHome.Text = "Judge a Book - Makine Öğrenmesi";
+            // 
+            // pbHome
+            // 
+            this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
+            this.pbHome.Location = new System.Drawing.Point(457, 119);
+            this.pbHome.Name = "pbHome";
+            this.pbHome.Size = new System.Drawing.Size(517, 317);
+            this.pbHome.TabIndex = 0;
+            this.pbHome.TabStop = false;
             // 
             // JudgeBookMain
             // 

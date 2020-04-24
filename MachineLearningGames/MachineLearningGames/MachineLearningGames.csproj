@@ -148,6 +148,9 @@
     <EmbeddedResource Include="JudgeBook\JudgeBookMain.resx">
       <DependentUpon>JudgeBookMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="JudgeBook\Tabs\JudgeBookTrain.resx">
+      <DependentUpon>JudgeBookTrain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SchoolLibrary\SchoolLibrary.resx">
       <DependentUpon>SchoolLibrary.cs</DependentUpon>
     </EmbeddedResource>
