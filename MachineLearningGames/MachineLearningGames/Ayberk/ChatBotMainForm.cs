@@ -27,9 +27,14 @@ namespace MachineLearningGames
             
         }
 
-        private void testButton_Click(object sender, EventArgs e)
+   
+
+        private void makeButton_Click(object sender, EventArgs e)
         {
-           
+            Chat c = new Chat();
+            mainPanel.Controls.Clear();
+            mainPanel.Controls.Add(c);
+            
         }
     }
 }

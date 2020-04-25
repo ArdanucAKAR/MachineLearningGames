@@ -10,14 +10,18 @@ using System.Windows.Forms;
 
 namespace MachineLearningGames.Ayberk
 {
+    
     public partial class ChatBotTrain : UserControl
     {
+        public static List<String> konular = new List<String>();
+        public static List<String> sorular = new List<String>();
+        public static List<String> cevaplar = new List<String>();
         public ChatBotTrain()
         {
             InitializeComponent();
         }
 
-        List<String> konular = new List<String>();
+        
         private void konuekleBtn_Click(object sender, EventArgs e)
         {
 
@@ -41,8 +45,19 @@ namespace MachineLearningGames.Ayberk
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            //object selected = konularCombo.SelectedItem;
+            //MessageBox.Show(selected.ToString());
+        }
+
+        private void soruekleBtn_Click(object sender, EventArgs e)
+        {
             object selected = konularCombo.SelectedItem;
-            MessageBox.Show(selected.ToString());
+            sorular.Add(soruTextbox.text);           
+        }
+
+        private void cevapBtn_Click(object sender, EventArgs e)
+        {
+            cevaplar.Add(cevapTextBox.text);
         }
     }
 }

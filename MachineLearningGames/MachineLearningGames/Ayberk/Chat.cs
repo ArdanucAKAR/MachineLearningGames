@@ -9,13 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MachineLearningGames.Ayberk;
 
-namespace MachineLearningGames
+namespace MachineLearningGames.Ayberk
 {
-    public partial class Make : UserControl
+    public partial class Chat : UserControl
     {
-        public Make()
+        public Chat()
         {
             InitializeComponent();
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
