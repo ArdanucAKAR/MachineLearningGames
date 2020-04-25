@@ -67,6 +67,7 @@ namespace MachineLearningGames.JudgeBook.Tabs
         private void btnUploadChildren_Click(object sender, EventArgs e)
         {
             Update(childrensBookList);
+            db.childrenBook = 1;
             for (int i = 0; i < childrensBookList.Items.Count; i++)
             {
                 if (childrensBookList.Items[i].Text == "kitap.jpg")
@@ -80,6 +81,8 @@ namespace MachineLearningGames.JudgeBook.Tabs
         private void btnUploadRomance_Click(object sender, EventArgs e)
         {
             Update(romanceBookList);
+            db.romanceBook = 1;
+
             for (int i = 0; i < romanceBookList.Items.Count; i++)
             {
                 if (romanceBookList.Items[i].Text == "kitap.jpg")
@@ -93,6 +96,7 @@ namespace MachineLearningGames.JudgeBook.Tabs
         private void btnUploadThriller_Click(object sender, EventArgs e)
         {
             Update(thrillerBookList);
+            db.thrillerBook = 1;
             for (int i = 0; i < thrillerBookList.Items.Count; i++)
             {
                 if (thrillerBookList.Items[i].Text == "kitap.jpg")
@@ -106,6 +110,7 @@ namespace MachineLearningGames.JudgeBook.Tabs
         private void btnUploadScifi_Click(object sender, EventArgs e)
         {
             Update(scifiBookList);
+            db.scifiBook = 1;
             for (int i = 0; i < scifiBookList.Items.Count; i++)
             {
                 if (scifiBookList.Items[i].Text == "kitap.jpg")
@@ -115,5 +120,6 @@ namespace MachineLearningGames.JudgeBook.Tabs
                 }
             }
         }
+        
     }
 }

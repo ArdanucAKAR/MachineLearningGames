@@ -10,6 +10,10 @@ namespace MachineLearningGames.JudgeBook.Class
     {
         private static JB_Singleton singleInstance;
         public string genre = "";
+        public int childrenBook = 0;
+        public int romanceBook = 0;
+        public int thrillerBook = 0;
+        public int scifiBook = 0;
         private JB_Singleton()
         {
 
