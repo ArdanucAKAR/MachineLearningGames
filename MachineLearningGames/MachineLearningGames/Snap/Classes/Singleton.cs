@@ -9,14 +9,14 @@ namespace MachineLearningGames
 {
     public class Singleton
     {
-        private static Singleton nesne;
+        public static Singleton nesne;
         public int spade = 0,
                    diamond = 0,
                    heart = 0,
                    club = 0;
         public Form main = new Main();
 
-        private Singleton()
+        public Singleton()
         {
 
         }

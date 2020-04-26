@@ -67,6 +67,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ayberk\Cevap.cs" />
     <Compile Include="Ayberk\Chat.cs">
       <SubType>UserControl</SubType>
     </Compile>

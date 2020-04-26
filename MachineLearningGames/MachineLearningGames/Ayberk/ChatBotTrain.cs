@@ -15,13 +15,13 @@ namespace MachineLearningGames.Ayberk
     {
         public static List<String> konular = new List<String>();
         public static List<String> sorular = new List<String>();
-        public static List<String> cevaplar = new List<String>();
+        
         public ChatBotTrain()
         {
             InitializeComponent();
         }
+        Cevap ce = Cevap.GetCevap();
 
-        
         private void konuekleBtn_Click(object sender, EventArgs e)
         {
 
@@ -41,7 +41,7 @@ namespace MachineLearningGames.Ayberk
         }  
         private void ChatBotTrain_Load(object sender, EventArgs e)
         {
-            
+           
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -57,7 +57,8 @@ namespace MachineLearningGames.Ayberk
 
         private void cevapBtn_Click(object sender, EventArgs e)
         {
-            cevaplar.Add(cevapTextBox.text);
+            
+            ce.cevaplar.Add(cevapTextBox.text);
         }
     }
 }

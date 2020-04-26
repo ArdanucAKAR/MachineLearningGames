@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChatBotTrain));
             this.trainPanel = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.cevapBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.cevapTextBox = new Bunifu.Framework.UI.BunifuTextbox();
+            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.konularCombo = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,9 +44,6 @@
             this.konuTextbox = new Bunifu.Framework.UI.BunifuTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.konuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cevapBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.cevapTextBox = new Bunifu.Framework.UI.BunifuTextbox();
-            this.label4 = new System.Windows.Forms.Label();
             this.trainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.konuBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -75,9 +75,70 @@
             this.trainPanel.Size = new System.Drawing.Size(775, 532);
             this.trainPanel.TabIndex = 0;
             // 
+            // cevapBtn
+            // 
+            this.cevapBtn.Activecolor = System.Drawing.Color.Transparent;
+            this.cevapBtn.BackColor = System.Drawing.Color.DarkGray;
+            this.cevapBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cevapBtn.BorderRadius = 0;
+            this.cevapBtn.ButtonText = "Cevaplar ekle";
+            this.cevapBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cevapBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.cevapBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cevapBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.cevapBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("cevapBtn.Iconimage")));
+            this.cevapBtn.Iconimage_right = null;
+            this.cevapBtn.Iconimage_right_Selected = null;
+            this.cevapBtn.Iconimage_Selected = null;
+            this.cevapBtn.IconMarginLeft = 2;
+            this.cevapBtn.IconMarginRight = 190;
+            this.cevapBtn.IconRightVisible = true;
+            this.cevapBtn.IconRightZoom = 0D;
+            this.cevapBtn.IconVisible = true;
+            this.cevapBtn.IconZoom = 100D;
+            this.cevapBtn.IsTab = false;
+            this.cevapBtn.Location = new System.Drawing.Point(85, 288);
+            this.cevapBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cevapBtn.Name = "cevapBtn";
+            this.cevapBtn.Normalcolor = System.Drawing.Color.DarkGray;
+            this.cevapBtn.OnHovercolor = System.Drawing.Color.LightGray;
+            this.cevapBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.cevapBtn.selected = false;
+            this.cevapBtn.Size = new System.Drawing.Size(208, 25);
+            this.cevapBtn.TabIndex = 11;
+            this.cevapBtn.Text = "Cevaplar ekle";
+            this.cevapBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cevapBtn.Textcolor = System.Drawing.Color.Black;
+            this.cevapBtn.TextFont = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cevapBtn.Click += new System.EventHandler(this.cevapBtn_Click);
+            // 
+            // cevapTextBox
+            // 
+            this.cevapTextBox.BackColor = System.Drawing.Color.LightGray;
+            this.cevapTextBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cevapTextBox.BackgroundImage")));
+            this.cevapTextBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cevapTextBox.ForeColor = System.Drawing.Color.Black;
+            this.cevapTextBox.Icon = ((System.Drawing.Image)(resources.GetObject("cevapTextBox.Icon")));
+            this.cevapTextBox.Location = new System.Drawing.Point(60, 255);
+            this.cevapTextBox.Name = "cevapTextBox";
+            this.cevapTextBox.Size = new System.Drawing.Size(267, 26);
+            this.cevapTextBox.TabIndex = 10;
+            this.cevapTextBox.text = "Aslanlarla ilgili bir şeyler girin";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(97, 233);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(116, 19);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Cevapları ekle:";
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(355, 117);
+            this.button1.Location = new System.Drawing.Point(416, 337);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
@@ -229,67 +290,6 @@
             // konuBindingSource
             // 
             this.konuBindingSource.DataSource = typeof(MachineLearningGames.Ayberk.Konu);
-            // 
-            // cevapBtn
-            // 
-            this.cevapBtn.Activecolor = System.Drawing.Color.Transparent;
-            this.cevapBtn.BackColor = System.Drawing.Color.DarkGray;
-            this.cevapBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.cevapBtn.BorderRadius = 0;
-            this.cevapBtn.ButtonText = "Cevaplar ekle";
-            this.cevapBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cevapBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.cevapBtn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cevapBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.cevapBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("cevapBtn.Iconimage")));
-            this.cevapBtn.Iconimage_right = null;
-            this.cevapBtn.Iconimage_right_Selected = null;
-            this.cevapBtn.Iconimage_Selected = null;
-            this.cevapBtn.IconMarginLeft = 2;
-            this.cevapBtn.IconMarginRight = 190;
-            this.cevapBtn.IconRightVisible = true;
-            this.cevapBtn.IconRightZoom = 0D;
-            this.cevapBtn.IconVisible = true;
-            this.cevapBtn.IconZoom = 100D;
-            this.cevapBtn.IsTab = false;
-            this.cevapBtn.Location = new System.Drawing.Point(85, 288);
-            this.cevapBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cevapBtn.Name = "cevapBtn";
-            this.cevapBtn.Normalcolor = System.Drawing.Color.DarkGray;
-            this.cevapBtn.OnHovercolor = System.Drawing.Color.LightGray;
-            this.cevapBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.cevapBtn.selected = false;
-            this.cevapBtn.Size = new System.Drawing.Size(208, 25);
-            this.cevapBtn.TabIndex = 11;
-            this.cevapBtn.Text = "Cevaplar ekle";
-            this.cevapBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cevapBtn.Textcolor = System.Drawing.Color.Black;
-            this.cevapBtn.TextFont = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cevapBtn.Click += new System.EventHandler(this.cevapBtn_Click);
-            // 
-            // cevapTextBox
-            // 
-            this.cevapTextBox.BackColor = System.Drawing.Color.LightGray;
-            this.cevapTextBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cevapTextBox.BackgroundImage")));
-            this.cevapTextBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.cevapTextBox.ForeColor = System.Drawing.Color.Black;
-            this.cevapTextBox.Icon = ((System.Drawing.Image)(resources.GetObject("cevapTextBox.Icon")));
-            this.cevapTextBox.Location = new System.Drawing.Point(60, 255);
-            this.cevapTextBox.Name = "cevapTextBox";
-            this.cevapTextBox.Size = new System.Drawing.Size(267, 26);
-            this.cevapTextBox.TabIndex = 10;
-            this.cevapTextBox.text = "Aslanlarla ilgili bir şeyler girin";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(97, 233);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 19);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Cevapları ekle:";
             // 
             // ChatBotTrain
             // 
