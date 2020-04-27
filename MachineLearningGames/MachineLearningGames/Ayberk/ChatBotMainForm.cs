@@ -17,7 +17,7 @@ namespace MachineLearningGames
         {
             InitializeComponent();
         }
-
+        public Form main;
         private void trainButton_Click(object sender, EventArgs e)
         {
             ChatBotTrain cs = new ChatBotTrain();
@@ -38,9 +38,9 @@ namespace MachineLearningGames
 
         private void homeButton_Click(object sender, EventArgs e)
         {
-            mainPanel.Controls.Clear();
             Games games = new Games();
-            mainPanel.Controls.Add(games);
+            games.Show();
+            this.Hide();
         }
     }
 }

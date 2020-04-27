@@ -32,8 +32,13 @@ namespace MachineLearningGames.Ayberk
             {
                 for(int i =0;i<words.Length;i++)
                 {
+                    if (words[i] == "Aslan" && words[i] == "Aslanlar")
+                    {
+                        break;
+                    }
                     if (cevap.Contains(words[i]))
                     {
+                       
                         cvpLabel.Text = cevap;
                         continue;
                     }
