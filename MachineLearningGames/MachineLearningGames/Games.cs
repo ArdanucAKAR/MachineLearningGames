@@ -30,6 +30,7 @@ namespace MachineLearningGames
             transitionGames.ShowSync(snap);
         }
 
+<<<<<<< HEAD
         private void btnSchoolLibrary_Click(object sender, EventArgs e)
         {
             SchoolLibrary school_library = new SchoolLibrary();
@@ -48,6 +49,13 @@ namespace MachineLearningGames
             judgeBook.Visible = false;
             pnlMain.Controls.Add(judgeBook);
             transitionGames.ShowSync(judgeBook);
+=======
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            ChatbotMainForm cb= new ChatbotMainForm();
+            cb.Show();
+            this.Hide();
+>>>>>>> ayberk
         }
     }
 }
