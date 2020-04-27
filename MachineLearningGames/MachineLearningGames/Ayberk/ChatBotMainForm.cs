@@ -36,5 +36,12 @@ namespace MachineLearningGames
             mainPanel.Controls.Add(c);
             
         }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            Games games = new Games();
+            games.Show();
+            this.Hide();
+        }
     }
 }

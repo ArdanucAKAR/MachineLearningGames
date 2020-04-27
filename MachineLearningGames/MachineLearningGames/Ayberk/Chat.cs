@@ -26,18 +26,23 @@ namespace MachineLearningGames.Ayberk
             string[] strlist = c.cevaplar.ToArray();
             strlist.ToString();
             //string[] words = strlist.Split('.',' ');
-            
+            string[] words = soruTextbx.text.Split(' ','?','.');
             
             foreach (string cevap in c.cevaplar)
             {
-                if (cevap.Contains(soruTextbx.text))
+                for(int i =0;i<words.Length;i++)
                 {
-                    cvpLabel.Text = cevap; 
+                    if (cevap.Contains(words[i]))
+                    {
+                        cvpLabel.Text = cevap;
+                        continue;
+                    }
+                    else
+                    {
+                        cvpLabel.Text = "Üzgünüm sizi anlayamadım. RAWWWWWWWWRRRRRRRR!";
+                    }
                 }
-                else
-                {
-                    cvpLabel.Text = "Üzgünüm sizi anlayamadım.";
-                }
+                             
             }
                  
         }
