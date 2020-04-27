@@ -21,10 +21,10 @@ namespace MachineLearningGames
         private void trainButton_Click(object sender, EventArgs e)
         {
             ChatBotTrain cs = new ChatBotTrain();
-            mainPanel.Controls.Clear();
             
-            mainPanel.Controls.Add(cs);
-            
+            mainPanels.Controls.Clear();
+            mainPanels.Controls.Add(cs);
+                       
         }
 
    
@@ -32,16 +32,15 @@ namespace MachineLearningGames
         private void makeButton_Click(object sender, EventArgs e)
         {
             Chat c = new Chat();
-            mainPanel.Controls.Clear();
-            mainPanel.Controls.Add(c);
-            
+            mainPanels.Controls.Clear();
+            mainPanels.Controls.Add(c);            
         }
 
         private void homeButton_Click(object sender, EventArgs e)
         {
+            mainPanel.Controls.Clear();
             Games games = new Games();
-            games.Show();
-            this.Hide();
+            mainPanel.Controls.Add(games);
         }
     }
 }

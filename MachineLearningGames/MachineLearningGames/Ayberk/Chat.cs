@@ -15,7 +15,7 @@ namespace MachineLearningGames.Ayberk
     {
         Cevap c = Cevap.GetCevap();
         //char[] seperator = { "" };
-        Int32 count = 2;
+   
         public Chat()
         {
             InitializeComponent();
