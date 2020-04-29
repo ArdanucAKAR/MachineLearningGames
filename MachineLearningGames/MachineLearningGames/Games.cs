@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MachineLearningGames.JudgeBook;
+using MachineLearningGames.Mehmetcik;
 
 namespace MachineLearningGames
 {
@@ -48,6 +49,24 @@ namespace MachineLearningGames
             judgeBook.Visible = false;
             pnlMain.Controls.Add(judgeBook);
             transitionGames.ShowSync(judgeBook);
+        }
+
+        private void bunifuImageButton7_Click(object sender, EventArgs e)
+        {
+            JudgeBookMain judgeBook = new JudgeBookMain();
+            judgeBook.main = main;
+            pnlMain.Controls.Clear();
+            judgeBook.Visible = false;
+            pnlMain.Controls.Add(judgeBook);
+            transitionGames.ShowSync(judgeBook);
+        }
+
+        private void bunifuImageButton8_Click(object sender, EventArgs e)
+        {
+            LocateLarryMain1 yeniSayfa = new LocateLarryMain1();
+            
+            yeniSayfa.ShowDialog();
+            this.Show();
         }
     }
 }

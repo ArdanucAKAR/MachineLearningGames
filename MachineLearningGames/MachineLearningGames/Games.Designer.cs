@@ -168,6 +168,7 @@
             this.bunifuImageButton8.TabIndex = 12;
             this.bunifuImageButton8.TabStop = false;
             this.bunifuImageButton8.Zoom = 10;
+            this.bunifuImageButton8.Click += new System.EventHandler(this.bunifuImageButton8_Click);
             // 
             // bunifuImageButton3
             // 
@@ -198,6 +199,7 @@
             this.bunifuImageButton7.TabIndex = 6;
             this.bunifuImageButton7.TabStop = false;
             this.bunifuImageButton7.Zoom = 10;
+            this.bunifuImageButton7.Click += new System.EventHandler(this.bunifuImageButton7_Click);
             // 
             // btnSchoolLibrary
             // 

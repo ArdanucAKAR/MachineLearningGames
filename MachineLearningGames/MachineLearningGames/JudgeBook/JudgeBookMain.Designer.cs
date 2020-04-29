@@ -129,6 +129,7 @@
             this.pnlJudgeBookMain.Name = "pnlJudgeBookMain";
             this.pnlJudgeBookMain.Size = new System.Drawing.Size(1500, 605);
             this.pnlJudgeBookMain.TabIndex = 1;
+            this.pnlJudgeBookMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlJudgeBookMain_Paint);
             // 
             // lblHome
             // 
@@ -171,10 +172,10 @@
 
         private System.Windows.Forms.Panel pnlBottom;
         private System.Windows.Forms.Panel pnlJudgeBookMain;
-        private System.Windows.Forms.PictureBox pbHome;
         private System.Windows.Forms.Label lblHome;
         private Bunifu.Framework.UI.BunifuTileButton btnHome;
         private Bunifu.Framework.UI.BunifuTileButton btnTest;
         private Bunifu.Framework.UI.BunifuTileButton btnTrain;
+        private System.Windows.Forms.PictureBox pbHome;
     }
 }
