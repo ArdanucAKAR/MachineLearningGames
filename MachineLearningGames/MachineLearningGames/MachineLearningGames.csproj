@@ -52,8 +52,15 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>C:\Users\Buse\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="FluentValidation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.8.6.2\lib\net45\FluentValidation.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.4.1\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
@@ -67,6 +74,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alihan\Entity\Customer.cs" />
+    <Compile Include="Alihan\Tabs\TitanicTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alihan\Tabs\TitanicTest.Designer.cs">
+      <DependentUpon>TitanicTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alihan\Tabs\TitanicTrain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alihan\Tabs\TitanicTrain.Designer.cs">
+      <DependentUpon>TitanicTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alihan\Titanic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alihan\Titanic.Designer.cs">
+      <DependentUpon>Titanic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alihan\Utilities\ValidationTool.cs" />
+    <Compile Include="Alihan\Validation\FluentValidation\DataValidator.cs" />
     <Compile Include="Ayberk\Cevap.cs" />
     <Compile Include="Ayberk\Chat.cs">
       <SubType>UserControl</SubType>
@@ -190,6 +218,15 @@
     <Compile Include="Ulas\WayToArrive.Designer.cs">
       <DependentUpon>WayToArrive.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Alihan\Tabs\TitanicTest.resx">
+      <DependentUpon>TitanicTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alihan\Tabs\TitanicTrain.resx">
+      <DependentUpon>TitanicTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alihan\Titanic.resx">
+      <DependentUpon>Titanic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ayberk\Chat.resx">
       <DependentUpon>Chat.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,6 +294,7 @@
     <EmbeddedResource Include="Ulas\WayToArrive.resx">
       <DependentUpon>WayToArrive.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\MachineLearningGames.Ayberk.Konu.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -272,7 +310,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Alihan\" />
     <Folder Include="Alperen\" />
     <Folder Include="Buse\" />
     <Folder Include="Mehmetcik\" />

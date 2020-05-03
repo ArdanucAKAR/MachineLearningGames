@@ -57,7 +57,7 @@ namespace MachineLearningGames
             transitionGames.ShowSync(school_library);
         }
 
-       
+
 
         private void btnJourneyToSchool_Click(object sender, EventArgs e)
         {
@@ -67,6 +67,16 @@ namespace MachineLearningGames
             game.Visible = false;
             pnlMain.Controls.Add(game);
             transitionGames.ShowSync(game);
+        }
+
+        private void btnTitanicGame_Click(object sender, EventArgs e)
+        {
+            Titanic titanic = new Titanic();
+            titanic.main = main;
+            pnlMain.Controls.Clear();
+            titanic.Visible = false;
+            pnlMain.Controls.Add(titanic);
+            transitionGames.ShowSync(titanic);
         }
     }
 }
