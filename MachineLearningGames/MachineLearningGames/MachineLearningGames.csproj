@@ -164,6 +164,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ulas\AddPanelUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ulas\AddPanelUc.Designer.cs">
+      <DependentUpon>AddPanelUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ulas\GamePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ulas\GamePanel.Designer.cs">
+      <DependentUpon>GamePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ulas\Journey.cs" />
+    <Compile Include="Ulas\TestUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ulas\TestUc.Designer.cs">
+      <DependentUpon>TestUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ulas\UlasSingleton.cs" />
+    <Compile Include="Ulas\WayToArrive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ulas\WayToArrive.Designer.cs">
+      <DependentUpon>WayToArrive.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Ayberk\Chat.resx">
       <DependentUpon>Chat.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +245,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Ulas\AddPanelUc.resx">
+      <DependentUpon>AddPanelUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ulas\GamePanel.resx">
+      <DependentUpon>GamePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ulas\TestUc.resx">
+      <DependentUpon>TestUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ulas\WayToArrive.resx">
+      <DependentUpon>WayToArrive.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\DataSources\MachineLearningGames.Ayberk.Konu.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -236,13 +274,12 @@
   <ItemGroup>
     <Folder Include="Alihan\" />
     <Folder Include="Alperen\" />
-    <Folder Include="Ayberk\" />
     <Folder Include="Buse\" />
     <Folder Include="Mehmetcik\" />
-    <Folder Include="Ulas\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bunifu_UI_v1.5.3.dll" />
+    <None Include="Resources\1500x705.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

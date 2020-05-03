@@ -56,5 +56,15 @@ namespace MachineLearningGames
             pnlMain.Controls.Add(school_library);
             transitionGames.ShowSync(school_library);
         }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            GamePanel game = new GamePanel();
+            game.main = main;
+            pnlMain.Controls.Clear();
+            game.Visible = false;
+            pnlMain.Controls.Add(game);
+            transitionGames.ShowSync(game);
+        }
     }
 }
