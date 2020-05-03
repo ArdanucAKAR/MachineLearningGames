@@ -41,7 +41,7 @@
             this.bunifuImageButton8 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnSchoolLibrary = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnJourneyToSchool = new Bunifu.Framework.UI.BunifuImageButton();
             this.transitionGames = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -53,7 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSchoolLibrary)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnJourneyToSchool)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMain
@@ -68,7 +68,7 @@
             this.pnlMain.Controls.Add(this.bunifuImageButton8);
             this.pnlMain.Controls.Add(this.bunifuImageButton3);
             this.pnlMain.Controls.Add(this.btnSchoolLibrary);
-            this.pnlMain.Controls.Add(this.bunifuImageButton2);
+            this.pnlMain.Controls.Add(this.btnJourneyToSchool);
             this.transitionGames.SetDecoration(this.pnlMain, BunifuAnimatorNS.DecorationType.None);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
@@ -215,21 +215,21 @@
             this.btnSchoolLibrary.Zoom = 10;
             this.btnSchoolLibrary.Click += new System.EventHandler(this.btnSchoolLibrary_Click);
             // 
-            // bunifuImageButton2
+            // btnJourneyToSchool
             // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.transitionGames.SetDecoration(this.bunifuImageButton2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(92, 376);
-            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(250, 177);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 7;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            this.btnJourneyToSchool.BackColor = System.Drawing.Color.Transparent;
+            this.transitionGames.SetDecoration(this.btnJourneyToSchool, BunifuAnimatorNS.DecorationType.None);
+            this.btnJourneyToSchool.Image = ((System.Drawing.Image)(resources.GetObject("btnJourneyToSchool.Image")));
+            this.btnJourneyToSchool.ImageActive = null;
+            this.btnJourneyToSchool.Location = new System.Drawing.Point(92, 376);
+            this.btnJourneyToSchool.Margin = new System.Windows.Forms.Padding(2);
+            this.btnJourneyToSchool.Name = "btnJourneyToSchool";
+            this.btnJourneyToSchool.Size = new System.Drawing.Size(250, 177);
+            this.btnJourneyToSchool.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnJourneyToSchool.TabIndex = 7;
+            this.btnJourneyToSchool.TabStop = false;
+            this.btnJourneyToSchool.Zoom = 10;
+            this.btnJourneyToSchool.Click += new System.EventHandler(this.btnJourneyToSchool_Click);
             // 
             // transitionGames
             // 
@@ -273,7 +273,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSchoolLibrary)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnJourneyToSchool)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -289,7 +289,7 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton8;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private Bunifu.Framework.UI.BunifuImageButton btnSchoolLibrary;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
+        private Bunifu.Framework.UI.BunifuImageButton btnJourneyToSchool;
         private BunifuAnimatorNS.BunifuTransition transitionGames;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }

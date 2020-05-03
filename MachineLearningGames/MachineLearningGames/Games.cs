@@ -57,7 +57,9 @@ namespace MachineLearningGames
             transitionGames.ShowSync(school_library);
         }
 
-        private void bunifuImageButton2_Click(object sender, EventArgs e)
+       
+
+        private void btnJourneyToSchool_Click(object sender, EventArgs e)
         {
             GamePanel game = new GamePanel();
             game.main = main;
