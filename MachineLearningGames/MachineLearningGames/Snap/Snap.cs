@@ -52,8 +52,8 @@ namespace MachineLearningGames
 
         private void btnTrain_Click(object sender, EventArgs e)
         {
-            pnlSnapMain.Controls.Clear();
             Train train = new Train();
+            pnlSnapMain.Controls.Clear();            
             pnlSnapMain.Visible = false;
             pnlSnapMain.Controls.Add(train);
             transitionTabs.ShowSync(pnlSnapMain);

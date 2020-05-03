@@ -180,7 +180,7 @@
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 1F;
             this.transitionTabs.DefaultAnimation = animation1;
-            this.transitionTabs.MaxAnimationTime = 1000;
+            this.transitionTabs.MaxAnimationTime = 1250;
             // 
             // Snap
             // 
@@ -205,11 +205,11 @@
 
         private System.Windows.Forms.Panel pnlBottom;
         private System.Windows.Forms.Panel pnlSnapMain;
-        private BunifuAnimatorNS.BunifuTransition transitionTabs;
         private System.Windows.Forms.PictureBox pbHome;
         private Bunifu.Framework.UI.BunifuCustomLabel lblHome;
         private Bunifu.Framework.UI.BunifuTileButton btnTrain;
         private Bunifu.Framework.UI.BunifuTileButton btnHome;
         private Bunifu.Framework.UI.BunifuTileButton btnTest;
+        private BunifuAnimatorNS.BunifuTransition transitionTabs;
     }
 }

@@ -72,7 +72,7 @@
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(1386, 45);
+            this.pnlTop.Size = new System.Drawing.Size(1500, 45);
             this.pnlTop.TabIndex = 1;
             // 
             // btnClose
@@ -153,7 +153,7 @@
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 45);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1386, 705);
+            this.pnlMain.Size = new System.Drawing.Size(1500, 705);
             this.pnlMain.TabIndex = 2;
             // 
             // lblText
@@ -266,12 +266,12 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1386, 750);
+            this.ClientSize = new System.Drawing.Size(1500, 750);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlTop);
-            this.transitionPages.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
-            this.transitionLogo.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.transtionText.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.transitionLogo.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.transitionPages.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";

@@ -30,17 +30,6 @@ namespace MachineLearningGames
             transitionGames.ShowSync(snap);
         }
 
-<<<<<<< HEAD
-        private void btnSchoolLibrary_Click(object sender, EventArgs e)
-        {
-            SchoolLibrary school_library = new SchoolLibrary();
-            school_library.main = main;
-            pnlMain.Controls.Clear();
-            school_library.Visible = false;
-            pnlMain.Controls.Add(school_library);
-            transitionGames.ShowSync(school_library);
-        }
-
         private void btnJudgeBook_Click(object sender, EventArgs e)
         {
             JudgeBookMain judgeBook = new JudgeBookMain();
@@ -49,13 +38,23 @@ namespace MachineLearningGames
             judgeBook.Visible = false;
             pnlMain.Controls.Add(judgeBook);
             transitionGames.ShowSync(judgeBook);
-=======
+        }
+
         private void bunifuImageButton4_Click(object sender, EventArgs e)
         {
-            ChatbotMainForm cb= new ChatbotMainForm();
+            ChatbotMainForm cb = new ChatbotMainForm();
             cb.Show();
             this.Hide();
->>>>>>> ayberk
+        }
+
+        private void btnSchoolLibrary_Click(object sender, EventArgs e)
+        {
+            SchoolLibrary school_library = new SchoolLibrary();
+            school_library.main = main;
+            pnlMain.Controls.Clear();
+            school_library.Visible = false;
+            pnlMain.Controls.Add(school_library);
+            transitionGames.ShowSync(school_library);
         }
     }
 }

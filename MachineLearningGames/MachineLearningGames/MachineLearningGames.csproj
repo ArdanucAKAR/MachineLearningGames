@@ -236,11 +236,8 @@
   <ItemGroup>
     <Folder Include="Alihan\" />
     <Folder Include="Alperen\" />
-<<<<<<< HEAD
     <Folder Include="Ayberk\" />
-=======
     <Folder Include="Buse\" />
->>>>>>> ayberk
     <Folder Include="Mehmetcik\" />
     <Folder Include="Ulas\" />
   </ItemGroup>
