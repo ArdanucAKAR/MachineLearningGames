@@ -192,30 +192,42 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="JourneyToSchool\AddPanelUc.cs">
+    <Compile Include="Ulas\AddPanelUc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="JourneyToSchool\AddPanelUc.Designer.cs">
+    <Compile Include="Ulas\AddPanelUc.Designer.cs">
       <DependentUpon>AddPanelUc.cs</DependentUpon>
     </Compile>
-    <Compile Include="JourneyToSchool\GamePanel.cs">
+    <Compile Include="Ulas\GamePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="JourneyToSchool\GamePanel.Designer.cs">
+    <Compile Include="Ulas\GamePanel.Designer.cs">
       <DependentUpon>GamePanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="JourneyToSchool\Journey.cs" />
-    <Compile Include="JourneyToSchool\TestUc.cs">
+    <Compile Include="Ulas\Journey.cs" />
+    <Compile Include="Ulas\JourneyToSchoolUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="JourneyToSchool\TestUc.Designer.cs">
+    <Compile Include="Ulas\JourneyToSchoolUC.Designer.cs">
+      <DependentUpon>JourneyToSchoolUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ulas\TestUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ulas\TestUc.Designer.cs">
       <DependentUpon>TestUc.cs</DependentUpon>
     </Compile>
-    <Compile Include="JourneyToSchool\UlasSingleton.cs" />
-    <Compile Include="JourneyToSchool\WayToArrive.cs">
+    <Compile Include="Ulas\UlasSingleton.cs" />
+    <Compile Include="Ulas\UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="JourneyToSchool\WayToArrive.Designer.cs">
+    <Compile Include="Ulas\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ulas\WayToArrive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ulas\WayToArrive.Designer.cs">
       <DependentUpon>WayToArrive.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Titanic\Tabs\TitanicTest.resx">
@@ -282,16 +294,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="JourneyToSchool\AddPanelUc.resx">
+    <EmbeddedResource Include="Ulas\AddPanelUc.resx">
       <DependentUpon>AddPanelUc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JourneyToSchool\GamePanel.resx">
+    <EmbeddedResource Include="Ulas\GamePanel.resx">
       <DependentUpon>GamePanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JourneyToSchool\TestUc.resx">
+    <EmbeddedResource Include="Ulas\JourneyToSchoolUC.resx">
+      <DependentUpon>JourneyToSchoolUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ulas\TestUc.resx">
       <DependentUpon>TestUc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JourneyToSchool\WayToArrive.resx">
+    <EmbeddedResource Include="Ulas\WayToArrive.resx">
       <DependentUpon>WayToArrive.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
