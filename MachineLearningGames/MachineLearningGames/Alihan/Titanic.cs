@@ -73,5 +73,35 @@ namespace MachineLearningGames
             TitanicTest test = new TitanicTest();
             pnlMain.Controls.Add(test);
         }
+
+        private void btnHome_Click_1(object sender, EventArgs e)
+        {
+            Panel pnl = main.Controls.Find("pnlMain", true).FirstOrDefault() as Panel;
+            pnl.Controls.Clear();
+            Games games = new Games();
+            games.main = main;
+            pnl.Controls.Add(games);
+        }
+
+        private void btnTrain_Click_1(object sender, EventArgs e)
+        {
+            pnlMain.Controls.Clear();
+            TitanicTrain train = new TitanicTrain();
+            pnlMain.Controls.Add(train);
+        }
+
+        private void btnTest_Click_1(object sender, EventArgs e)
+        {
+            TitanicTest test = new TitanicTest();
+            if (TitanicTest._state)
+            {
+                pnlMain.Controls.Clear();
+                pnlMain.Controls.Add(test);
+            }
+            else
+            {
+                MessageBox.Show("Lütfen önce eğitme işlemini yapınız!");
+            }
+        }
     }
 }

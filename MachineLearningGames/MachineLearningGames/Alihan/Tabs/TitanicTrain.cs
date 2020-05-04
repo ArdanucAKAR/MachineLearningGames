@@ -47,7 +47,6 @@ namespace MachineLearningGames.Alihan.Tabs
                 lblModeTraining.Visible = true;
                 pictureBox2.Visible = true;
 
-
             }
 
         }
@@ -98,6 +97,8 @@ namespace MachineLearningGames.Alihan.Tabs
                         "-------------------------------------------------------------------------------------------------------------------------");
                     _itemSurvivedCount++;
                     lblItemCount.Text = (_itemSurvivedCount + _itemNotSurvivedCount).ToString();
+                    DataClear();
+
                 }
                 else
                 {
@@ -112,17 +113,15 @@ namespace MachineLearningGames.Alihan.Tabs
                         "-------------------------------------------------------------------------------------------------------------------------");
                     _itemNotSurvivedCount++;
                     lblItemCount.Text = (_itemSurvivedCount + _itemNotSurvivedCount).ToString();
+                    DataClear();
+
                 }
-
-
-
             }
             catch (Exception exception)
             {
                 MessageBox.Show(exception.Message);
             }
 
-            DataClear();
         }
 
         private void DataClear()
@@ -146,12 +145,7 @@ namespace MachineLearningGames.Alihan.Tabs
                 pictureBox2.Visible = false;
                 MessageBox.Show("Eğitim Tamamlandı!\nArtık Test Edebilirisiniz.");
                 lblModeTraining.Text = "Eğitim Tamamlandı!";
-                Titanic titanic = new Titanic();
-                titanic.main = main;
-                pnlMain.Controls.Clear();
-                titanic.Visible = false;
-                pnlMain.Controls.Add(titanic);
-                bunifuTransition1.ShowSync(titanic);
+                TitanicTest._state = true;
             }
         }
     }
