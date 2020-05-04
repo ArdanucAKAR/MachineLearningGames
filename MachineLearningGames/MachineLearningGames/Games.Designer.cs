@@ -34,24 +34,24 @@
             this.pnlMain = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnSnap = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton10 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnTitanic = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton9 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnJudgeBook = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton8 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnTitanicGame = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnChatbot = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnSchoolLibrary = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnJourneyToSchool = new Bunifu.Framework.UI.BunifuImageButton();
             this.transitionGames = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSnap)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTitanic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnJudgeBook)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTitanicGame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnChatbot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSchoolLibrary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnJourneyToSchool)).BeginInit();
             this.SuspendLayout();
@@ -61,12 +61,12 @@
             this.pnlMain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMain.BackgroundImage")));
             this.pnlMain.Controls.Add(this.bunifuImageButton1);
             this.pnlMain.Controls.Add(this.btnSnap);
-            this.pnlMain.Controls.Add(this.bunifuImageButton10);
+            this.pnlMain.Controls.Add(this.btnTitanic);
             this.pnlMain.Controls.Add(this.bunifuImageButton5);
             this.pnlMain.Controls.Add(this.bunifuImageButton9);
             this.pnlMain.Controls.Add(this.btnJudgeBook);
-            this.pnlMain.Controls.Add(this.bunifuImageButton8);
-            this.pnlMain.Controls.Add(this.bunifuImageButton3);
+            this.pnlMain.Controls.Add(this.btnTitanicGame);
+            this.pnlMain.Controls.Add(this.btnChatbot);
             this.pnlMain.Controls.Add(this.btnSchoolLibrary);
             this.pnlMain.Controls.Add(this.btnJourneyToSchool);
             this.transitionGames.SetDecoration(this.pnlMain, BunifuAnimatorNS.DecorationType.None);
@@ -108,20 +108,21 @@
             this.btnSnap.Zoom = 10;
             this.btnSnap.Click += new System.EventHandler(this.btnSnap_Click);
             // 
-            // bunifuImageButton10
+            // btnTitanic
             // 
-            this.bunifuImageButton10.BackColor = System.Drawing.Color.Transparent;
-            this.transitionGames.SetDecoration(this.bunifuImageButton10, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton10.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton10.Image")));
-            this.bunifuImageButton10.ImageActive = null;
-            this.bunifuImageButton10.Location = new System.Drawing.Point(1152, 143);
-            this.bunifuImageButton10.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuImageButton10.Name = "bunifuImageButton10";
-            this.bunifuImageButton10.Size = new System.Drawing.Size(250, 177);
-            this.bunifuImageButton10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton10.TabIndex = 8;
-            this.bunifuImageButton10.TabStop = false;
-            this.bunifuImageButton10.Zoom = 10;
+            this.btnTitanic.BackColor = System.Drawing.Color.Transparent;
+            this.transitionGames.SetDecoration(this.btnTitanic, BunifuAnimatorNS.DecorationType.None);
+            this.btnTitanic.Image = ((System.Drawing.Image)(resources.GetObject("btnTitanic.Image")));
+            this.btnTitanic.ImageActive = null;
+            this.btnTitanic.Location = new System.Drawing.Point(92, 376);
+            this.btnTitanic.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTitanic.Name = "btnTitanic";
+            this.btnTitanic.Size = new System.Drawing.Size(250, 177);
+            this.btnTitanic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnTitanic.TabIndex = 8;
+            this.btnTitanic.TabStop = false;
+            this.btnTitanic.Zoom = 10;
+            this.btnTitanic.Click += new System.EventHandler(this.btnTitanicGame_Click);
             // 
             // bunifuImageButton5
             // 
@@ -169,35 +170,37 @@
             this.btnJudgeBook.Zoom = 10;
             this.btnJudgeBook.Click += new System.EventHandler(this.btnJudgeBook_Click);
             // 
-            // bunifuImageButton8
+            // btnTitanicGame
             // 
-            this.bunifuImageButton8.BackColor = System.Drawing.Color.Transparent;
-            this.transitionGames.SetDecoration(this.bunifuImageButton8, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton8.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton8.Image")));
-            this.bunifuImageButton8.ImageActive = null;
-            this.bunifuImageButton8.Location = new System.Drawing.Point(357, 376);
-            this.bunifuImageButton8.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuImageButton8.Name = "bunifuImageButton8";
-            this.bunifuImageButton8.Size = new System.Drawing.Size(250, 177);
-            this.bunifuImageButton8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton8.TabIndex = 12;
-            this.bunifuImageButton8.TabStop = false;
-            this.bunifuImageButton8.Zoom = 10;
+            this.btnTitanicGame.BackColor = System.Drawing.Color.Transparent;
+            this.transitionGames.SetDecoration(this.btnTitanicGame, BunifuAnimatorNS.DecorationType.None);
+            this.btnTitanicGame.Image = ((System.Drawing.Image)(resources.GetObject("btnTitanicGame.Image")));
+            this.btnTitanicGame.ImageActive = null;
+            this.btnTitanicGame.Location = new System.Drawing.Point(357, 376);
+            this.btnTitanicGame.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTitanicGame.Name = "btnTitanicGame";
+            this.btnTitanicGame.Size = new System.Drawing.Size(250, 177);
+            this.btnTitanicGame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnTitanicGame.TabIndex = 12;
+            this.btnTitanicGame.TabStop = false;
+            this.btnTitanicGame.Zoom = 10;
+            this.btnTitanicGame.Click += new System.EventHandler(this.btnTitanicGame_Click);
             // 
-            // bunifuImageButton3
+            // btnChatbot
             // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.Transparent;
-            this.transitionGames.SetDecoration(this.bunifuImageButton3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(887, 143);
-            this.bunifuImageButton3.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(250, 177);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 13;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
+            this.btnChatbot.BackColor = System.Drawing.Color.Transparent;
+            this.transitionGames.SetDecoration(this.btnChatbot, BunifuAnimatorNS.DecorationType.None);
+            this.btnChatbot.Image = ((System.Drawing.Image)(resources.GetObject("btnChatbot.Image")));
+            this.btnChatbot.ImageActive = null;
+            this.btnChatbot.Location = new System.Drawing.Point(887, 143);
+            this.btnChatbot.Margin = new System.Windows.Forms.Padding(2);
+            this.btnChatbot.Name = "btnChatbot";
+            this.btnChatbot.Size = new System.Drawing.Size(250, 177);
+            this.btnChatbot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnChatbot.TabIndex = 13;
+            this.btnChatbot.TabStop = false;
+            this.btnChatbot.Zoom = 10;
+            this.btnChatbot.Click += new System.EventHandler(this.btnChatbot_Click);
             // 
             // btnSchoolLibrary
             // 
@@ -221,7 +224,7 @@
             this.transitionGames.SetDecoration(this.btnJourneyToSchool, BunifuAnimatorNS.DecorationType.None);
             this.btnJourneyToSchool.Image = ((System.Drawing.Image)(resources.GetObject("btnJourneyToSchool.Image")));
             this.btnJourneyToSchool.ImageActive = null;
-            this.btnJourneyToSchool.Location = new System.Drawing.Point(92, 376);
+            this.btnJourneyToSchool.Location = new System.Drawing.Point(1152, 143);
             this.btnJourneyToSchool.Margin = new System.Windows.Forms.Padding(2);
             this.btnJourneyToSchool.Name = "btnJourneyToSchool";
             this.btnJourneyToSchool.Size = new System.Drawing.Size(250, 177);
@@ -266,12 +269,12 @@
             this.pnlMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSnap)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTitanic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnJudgeBook)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTitanicGame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnChatbot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSchoolLibrary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnJourneyToSchool)).EndInit();
             this.ResumeLayout(false);
@@ -282,12 +285,12 @@
 
         private System.Windows.Forms.Panel pnlMain;
         private Bunifu.Framework.UI.BunifuImageButton btnSnap;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton10;
+        private Bunifu.Framework.UI.BunifuImageButton btnTitanic;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton5;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton9;
         private Bunifu.Framework.UI.BunifuImageButton btnJudgeBook;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton8;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
+        private Bunifu.Framework.UI.BunifuImageButton btnTitanicGame;
+        private Bunifu.Framework.UI.BunifuImageButton btnChatbot;
         private Bunifu.Framework.UI.BunifuImageButton btnSchoolLibrary;
         private Bunifu.Framework.UI.BunifuImageButton btnJourneyToSchool;
         private BunifuAnimatorNS.BunifuTransition transitionGames;

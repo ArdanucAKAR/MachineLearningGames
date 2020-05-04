@@ -40,13 +40,6 @@ namespace MachineLearningGames
             transitionGames.ShowSync(judgeBook);
         }
 
-        private void bunifuImageButton4_Click(object sender, EventArgs e)
-        {
-            ChatbotMainForm cb = new ChatbotMainForm();
-            cb.Show();
-            this.Hide();
-        }
-
         private void btnSchoolLibrary_Click(object sender, EventArgs e)
         {
             SchoolLibrary school_library = new SchoolLibrary();
@@ -57,7 +50,15 @@ namespace MachineLearningGames
             transitionGames.ShowSync(school_library);
         }
 
-       
+        private void btnChatbot_Click(object sender, EventArgs e)
+        {
+            //ChatbotMainForm chatbot = new ChatbotMainForm();
+            //chatbot.main = main;
+            //pnlMain.Controls.Clear();
+            //chatbot.Visible = false;
+            //pnlMain.Controls.Add(chatbot);
+            //transitionGames.ShowSync(chatbot);
+        }
 
         private void btnJourneyToSchool_Click(object sender, EventArgs e)
         {
@@ -67,6 +68,16 @@ namespace MachineLearningGames
             game.Visible = false;
             pnlMain.Controls.Add(game);
             transitionGames.ShowSync(game);
+        }
+
+        private void btnTitanicGame_Click(object sender, EventArgs e)
+        {
+            Titanic titanic = new Titanic();
+            titanic.main = main;
+            pnlMain.Controls.Clear();
+            titanic.Visible = false;
+            pnlMain.Controls.Add(titanic);
+            transitionGames.ShowSync(titanic);
         }
     }
 }
