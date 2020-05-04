@@ -364,7 +364,7 @@
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(212, 35);
             this.txtAge.TabIndex = 3;
-            this.txtAge.text = "18";
+            this.txtAge.text = "0";
             // 
             // drpEmbarked
             // 
