@@ -18,7 +18,7 @@ namespace MachineLearningGames.Alihan.Tabs
             InitializeComponent();
         }
 
-        private int _counter = 0;
+        //private int _counter = 0;
         private void btnTest_Click(object sender, EventArgs e)
         {
             int age = Convert.ToInt32(txtAge.text);
@@ -42,7 +42,6 @@ namespace MachineLearningGames.Alihan.Tabs
                 lblResult.ForeColor = Color.Red;
                 lblResult.Text = "HAYATTA KALAMADI";
             }
-
         }
     }
 }

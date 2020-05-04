@@ -74,48 +74,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alihan\Entity\Customer.cs" />
-    <Compile Include="Alihan\Tabs\TitanicTest.cs">
+    <Compile Include="Titanic\Entity\Customer.cs" />
+    <Compile Include="Titanic\Tabs\TitanicTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Alihan\Tabs\TitanicTest.Designer.cs">
+    <Compile Include="Titanic\Tabs\TitanicTest.Designer.cs">
       <DependentUpon>TitanicTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Alihan\Tabs\TitanicTrain.cs">
+    <Compile Include="Titanic\Tabs\TitanicTrain.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Alihan\Tabs\TitanicTrain.Designer.cs">
+    <Compile Include="Titanic\Tabs\TitanicTrain.Designer.cs">
       <DependentUpon>TitanicTrain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Alihan\Titanic.cs">
+    <Compile Include="Titanic\Titanic.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Alihan\Titanic.Designer.cs">
+    <Compile Include="Titanic\Titanic.Designer.cs">
       <DependentUpon>Titanic.cs</DependentUpon>
     </Compile>
-    <Compile Include="Alihan\Utilities\ValidationTool.cs" />
-    <Compile Include="Alihan\Validation\FluentValidation\DataValidator.cs" />
-    <Compile Include="Ayberk\Cevap.cs" />
-    <Compile Include="Ayberk\Chat.cs">
+    <Compile Include="Titanic\Utilities\ValidationTool.cs" />
+    <Compile Include="Titanic\Validation\FluentValidation\DataValidator.cs" />
+    <Compile Include="Chatbot\Cevap.cs" />
+    <Compile Include="Chatbot\Chat.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ayberk\Chat.Designer.cs">
+    <Compile Include="Chatbot\Chat.Designer.cs">
       <DependentUpon>Chat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ayberk\ChatBotMainForm.cs">
+    <Compile Include="Chatbot\ChatBotMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ayberk\ChatBotMainForm.Designer.cs">
+    <Compile Include="Chatbot\ChatBotMainForm.Designer.cs">
       <DependentUpon>ChatBotMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ayberk\ChatBotTrain.cs">
+    <Compile Include="Chatbot\ChatBotTrain.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ayberk\ChatBotTrain.Designer.cs">
+    <Compile Include="Chatbot\ChatBotTrain.Designer.cs">
       <DependentUpon>ChatBotTrain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ayberk\Konu.cs" />
-    <Compile Include="Ayberk\Soru.cs" />
+    <Compile Include="Chatbot\Konu.cs" />
+    <Compile Include="Chatbot\Soru.cs" />
     <Compile Include="Games.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -192,48 +192,48 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ulas\AddPanelUc.cs">
+    <Compile Include="JourneyToSchool\AddPanelUc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ulas\AddPanelUc.Designer.cs">
+    <Compile Include="JourneyToSchool\AddPanelUc.Designer.cs">
       <DependentUpon>AddPanelUc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ulas\GamePanel.cs">
+    <Compile Include="JourneyToSchool\GamePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ulas\GamePanel.Designer.cs">
+    <Compile Include="JourneyToSchool\GamePanel.Designer.cs">
       <DependentUpon>GamePanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ulas\Journey.cs" />
-    <Compile Include="Ulas\TestUc.cs">
+    <Compile Include="JourneyToSchool\Journey.cs" />
+    <Compile Include="JourneyToSchool\TestUc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ulas\TestUc.Designer.cs">
+    <Compile Include="JourneyToSchool\TestUc.Designer.cs">
       <DependentUpon>TestUc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ulas\UlasSingleton.cs" />
-    <Compile Include="Ulas\WayToArrive.cs">
+    <Compile Include="JourneyToSchool\UlasSingleton.cs" />
+    <Compile Include="JourneyToSchool\WayToArrive.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ulas\WayToArrive.Designer.cs">
+    <Compile Include="JourneyToSchool\WayToArrive.Designer.cs">
       <DependentUpon>WayToArrive.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Alihan\Tabs\TitanicTest.resx">
+    <EmbeddedResource Include="Titanic\Tabs\TitanicTest.resx">
       <DependentUpon>TitanicTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Alihan\Tabs\TitanicTrain.resx">
+    <EmbeddedResource Include="Titanic\Tabs\TitanicTrain.resx">
       <DependentUpon>TitanicTrain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Alihan\Titanic.resx">
+    <EmbeddedResource Include="Titanic\Titanic.resx">
       <DependentUpon>Titanic.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ayberk\Chat.resx">
+    <EmbeddedResource Include="Chatbot\Chat.resx">
       <DependentUpon>Chat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ayberk\ChatBotMainForm.resx">
+    <EmbeddedResource Include="Chatbot\ChatBotMainForm.resx">
       <DependentUpon>ChatBotMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ayberk\ChatBotTrain.resx">
+    <EmbeddedResource Include="Chatbot\ChatBotTrain.resx">
       <DependentUpon>ChatBotTrain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Games.resx">
@@ -282,16 +282,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Ulas\AddPanelUc.resx">
+    <EmbeddedResource Include="JourneyToSchool\AddPanelUc.resx">
       <DependentUpon>AddPanelUc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ulas\GamePanel.resx">
+    <EmbeddedResource Include="JourneyToSchool\GamePanel.resx">
       <DependentUpon>GamePanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ulas\TestUc.resx">
+    <EmbeddedResource Include="JourneyToSchool\TestUc.resx">
       <DependentUpon>TestUc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ulas\WayToArrive.resx">
+    <EmbeddedResource Include="JourneyToSchool\WayToArrive.resx">
       <DependentUpon>WayToArrive.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -311,7 +311,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Alperen\" />
-    <Folder Include="Buse\" />
     <Folder Include="Mehmetcik\" />
   </ItemGroup>
   <ItemGroup>
