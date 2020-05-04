@@ -46,5 +46,10 @@ namespace MachineLearningGames.JudgeBook.Tabs
             gbGuess.Visible = true;
             lblGuess.Visible = true;
         }
+
+        private void pnlTest_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

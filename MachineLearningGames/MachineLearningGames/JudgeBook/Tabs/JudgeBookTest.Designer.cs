@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JudgeBookTest));
             this.pnlTest = new System.Windows.Forms.Panel();
+            this.gbGuess = new System.Windows.Forms.GroupBox();
+            this.lblGuess = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnTest = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnUploadPicture = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pbUploadPicture = new System.Windows.Forms.PictureBox();
-            this.gbGuess = new System.Windows.Forms.GroupBox();
-            this.lblGuess = new System.Windows.Forms.Label();
             this.pnlTest.SuspendLayout();
+            this.gbGuess.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUploadPicture)).BeginInit();
-            this.gbGuess.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlTest
@@ -52,6 +52,30 @@
             this.pnlTest.Name = "pnlTest";
             this.pnlTest.Size = new System.Drawing.Size(1500, 605);
             this.pnlTest.TabIndex = 0;
+            this.pnlTest.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTest_Paint);
+            // 
+            // gbGuess
+            // 
+            this.gbGuess.Controls.Add(this.lblGuess);
+            this.gbGuess.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gbGuess.ForeColor = System.Drawing.Color.White;
+            this.gbGuess.Location = new System.Drawing.Point(779, 211);
+            this.gbGuess.Name = "gbGuess";
+            this.gbGuess.Size = new System.Drawing.Size(419, 109);
+            this.gbGuess.TabIndex = 1;
+            this.gbGuess.TabStop = false;
+            this.gbGuess.Text = "Makine Tahmini";
+            // 
+            // lblGuess
+            // 
+            this.lblGuess.AutoSize = true;
+            this.lblGuess.ForeColor = System.Drawing.Color.White;
+            this.lblGuess.Location = new System.Drawing.Point(91, 49);
+            this.lblGuess.Name = "lblGuess";
+            this.lblGuess.Size = new System.Drawing.Size(60, 24);
+            this.lblGuess.TabIndex = 0;
+            this.lblGuess.Text = "label1";
+            this.lblGuess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox1
             // 
@@ -127,29 +151,6 @@
             this.pbUploadPicture.TabIndex = 0;
             this.pbUploadPicture.TabStop = false;
             // 
-            // gbGuess
-            // 
-            this.gbGuess.Controls.Add(this.lblGuess);
-            this.gbGuess.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gbGuess.ForeColor = System.Drawing.Color.White;
-            this.gbGuess.Location = new System.Drawing.Point(779, 211);
-            this.gbGuess.Name = "gbGuess";
-            this.gbGuess.Size = new System.Drawing.Size(419, 109);
-            this.gbGuess.TabIndex = 1;
-            this.gbGuess.TabStop = false;
-            this.gbGuess.Text = "Makine Tahmini";
-            // 
-            // lblGuess
-            // 
-            this.lblGuess.AutoSize = true;
-            this.lblGuess.ForeColor = System.Drawing.Color.White;
-            this.lblGuess.Location = new System.Drawing.Point(91, 49);
-            this.lblGuess.Name = "lblGuess";
-            this.lblGuess.Size = new System.Drawing.Size(60, 24);
-            this.lblGuess.TabIndex = 0;
-            this.lblGuess.Text = "label1";
-            this.lblGuess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // JudgeBookTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,10 +160,10 @@
             this.Name = "JudgeBookTest";
             this.Size = new System.Drawing.Size(1500, 605);
             this.pnlTest.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbUploadPicture)).EndInit();
             this.gbGuess.ResumeLayout(false);
             this.gbGuess.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbUploadPicture)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -92,23 +92,23 @@
       <DependentUpon>JudgeBookTrain.cs</DependentUpon>
     </Compile>
     <Compile Include="Mehmetcik\Class\Pictures.cs" />
+    <Compile Include="Mehmetcik\Tabs\PicturesTest2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mehmetcik\Tabs\PicturesTest2.Designer.cs">
+      <DependentUpon>PicturesTest2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mehmetcik\Tabs\PicturesTrain3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mehmetcik\Tabs\PicturesTrain3.Designer.cs">
+      <DependentUpon>PicturesTrain3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mehmetcik\LocateLarryMain.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Mehmetcik\LocateLarryMain.Designer.cs">
       <DependentUpon>LocateLarryMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mehmetcik\Tabs\PicturesTest.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Mehmetcik\Tabs\PicturesTest.Designer.cs">
-      <DependentUpon>PicturesTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mehmetcik\Tabs\PicturesTrain.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Mehmetcik\Tabs\PicturesTrain.Designer.cs">
-      <DependentUpon>PicturesTrain.cs</DependentUpon>
     </Compile>
     <Compile Include="SchoolLibrary\SchoolLibrary.cs">
       <SubType>UserControl</SubType>
@@ -173,14 +173,14 @@
     <EmbeddedResource Include="JudgeBook\Tabs\JudgeBookTrain.resx">
       <DependentUpon>JudgeBookTrain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mehmetcik\Tabs\PicturesTest2.resx">
+      <DependentUpon>PicturesTest2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mehmetcik\Tabs\PicturesTrain3.resx">
+      <DependentUpon>PicturesTrain3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mehmetcik\LocateLarryMain.resx">
       <DependentUpon>LocateLarryMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mehmetcik\Tabs\PicturesTest.resx">
-      <DependentUpon>PicturesTest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mehmetcik\Tabs\PicturesTrain.resx">
-      <DependentUpon>PicturesTrain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SchoolLibrary\SchoolLibrary.resx">
       <DependentUpon>SchoolLibrary.cs</DependentUpon>

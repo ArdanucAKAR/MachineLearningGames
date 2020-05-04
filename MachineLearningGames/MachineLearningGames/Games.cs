@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MachineLearningGames.JudgeBook;
 using MachineLearningGames.Mehmetcik;
+using MachineLearningGames.Mehmetcik.Tabs;
 
 namespace MachineLearningGames
 {
@@ -63,10 +64,12 @@ namespace MachineLearningGames
 
         private void bunifuImageButton8_Click(object sender, EventArgs e)
         {
-            LocateLarryMain1 yeniSayfa = new LocateLarryMain1();
-            
-            yeniSayfa.ShowDialog();
-            this.Show();
+            UserControl2 larryMain = new UserControl2();
+            larryMain.main = main;
+            pnlMain.Controls.Clear();
+            larryMain.Visible = false;
+            pnlMain.Controls.Add(larryMain);
+            transitionGames.ShowSync(larryMain);
         }
     }
 }

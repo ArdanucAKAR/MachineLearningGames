@@ -36,8 +36,8 @@
             this.romanceBookList = new System.Windows.Forms.ListView();
             this.btnUploadRomance = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.thrillerBookList = new System.Windows.Forms.ListView();
             this.btnUploadThriller = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.thrillerBookList = new System.Windows.Forms.ListView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.scifiBookList = new System.Windows.Forms.ListView();
             this.btnUploadScifi = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -163,16 +163,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Korku";
             // 
-            // thrillerBookList
-            // 
-            this.thrillerBookList.BackColor = System.Drawing.Color.Violet;
-            this.thrillerBookList.HideSelection = false;
-            this.thrillerBookList.Location = new System.Drawing.Point(17, 28);
-            this.thrillerBookList.Name = "thrillerBookList";
-            this.thrillerBookList.Size = new System.Drawing.Size(212, 339);
-            this.thrillerBookList.TabIndex = 4;
-            this.thrillerBookList.UseCompatibleStateImageBehavior = false;
-            // 
             // btnUploadThriller
             // 
             this.btnUploadThriller.ActiveBorderThickness = 3;
@@ -198,6 +188,16 @@
             this.btnUploadThriller.TabIndex = 4;
             this.btnUploadThriller.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUploadThriller.Click += new System.EventHandler(this.btnUploadThriller_Click);
+            // 
+            // thrillerBookList
+            // 
+            this.thrillerBookList.BackColor = System.Drawing.Color.Violet;
+            this.thrillerBookList.HideSelection = false;
+            this.thrillerBookList.Location = new System.Drawing.Point(17, 28);
+            this.thrillerBookList.Name = "thrillerBookList";
+            this.thrillerBookList.Size = new System.Drawing.Size(212, 339);
+            this.thrillerBookList.TabIndex = 4;
+            this.thrillerBookList.UseCompatibleStateImageBehavior = false;
             // 
             // groupBox4
             // 
@@ -261,6 +261,7 @@
             this.pnlJudgeBookTrain.Name = "pnlJudgeBookTrain";
             this.pnlJudgeBookTrain.Size = new System.Drawing.Size(1500, 605);
             this.pnlJudgeBookTrain.TabIndex = 8;
+            this.pnlJudgeBookTrain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlJudgeBookTrain_Paint);
             // 
             // JudgeBookTrain
             // 

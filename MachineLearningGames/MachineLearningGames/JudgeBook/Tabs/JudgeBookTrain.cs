@@ -120,6 +120,10 @@ namespace MachineLearningGames.JudgeBook.Tabs
                 }
             }
         }
-        
+
+        private void pnlJudgeBookTrain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

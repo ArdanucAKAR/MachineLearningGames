@@ -11,9 +11,12 @@ using MachineLearningGames.Mehmetcik.Class;
 
 namespace MachineLearningGames.Mehmetcik.Tabs
 {
-    public partial class PicturesTest : UserControl
+    public partial class PicturesTest2 : UserControl
     {
-
+        public PicturesTest2()
+        {
+            InitializeComponent();
+        }
 
         Pictures db = Pictures.SingleInstance();
         System.Windows.Forms.ImageList myImageList = new ImageList();
@@ -30,47 +33,14 @@ namespace MachineLearningGames.Mehmetcik.Tabs
 
 
 
-        public PicturesTest()
-        {
-            InitializeComponent();
-            
-            gbGuess.Visible = false;
-            lblGuess.Visible = false;
-        }
+        
 
         internal void ShowDialog()
         {
             throw new NotImplementedException();
         }
 
-        /*
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureLarry_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       */
-
+      
         private void btnUploadLarry_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
@@ -78,7 +48,7 @@ namespace MachineLearningGames.Mehmetcik.Tabs
 
         }
 
-      
+
 
         private void bunifuThinButton21_Click_1(object sender, EventArgs e)
         {
@@ -132,6 +102,46 @@ namespace MachineLearningGames.Mehmetcik.Tabs
                 gbGuess.Visible = true;
                 lblGuess.Visible = true;
             }
+        }
+
+        private void gbGuess_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+        private void pictureLarry_Click_1(object sender, EventArgs e)
+        {
+            lblGuess.Text = db.genre;
+            gbGuess.Visible = true;
+            lblGuess.Visible = true;
+        }
+
+        private void pictureNotLarry1_Click_1(object sender, EventArgs e)
+        {
+            lblGuess.Text = db.genre;
+            gbGuess.Visible = true;
+            lblGuess.Visible = true;
+        }
+
+        private void pictureNotLarry2_Click_1(object sender, EventArgs e)
+        {
+            lblGuess.Text = db.genre;
+            gbGuess.Visible = true;
+            lblGuess.Visible = true;
+        }
+
+        private void pictureNotLarry3_Click_1(object sender, EventArgs e)
+        {
+            lblGuess.Text = db.genre;
+            gbGuess.Visible = true;
+            lblGuess.Visible = true;
+        }
+
+        private void bunifuThinButton22_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

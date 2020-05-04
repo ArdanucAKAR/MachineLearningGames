@@ -12,12 +12,13 @@ using System.IO;
 
 namespace MachineLearningGames.Mehmetcik.Tabs
 {
-    public partial class PicturesTrain1 : UserControl
+    public partial class PicturesTrain3 : UserControl
     {
-        public PicturesTrain1()
+        public PicturesTrain3()
         {
             InitializeComponent();
         }
+
         Pictures db = Pictures.SingleInstance();
         System.Windows.Forms.ImageList myImageList = new ImageList();
         int count = 0;
@@ -63,26 +64,24 @@ namespace MachineLearningGames.Mehmetcik.Tabs
 
             }
         }
-
-        internal void ShowDialog()
+            private void btnUploadLarry_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Update(LarryList);
+            db.larry = 1;
+            for (int i = 0; i < LarryList.Items.Count; i++)
+            {
+                if (LarryList.Items[i].Text == "larry.jpg")
+                {
+                    db.genre = "EVET BU LARRY";
+
+                }
+            }
+
         }
 
-        private void btnUploadLarry_Click(object sender, EventArgs e)
+        private void btnTest_Click(object sender, EventArgs e)
         {
-          
-                Update(LarryList);
-                db.larry = 1;
-                for (int i = 0; i < LarryList.Items.Count; i++)
-                {
-                    if (LarryList.Items[i].Text == "larry.jpg")
-                    {
-                        db.genre = "EVET BU LARRY";
 
-                    }
-                }
-            
         }
 
         private void btnUploadNormal_Click(object sender, EventArgs e)
@@ -97,8 +96,10 @@ namespace MachineLearningGames.Mehmetcik.Tabs
 
                 }
             }
-
         }
 
+        private void btnTrain_Click(object sender, EventArgs e)
+        {
+                    }
     }
 }

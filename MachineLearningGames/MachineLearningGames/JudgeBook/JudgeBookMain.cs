@@ -86,5 +86,10 @@ namespace MachineLearningGames.JudgeBook
             }
 
         }
+
+        private void pnlJudgeBookMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
