@@ -177,6 +177,12 @@
       <DependentUpon>GamePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Ulas\Journey.cs" />
+    <Compile Include="Ulas\JourneyToSchoolUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ulas\JourneyToSchoolUC.Designer.cs">
+      <DependentUpon>JourneyToSchoolUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ulas\TestUc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -184,6 +190,12 @@
       <DependentUpon>TestUc.cs</DependentUpon>
     </Compile>
     <Compile Include="Ulas\UlasSingleton.cs" />
+    <Compile Include="Ulas\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ulas\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ulas\WayToArrive.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -250,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ulas\GamePanel.resx">
       <DependentUpon>GamePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ulas\JourneyToSchoolUC.resx">
+      <DependentUpon>JourneyToSchoolUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ulas\TestUc.resx">
       <DependentUpon>TestUc.cs</DependentUpon>

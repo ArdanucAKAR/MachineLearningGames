@@ -16,49 +16,36 @@ namespace MachineLearningGames
         public GamePanel()
         {
             InitializeComponent();
-            UlasSingleton singleton = UlasSingleton.Instance;
-            if (singleton.Journeys.Count > 0)
-            {
-                for (int i = 0; i < singleton.Journeys.Count; i++)
-                {
-                    if (singleton.Journeys[i].JouneyType==1)
-                    {
-
-                        WayToArrive wayToArrive = new WayToArrive();
-
-                        wayToArrive.setAge(singleton.Journeys[i].Age.ToString());
-                        wayToArrive.setDistance(singleton.Journeys[i].Distance.ToString());
-                        wayToArrive.setFriends(singleton.Journeys[i].Friends.ToString());
-                        flowLayoutPanel1.Controls.Add(wayToArrive);
-                    }
-                    if (singleton.Journeys[i].JouneyType == 2)
-                    {
-
-                        WayToArrive wayToArrive = new WayToArrive();
-
-                        wayToArrive.setAge(singleton.Journeys[i].Age.ToString());
-                        wayToArrive.setDistance(singleton.Journeys[i].Distance.ToString());
-                        wayToArrive.setFriends(singleton.Journeys[i].Friends.ToString());
-                        flowLayoutPanel2.Controls.Add(wayToArrive);
-                    }
-                    if (singleton.Journeys[i].JouneyType == 3)
-                    {
-
-                        WayToArrive wayToArrive = new WayToArrive();
-
-                        wayToArrive.setAge(singleton.Journeys[i].Age.ToString());
-                        wayToArrive.setDistance(singleton.Journeys[i].Distance.ToString());
-                        wayToArrive.setFriends(singleton.Journeys[i].Friends.ToString());
-                        flowLayoutPanel3.Controls.Add(wayToArrive);
-                    }
-                }
-            }
-        }
-
-        private void btnAddWalk_Click(object sender, EventArgs e)
-        {
            
-
         }
+       
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+            TestUc add = new TestUc();
+            mainGamingPanel.Controls.Clear();
+            mainGamingPanel.Controls.Add(add);
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            Panel pnl = main.Controls.Find("pnlMain", true).FirstOrDefault() as Panel;
+            pnl.Controls.Clear();
+            Games games = new Games();
+            games.main = main;
+            pnl.Controls.Add(games);
+        }
+
+        private void btnTrain_Click(object sender, EventArgs e)
+        {
+            JourneyToSchoolUC add = new JourneyToSchoolUC();
+            mainGamingPanel.Controls.Clear();
+            mainGamingPanel.Controls.Add(add);
+        }
+
+       
+
+      
+
+       
     }
 }

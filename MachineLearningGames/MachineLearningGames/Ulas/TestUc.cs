@@ -17,24 +17,27 @@ namespace MachineLearningGames
             InitializeComponent();
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+        
+
+       
+
+        private void btnTry_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
             int _random = rnd.Next(3);
 
-            if (_random==0)
+            if (_random == 0)
             {
                 lblResult.Text = "Car";
             }
-            else if (_random==1)
+            else if (_random == 1)
             {
-                lblResult.Text ="Walk" ;
+                lblResult.Text = "Walk";
             }
             else
             {
-                lblResult.Text ="Cycle" ;
+                lblResult.Text = "Cycle";
             }
-           
         }
     }
 }

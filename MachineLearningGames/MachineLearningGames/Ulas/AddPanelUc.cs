@@ -16,16 +16,20 @@ namespace MachineLearningGames
         {
             InitializeComponent();
         }
-
-        private void btnSubmit_Click(object sender, EventArgs e)
+       
+        private void btnSubmit_Click_1(object sender, EventArgs e)
         {
             UlasSingleton singleton = UlasSingleton.Instance;
-            Journey journey = new Journey();
-            journey.Age = Convert.ToInt32(txtAge.Text);
-            journey.Friends = Convert.ToInt32(txtFriends.Text);
-            journey.Distance = Convert.ToDouble(txtDistance.Text);
-            journey.JouneyType = 1;
-            singleton.Journeys.Add(journey);
+           
+            singleton.Journeys.LastOrDefault().Age = Convert.ToInt32(txtAge.Text);
+            singleton.Journeys.LastOrDefault().Friends = Convert.ToInt32(txtFriends.Text);
+            singleton.Journeys.LastOrDefault().Distance = Convert.ToDouble(txtDistance.Text);
+          
+           
+
+            JourneyToSchoolUC add = new JourneyToSchoolUC();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(add);
         }
     }
 }
