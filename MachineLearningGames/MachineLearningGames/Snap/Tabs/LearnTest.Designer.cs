@@ -1,4 +1,4 @@
-﻿namespace MachineLearningGames
+﻿namespace MachineLearningGames.Snap.Tabs
 {
     partial class LearnTest
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation12 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LearnTest));
             this.btnProgressAnimation = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.pbClubs = new System.Windows.Forms.PictureBox();
@@ -65,22 +65,22 @@
             // 
             this.btnProgressAnimation.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.btnProgressAnimation.Cursor = null;
-            animation12.AnimateOnlyDifferences = true;
-            animation12.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.BlindCoeff")));
-            animation12.LeafCoeff = 0F;
-            animation12.MaxTime = 1F;
-            animation12.MinTime = 0F;
-            animation12.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicCoeff")));
-            animation12.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicShift")));
-            animation12.MosaicSize = 0;
-            animation12.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation12.RotateCoeff = 0F;
-            animation12.RotateLimit = 0F;
-            animation12.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.ScaleCoeff")));
-            animation12.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.SlideCoeff")));
-            animation12.TimeCoeff = 0F;
-            animation12.TransparencyCoeff = 1F;
-            this.btnProgressAnimation.DefaultAnimation = animation12;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.btnProgressAnimation.DefaultAnimation = animation1;
             this.btnProgressAnimation.MaxAnimationTime = 1000;
             // 
             // pbClubs
@@ -284,7 +284,7 @@
             // 
             // pnlLearnTest
             // 
-            this.pnlLearnTest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
+            this.pnlLearnTest.BackColor = System.Drawing.Color.Transparent;
             this.pnlLearnTest.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlLearnTest.BackgroundImage")));
             this.pnlLearnTest.Controls.Add(this.pnlSpadesCount);
             this.pnlLearnTest.Controls.Add(this.pnlHeartsCount);

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MachineLearningGames
+namespace MachineLearningGames.Snap.Classes
 {
     public class Singleton
     {
@@ -14,7 +14,8 @@ namespace MachineLearningGames
                    diamond = 0,
                    heart = 0,
                    club = 0;
-        public Form main = new Main();
+
+        //public Form main = new Main();
 
         public Singleton()
         {

@@ -1,4 +1,4 @@
-﻿namespace MachineLearningGames
+﻿namespace MachineLearningGames.Snap.Tabs
 {
     partial class Make
     {

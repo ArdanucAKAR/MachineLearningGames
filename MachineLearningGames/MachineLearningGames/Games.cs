@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MachineLearningGames.JudgeBook;
 
+
 namespace MachineLearningGames
 {
     public partial class Games : UserControl
@@ -22,7 +23,7 @@ namespace MachineLearningGames
 
         private void btnSnap_Click(object sender, EventArgs e)
         {
-            Snap snap = new Snap();
+            Snap.Snap snap = new Snap.Snap();
             snap.main = main;
             pnlMain.Controls.Clear();
             snap.Visible = false;
@@ -78,6 +79,16 @@ namespace MachineLearningGames
             titanic.Visible = false;
             pnlMain.Controls.Add(titanic);
             transitionGames.ShowSync(titanic);
+        }
+
+        private void btnMakeMeHappy_Click(object sender, EventArgs e)
+        {
+            MakeMeHappy.MakeMeHappy makeMeHappy = new MakeMeHappy.MakeMeHappy();
+            makeMeHappy.main = main;
+            pnlMain.Controls.Clear();
+            makeMeHappy.Visible = false;
+            pnlMain.Controls.Add(makeMeHappy);
+            transitionGames.ShowSync(makeMeHappy);
         }
     }
 }

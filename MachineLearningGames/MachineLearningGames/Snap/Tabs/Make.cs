@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MachineLearningGames.Ayberk;
 
-namespace MachineLearningGames
+namespace MachineLearningGames.Snap.Tabs
 {
     public partial class Make : UserControl
     {

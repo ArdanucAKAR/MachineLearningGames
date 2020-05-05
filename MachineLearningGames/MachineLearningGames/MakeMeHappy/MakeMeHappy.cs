@@ -7,14 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BunifuAnimatorNS;
-using MachineLearningGames.Snap.Tabs;
+using MachineLearningGames.MakeMeHappy.Tabs;
 
-namespace MachineLearningGames.Snap
+namespace MachineLearningGames.MakeMeHappy
 {
-    public partial class Snap : UserControl
+    public partial class MakeMeHappy : UserControl
     {
-        public Snap()
+        public MakeMeHappy()
         {
             InitializeComponent();
         }
@@ -51,24 +50,6 @@ namespace MachineLearningGames.Snap
             btnTest.LabelText = "";
         }
 
-        private void btnTrain_Click(object sender, EventArgs e)
-        {
-            Train train = new Train();
-            pnlSnapMain.Controls.Clear();            
-            pnlSnapMain.Visible = false;
-            pnlSnapMain.Controls.Add(train);
-            transitionTabs.ShowSync(pnlSnapMain);
-        }
-
-        private void btnTest_Click(object sender, EventArgs e)
-        {
-            Make make = new Make();
-            pnlSnapMain.Controls.Clear();
-            pnlSnapMain.Visible = false;
-            pnlSnapMain.Controls.Add(make);
-            transitionTabs.ShowSync(pnlSnapMain);
-        }
-
         private void btnHome_Click(object sender, EventArgs e)
         {
             Panel pnl = main.Controls.Find("pnlMain", true).FirstOrDefault() as Panel;
@@ -76,6 +57,24 @@ namespace MachineLearningGames.Snap
             Games games = new Games();
             games.main = main;
             pnl.Controls.Add(games);
+        }
+
+        private void btnTrain_Click(object sender, EventArgs e)
+        {
+            Train train = new Train();
+            pnlSnapMain.Controls.Clear();
+            pnlSnapMain.Visible = false;
+            pnlSnapMain.Controls.Add(train);
+            transitionTabs.ShowSync(pnlSnapMain);
+        }
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+            Test train = new Test();
+            pnlSnapMain.Controls.Clear();
+            pnlSnapMain.Visible = false;
+            pnlSnapMain.Controls.Add(train);
+            transitionTabs.ShowSync(pnlSnapMain);
         }
     }
 }

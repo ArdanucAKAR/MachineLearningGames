@@ -1,6 +1,6 @@
-﻿namespace MachineLearningGames.Snap
+﻿namespace MachineLearningGames.MakeMeHappy
 {
-    partial class Snap
+    partial class MakeMeHappy
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,20 +29,55 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Snap));
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MakeMeHappy));
+            this.pnlSnapMain = new System.Windows.Forms.Panel();
+            this.pbHome = new System.Windows.Forms.PictureBox();
+            this.lblHome = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.btnHome = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnTest = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnTrain = new Bunifu.Framework.UI.BunifuTileButton();
-            this.pnlSnapMain = new System.Windows.Forms.Panel();
-            this.pbHome = new System.Windows.Forms.PictureBox();
-            this.lblHome = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.transitionTabs = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.pnlBottom.SuspendLayout();
             this.pnlSnapMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
+            this.pnlBottom.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pnlSnapMain
+            // 
+            this.pnlSnapMain.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSnapMain.Controls.Add(this.pbHome);
+            this.pnlSnapMain.Controls.Add(this.lblHome);
+            this.transitionTabs.SetDecoration(this.pnlSnapMain, BunifuAnimatorNS.DecorationType.None);
+            this.pnlSnapMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlSnapMain.Location = new System.Drawing.Point(0, 0);
+            this.pnlSnapMain.Name = "pnlSnapMain";
+            this.pnlSnapMain.Size = new System.Drawing.Size(1500, 605);
+            this.pnlSnapMain.TabIndex = 3;
+            // 
+            // pbHome
+            // 
+            this.transitionTabs.SetDecoration(this.pbHome, BunifuAnimatorNS.DecorationType.None);
+            this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
+            this.pbHome.Location = new System.Drawing.Point(457, 119);
+            this.pbHome.Name = "pbHome";
+            this.pbHome.Size = new System.Drawing.Size(587, 305);
+            this.pbHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbHome.TabIndex = 5;
+            this.pbHome.TabStop = false;
+            // 
+            // lblHome
+            // 
+            this.lblHome.AutoSize = true;
+            this.transitionTabs.SetDecoration(this.lblHome, BunifuAnimatorNS.DecorationType.None);
+            this.lblHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHome.ForeColor = System.Drawing.Color.White;
+            this.lblHome.Location = new System.Drawing.Point(479, 448);
+            this.lblHome.Name = "lblHome";
+            this.lblHome.Size = new System.Drawing.Size(542, 37);
+            this.lblHome.TabIndex = 6;
+            this.lblHome.Text = "Make Me Happy - Makine Öğrenmesi";
             // 
             // pnlBottom
             // 
@@ -54,7 +89,7 @@
             this.pnlBottom.Location = new System.Drawing.Point(0, 605);
             this.pnlBottom.Name = "pnlBottom";
             this.pnlBottom.Size = new System.Drawing.Size(1500, 100);
-            this.pnlBottom.TabIndex = 0;
+            this.pnlBottom.TabIndex = 2;
             // 
             // btnHome
             // 
@@ -125,64 +160,29 @@
             this.btnTrain.MouseLeave += new System.EventHandler(this.btnTrain_MouseLeave);
             this.btnTrain.MouseHover += new System.EventHandler(this.btnTrain_MouseHover);
             // 
-            // pnlSnapMain
-            // 
-            this.pnlSnapMain.BackColor = System.Drawing.Color.Transparent;
-            this.pnlSnapMain.Controls.Add(this.pbHome);
-            this.pnlSnapMain.Controls.Add(this.lblHome);
-            this.transitionTabs.SetDecoration(this.pnlSnapMain, BunifuAnimatorNS.DecorationType.None);
-            this.pnlSnapMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlSnapMain.Location = new System.Drawing.Point(0, 0);
-            this.pnlSnapMain.Name = "pnlSnapMain";
-            this.pnlSnapMain.Size = new System.Drawing.Size(1500, 605);
-            this.pnlSnapMain.TabIndex = 1;
-            // 
-            // pbHome
-            // 
-            this.transitionTabs.SetDecoration(this.pbHome, BunifuAnimatorNS.DecorationType.None);
-            this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
-            this.pbHome.Location = new System.Drawing.Point(457, 119);
-            this.pbHome.Name = "pbHome";
-            this.pbHome.Size = new System.Drawing.Size(587, 305);
-            this.pbHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbHome.TabIndex = 5;
-            this.pbHome.TabStop = false;
-            // 
-            // lblHome
-            // 
-            this.lblHome.AutoSize = true;
-            this.transitionTabs.SetDecoration(this.lblHome, BunifuAnimatorNS.DecorationType.None);
-            this.lblHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHome.ForeColor = System.Drawing.Color.White;
-            this.lblHome.Location = new System.Drawing.Point(537, 448);
-            this.lblHome.Name = "lblHome";
-            this.lblHome.Size = new System.Drawing.Size(409, 37);
-            this.lblHome.TabIndex = 6;
-            this.lblHome.Text = "SNAP! - Makine Öğrenmesi";
-            // 
             // transitionTabs
             // 
             this.transitionTabs.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.transitionTabs.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.transitionTabs.DefaultAnimation = animation1;
-            this.transitionTabs.MaxAnimationTime = 1250;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 1F;
+            this.transitionTabs.DefaultAnimation = animation2;
+            this.transitionTabs.MaxAnimationTime = 1000;
             // 
-            // Snap
+            // MakeMeHappy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -191,25 +191,25 @@
             this.Controls.Add(this.pnlSnapMain);
             this.Controls.Add(this.pnlBottom);
             this.transitionTabs.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
-            this.Name = "Snap";
+            this.Name = "MakeMeHappy";
             this.Size = new System.Drawing.Size(1500, 705);
-            this.pnlBottom.ResumeLayout(false);
             this.pnlSnapMain.ResumeLayout(false);
             this.pnlSnapMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();
+            this.pnlBottom.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlBottom;
         private System.Windows.Forms.Panel pnlSnapMain;
         private System.Windows.Forms.PictureBox pbHome;
         private Bunifu.Framework.UI.BunifuCustomLabel lblHome;
-        private Bunifu.Framework.UI.BunifuTileButton btnTrain;
+        private System.Windows.Forms.Panel pnlBottom;
         private Bunifu.Framework.UI.BunifuTileButton btnHome;
         private Bunifu.Framework.UI.BunifuTileButton btnTest;
+        private Bunifu.Framework.UI.BunifuTileButton btnTrain;
         private BunifuAnimatorNS.BunifuTransition transitionTabs;
     }
 }

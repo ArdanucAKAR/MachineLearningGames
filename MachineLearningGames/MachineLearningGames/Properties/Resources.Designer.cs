@@ -63,9 +63,29 @@ namespace MachineLearningGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1500x705 {
+        internal static System.Drawing.Bitmap expressionless {
             get {
-                object obj = ResourceManager.GetObject("1500x705", resourceCulture);
+                object obj = ResourceManager.GetObject("expressionless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap happy {
+            get {
+                object obj = ResourceManager.GetObject("happy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unhappy {
+            get {
+                object obj = ResourceManager.GetObject("unhappy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

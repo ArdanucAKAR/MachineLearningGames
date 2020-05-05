@@ -8,8 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bunifu.Framework.UI;
+using MachineLearningGames.Snap.Classes;
 
-namespace MachineLearningGames
+namespace MachineLearningGames.Snap.Tabs
 {
     public partial class Train : UserControl
     {

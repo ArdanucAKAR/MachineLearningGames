@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MachineLearningGames.Snap.Classes;
 
-namespace MachineLearningGames
+namespace MachineLearningGames.Snap.Tabs
 {
     public partial class LearnTest : UserControl
     {

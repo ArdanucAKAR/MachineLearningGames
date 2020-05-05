@@ -47,7 +47,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::MachineLearningGames.Properties.Resources._1500x705;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.btnCycle);
             this.panel1.Controls.Add(this.btnCar);
             this.panel1.Controls.Add(this.btnWalk);
@@ -206,7 +206,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
-            this.BackgroundImage = global::MachineLearningGames.Properties.Resources._1500x705;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.panel1);
             this.Name = "JourneyToSchoolUC";
             this.Size = new System.Drawing.Size(1500, 605);

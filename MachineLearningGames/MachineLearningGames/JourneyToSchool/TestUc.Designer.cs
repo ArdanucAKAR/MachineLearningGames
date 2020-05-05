@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TestUc));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTry = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lblResult = new System.Windows.Forms.Label();
             this.txtFriends = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,14 +38,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtAge = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnTry = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
-            this.panel1.BackgroundImage = global::MachineLearningGames.Properties.Resources._1500x705;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.btnTry);
             this.panel1.Controls.Add(this.lblResult);
             this.panel1.Controls.Add(this.txtFriends);
@@ -58,6 +58,32 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1500, 605);
             this.panel1.TabIndex = 0;
+            // 
+            // btnTry
+            // 
+            this.btnTry.ActiveBorderThickness = 3;
+            this.btnTry.ActiveCornerRadius = 20;
+            this.btnTry.ActiveFillColor = System.Drawing.Color.Silver;
+            this.btnTry.ActiveForecolor = System.Drawing.Color.Black;
+            this.btnTry.ActiveLineColor = System.Drawing.Color.Black;
+            this.btnTry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
+            this.btnTry.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTry.BackgroundImage")));
+            this.btnTry.ButtonText = "Try It!!";
+            this.btnTry.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTry.ForeColor = System.Drawing.Color.White;
+            this.btnTry.IdleBorderThickness = 3;
+            this.btnTry.IdleCornerRadius = 20;
+            this.btnTry.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnTry.IdleForecolor = System.Drawing.Color.Silver;
+            this.btnTry.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnTry.Location = new System.Drawing.Point(381, 413);
+            this.btnTry.Margin = new System.Windows.Forms.Padding(5);
+            this.btnTry.Name = "btnTry";
+            this.btnTry.Size = new System.Drawing.Size(131, 55);
+            this.btnTry.TabIndex = 38;
+            this.btnTry.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTry.Click += new System.EventHandler(this.btnTry_Click);
             // 
             // lblResult
             // 
@@ -125,37 +151,11 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Age";
             // 
-            // btnTry
-            // 
-            this.btnTry.ActiveBorderThickness = 3;
-            this.btnTry.ActiveCornerRadius = 20;
-            this.btnTry.ActiveFillColor = System.Drawing.Color.Silver;
-            this.btnTry.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnTry.ActiveLineColor = System.Drawing.Color.Black;
-            this.btnTry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
-            this.btnTry.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTry.BackgroundImage")));
-            this.btnTry.ButtonText = "Try It!!";
-            this.btnTry.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTry.ForeColor = System.Drawing.Color.White;
-            this.btnTry.IdleBorderThickness = 3;
-            this.btnTry.IdleCornerRadius = 20;
-            this.btnTry.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btnTry.IdleForecolor = System.Drawing.Color.Silver;
-            this.btnTry.IdleLineColor = System.Drawing.Color.Silver;
-            this.btnTry.Location = new System.Drawing.Point(381, 413);
-            this.btnTry.Margin = new System.Windows.Forms.Padding(5);
-            this.btnTry.Name = "btnTry";
-            this.btnTry.Size = new System.Drawing.Size(131, 55);
-            this.btnTry.TabIndex = 38;
-            this.btnTry.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnTry.Click += new System.EventHandler(this.btnTry_Click);
-            // 
             // TestUc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MachineLearningGames.Properties.Resources._1500x705;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.panel1);
             this.Name = "TestUc";
             this.Size = new System.Drawing.Size(1500, 605);
