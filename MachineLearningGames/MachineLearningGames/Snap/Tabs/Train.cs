@@ -85,5 +85,11 @@ namespace MachineLearningGames.Snap.Tabs
             pnlTrain.Controls.Add(learnTest);
             transitionTrain.ShowSync(pnlTrain);
         }
+
+        private void Train_Load(object sender, EventArgs e)
+        {
+            lblDescription.Text = "Her Kategoride Mutlaka En Az 1 Resim Olmalıdır. Resimleri Ekledikten Sonra Eğitim Aşamasına Geçiniz.";
+            lblDescription.Location = new Point((pnlTrain.Width - lblDescription.Width) / 2, 18);
+        }
     }
 }

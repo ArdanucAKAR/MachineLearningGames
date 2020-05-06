@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LearnTest));
             this.btnProgressAnimation = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.pbClubs = new System.Windows.Forms.PictureBox();
@@ -49,7 +49,6 @@
             this.btnLearnTest = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pnlLearnTest = new System.Windows.Forms.Panel();
             this.tmrLearnTest = new System.Windows.Forms.Timer(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbClubs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDiamonds)).BeginInit();
             this.pnlSpadesCount.SuspendLayout();
@@ -65,22 +64,22 @@
             // 
             this.btnProgressAnimation.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.btnProgressAnimation.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.btnProgressAnimation.DefaultAnimation = animation1;
+            animation5.AnimateOnlyDifferences = true;
+            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
+            animation5.LeafCoeff = 0F;
+            animation5.MaxTime = 1F;
+            animation5.MinTime = 0F;
+            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
+            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
+            animation5.MosaicSize = 0;
+            animation5.Padding = new System.Windows.Forms.Padding(0);
+            animation5.RotateCoeff = 0F;
+            animation5.RotateLimit = 0F;
+            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
+            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
+            animation5.TimeCoeff = 0F;
+            animation5.TransparencyCoeff = 1F;
+            this.btnProgressAnimation.DefaultAnimation = animation5;
             this.btnProgressAnimation.MaxAnimationTime = 1000;
             // 
             // pbClubs
@@ -259,9 +258,9 @@
             // 
             this.btnLearnTest.ActiveBorderThickness = 3;
             this.btnLearnTest.ActiveCornerRadius = 20;
-            this.btnLearnTest.ActiveFillColor = System.Drawing.Color.DarkGreen;
-            this.btnLearnTest.ActiveForecolor = System.Drawing.Color.Silver;
-            this.btnLearnTest.ActiveLineColor = System.Drawing.Color.ForestGreen;
+            this.btnLearnTest.ActiveFillColor = System.Drawing.Color.Gainsboro;
+            this.btnLearnTest.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.btnLearnTest.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.btnLearnTest.BackColor = System.Drawing.Color.Transparent;
             this.btnLearnTest.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLearnTest.BackgroundImage")));
             this.btnLearnTest.ButtonText = "Öğret ve Test Et";
@@ -271,9 +270,9 @@
             this.btnLearnTest.ForeColor = System.Drawing.Color.White;
             this.btnLearnTest.IdleBorderThickness = 3;
             this.btnLearnTest.IdleCornerRadius = 20;
-            this.btnLearnTest.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btnLearnTest.IdleForecolor = System.Drawing.Color.Silver;
-            this.btnLearnTest.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnLearnTest.IdleFillColor = System.Drawing.Color.SeaGreen;
+            this.btnLearnTest.IdleForecolor = System.Drawing.Color.White;
+            this.btnLearnTest.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btnLearnTest.Location = new System.Drawing.Point(648, 354);
             this.btnLearnTest.Margin = new System.Windows.Forms.Padding(5);
             this.btnLearnTest.Name = "btnLearnTest";
@@ -302,6 +301,7 @@
             // 
             // tmrLearnTest
             // 
+            this.tmrLearnTest.Interval = 500;
             this.tmrLearnTest.Tick += new System.EventHandler(this.tmrLearnTest_Tick);
             // 
             // LearnTest
@@ -353,6 +353,5 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnLearnTest;
         private System.Windows.Forms.Panel pnlLearnTest;
         private System.Windows.Forms.Timer tmrLearnTest;
-        private System.Windows.Forms.Timer timer1;
     }
 }

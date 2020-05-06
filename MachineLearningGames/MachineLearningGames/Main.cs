@@ -33,15 +33,9 @@ namespace MachineLearningGames
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnSnap_Click(object sender, EventArgs e)
-        {
-            //UserControl snap = new Snap();
-            //snap.Show();
-            //this.Hide();
-        }
-
         private void Main_Shown(object sender, EventArgs e)
         {
+            lblHeader.Location = new Point((pnlTop.Width - lblHeader.Width) / 2, 12);
             transitionLogo.ShowSync(pbLogo);
             transtionText.ShowSync(lblText);
             Thread.Sleep(1000);

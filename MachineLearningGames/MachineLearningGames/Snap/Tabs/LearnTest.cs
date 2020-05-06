@@ -21,7 +21,7 @@ namespace MachineLearningGames.Snap.Tabs
         private void ProgressTextChangeAndNewLocation(string text)
         {
             lblProgress.Text = text;
-            lblProgress.Location = new Point((pnlLearnTest.Width - lblProgress.Width) / 2, 455);
+            lblProgress.Location = new Point((pnlLearnTest.Width - lblProgress.Width) / 2, 500);
         }
         #endregion
 
@@ -74,7 +74,7 @@ namespace MachineLearningGames.Snap.Tabs
             else if (prgssbLearnTest.Value >= 90)
             {
                 prgssbLearnTest.Value += (100 - prgssbLearnTest.Value);
-                ProgressTextChangeAndNewLocation("Tamamlandı\nDiğer Aşamaya Geçebilirsiniz");
+                ProgressTextChangeAndNewLocation("Tamamlandı\nTest Aşamasına Geçebilirsiniz");
                 tmrLearnTest.Stop();
             }
         }

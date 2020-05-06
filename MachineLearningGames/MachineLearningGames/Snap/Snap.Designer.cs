@@ -36,12 +36,13 @@
             this.btnTest = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnTrain = new Bunifu.Framework.UI.BunifuTileButton();
             this.pnlSnapMain = new System.Windows.Forms.Panel();
-            this.pbHome = new System.Windows.Forms.PictureBox();
-            this.lblHome = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pbSnap = new System.Windows.Forms.PictureBox();
+            this.lblSnap = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.transitionTabs = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.lblDescription = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pnlBottom.SuspendLayout();
             this.pnlSnapMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSnap)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBottom
@@ -128,8 +129,9 @@
             // pnlSnapMain
             // 
             this.pnlSnapMain.BackColor = System.Drawing.Color.Transparent;
-            this.pnlSnapMain.Controls.Add(this.pbHome);
-            this.pnlSnapMain.Controls.Add(this.lblHome);
+            this.pnlSnapMain.Controls.Add(this.pbSnap);
+            this.pnlSnapMain.Controls.Add(this.lblDescription);
+            this.pnlSnapMain.Controls.Add(this.lblSnap);
             this.transitionTabs.SetDecoration(this.pnlSnapMain, BunifuAnimatorNS.DecorationType.None);
             this.pnlSnapMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlSnapMain.Location = new System.Drawing.Point(0, 0);
@@ -137,28 +139,28 @@
             this.pnlSnapMain.Size = new System.Drawing.Size(1500, 605);
             this.pnlSnapMain.TabIndex = 1;
             // 
-            // pbHome
+            // pbSnap
             // 
-            this.transitionTabs.SetDecoration(this.pbHome, BunifuAnimatorNS.DecorationType.None);
-            this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
-            this.pbHome.Location = new System.Drawing.Point(457, 119);
-            this.pbHome.Name = "pbHome";
-            this.pbHome.Size = new System.Drawing.Size(587, 305);
-            this.pbHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbHome.TabIndex = 5;
-            this.pbHome.TabStop = false;
+            this.transitionTabs.SetDecoration(this.pbSnap, BunifuAnimatorNS.DecorationType.None);
+            this.pbSnap.Image = ((System.Drawing.Image)(resources.GetObject("pbSnap.Image")));
+            this.pbSnap.Location = new System.Drawing.Point(460, 71);
+            this.pbSnap.Name = "pbSnap";
+            this.pbSnap.Size = new System.Drawing.Size(587, 305);
+            this.pbSnap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSnap.TabIndex = 5;
+            this.pbSnap.TabStop = false;
             // 
-            // lblHome
+            // lblSnap
             // 
-            this.lblHome.AutoSize = true;
-            this.transitionTabs.SetDecoration(this.lblHome, BunifuAnimatorNS.DecorationType.None);
-            this.lblHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHome.ForeColor = System.Drawing.Color.White;
-            this.lblHome.Location = new System.Drawing.Point(537, 448);
-            this.lblHome.Name = "lblHome";
-            this.lblHome.Size = new System.Drawing.Size(409, 37);
-            this.lblHome.TabIndex = 6;
-            this.lblHome.Text = "SNAP! - Makine Öğrenmesi";
+            this.lblSnap.AutoSize = true;
+            this.transitionTabs.SetDecoration(this.lblSnap, BunifuAnimatorNS.DecorationType.None);
+            this.lblSnap.Font = new System.Drawing.Font("TR Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSnap.ForeColor = System.Drawing.Color.White;
+            this.lblSnap.Location = new System.Drawing.Point(540, 400);
+            this.lblSnap.Name = "lblSnap";
+            this.lblSnap.Size = new System.Drawing.Size(427, 38);
+            this.lblSnap.TabIndex = 6;
+            this.lblSnap.Text = "SNAP! - Makine Öğrenmesi";
             // 
             // transitionTabs
             // 
@@ -172,7 +174,7 @@
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
@@ -181,6 +183,18 @@
             animation1.TransparencyCoeff = 1F;
             this.transitionTabs.DefaultAnimation = animation1;
             this.transitionTabs.MaxAnimationTime = 1250;
+            // 
+            // lblDescription
+            // 
+            this.lblDescription.AutoSize = true;
+            this.transitionTabs.SetDecoration(this.lblDescription, BunifuAnimatorNS.DecorationType.None);
+            this.lblDescription.Font = new System.Drawing.Font("TR Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.ForeColor = System.Drawing.Color.White;
+            this.lblDescription.Location = new System.Drawing.Point(692, 457);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(123, 28);
+            this.lblDescription.TabIndex = 6;
+            this.lblDescription.Text = "Açıklama";
             // 
             // Snap
             // 
@@ -193,10 +207,11 @@
             this.transitionTabs.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.Name = "Snap";
             this.Size = new System.Drawing.Size(1500, 705);
+            this.Load += new System.EventHandler(this.Snap_Load);
             this.pnlBottom.ResumeLayout(false);
             this.pnlSnapMain.ResumeLayout(false);
             this.pnlSnapMain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSnap)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -205,11 +220,12 @@
 
         private System.Windows.Forms.Panel pnlBottom;
         private System.Windows.Forms.Panel pnlSnapMain;
-        private System.Windows.Forms.PictureBox pbHome;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblHome;
+        private System.Windows.Forms.PictureBox pbSnap;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblSnap;
         private Bunifu.Framework.UI.BunifuTileButton btnTrain;
         private Bunifu.Framework.UI.BunifuTileButton btnHome;
         private Bunifu.Framework.UI.BunifuTileButton btnTest;
         private BunifuAnimatorNS.BunifuTransition transitionTabs;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblDescription;
     }
 }

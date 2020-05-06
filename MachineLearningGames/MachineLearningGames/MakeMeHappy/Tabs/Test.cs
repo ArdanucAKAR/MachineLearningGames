@@ -45,23 +45,21 @@ namespace MachineLearningGames.MakeMeHappy.Tabs
                 string clearText = db.PreparePhrase(sentence);
                 string[] words = clearText.Split(' ');
                 int score = ScorePhrase(words);
+                pnlResult.Location = new Point((pnlMain.Width - pnlResult.Width) / 2, 28);
                 if (score > 0)
                 {
-                    pnlResult.Location= new Point((pnlMain.Width - pnlResult.Width) / 2, 28);
                     pbResult.Image = Properties.Resources.happy;
                     transitionResult.Hide(pnlTest);
                     transitionResult.ShowSync(pnlResult);
                 }
                 else if (score < 0)
                 {
-                    pnlResult.Location = new Point((pnlMain.Width - pnlResult.Width) / 2, 28);
                     pbResult.Image = Properties.Resources.unhappy;
                     transitionResult.Hide(pnlTest);
                     transitionResult.ShowSync(pnlResult);
                 }
                 else
                 {
-                    pnlResult.Location = new Point((pnlMain.Width - pnlResult.Width) / 2, 28);
                     pbResult.Image = Properties.Resources.expressionless;
                     transitionResult.Hide(pnlTest);
                     transitionResult.ShowSync(pnlResult);

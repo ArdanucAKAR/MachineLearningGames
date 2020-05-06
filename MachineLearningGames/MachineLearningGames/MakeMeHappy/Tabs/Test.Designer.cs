@@ -102,7 +102,7 @@
             this.btnNewTest.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.btnNewTest.BackColor = System.Drawing.Color.Transparent;
             this.btnNewTest.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNewTest.BackgroundImage")));
-            this.btnNewTest.ButtonText = "Cümleyi Ekle";
+            this.btnNewTest.ButtonText = "Yeni Cümle Test Et";
             this.btnNewTest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.transitionResult.SetDecoration(this.btnNewTest, BunifuAnimatorNS.DecorationType.None);
             this.btnNewTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

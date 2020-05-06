@@ -15,8 +15,6 @@ namespace MachineLearningGames.Snap.Classes
                    heart = 0,
                    club = 0;
 
-        //public Form main = new Main();
-
         public Singleton()
         {
 

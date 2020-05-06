@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Train));
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblDescription = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.gbHearts = new System.Windows.Forms.GroupBox();
             this.btnUploadHearts = new Bunifu.Framework.UI.BunifuThinButton2();
             this.cardHearts = new Bunifu.Framework.UI.BunifuCards();
@@ -54,17 +54,17 @@
             this.pnlTrain.SuspendLayout();
             this.SuspendLayout();
             // 
-            // bunifuCustomLabel1
+            // lblDescription
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.transitionTrain.SetDecoration(this.bunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("TR Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(477, 18);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(547, 20);
-            this.bunifuCustomLabel1.TabIndex = 4;
-            this.bunifuCustomLabel1.Text = "Eğitim için resim yükledikten sonra Öğrenme ve Test aşamasına geçiniz.";
+            this.lblDescription.AutoSize = true;
+            this.transitionTrain.SetDecoration(this.lblDescription, BunifuAnimatorNS.DecorationType.None);
+            this.lblDescription.Font = new System.Drawing.Font("TR Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.ForeColor = System.Drawing.Color.White;
+            this.lblDescription.Location = new System.Drawing.Point(709, 18);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(82, 20);
+            this.lblDescription.TabIndex = 4;
+            this.lblDescription.Text = "Açıklama";
             // 
             // gbHearts
             // 
@@ -84,21 +84,21 @@
             // 
             this.btnUploadHearts.ActiveBorderThickness = 3;
             this.btnUploadHearts.ActiveCornerRadius = 20;
-            this.btnUploadHearts.ActiveFillColor = System.Drawing.Color.Silver;
-            this.btnUploadHearts.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnUploadHearts.ActiveLineColor = System.Drawing.Color.Black;
+            this.btnUploadHearts.ActiveFillColor = System.Drawing.Color.Gainsboro;
+            this.btnUploadHearts.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.btnUploadHearts.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.btnUploadHearts.BackColor = System.Drawing.Color.Transparent;
             this.btnUploadHearts.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUploadHearts.BackgroundImage")));
-            this.btnUploadHearts.ButtonText = "Resim Yükle";
+            this.btnUploadHearts.ButtonText = "Resim Ekle";
             this.btnUploadHearts.Cursor = System.Windows.Forms.Cursors.Hand;
             this.transitionTrain.SetDecoration(this.btnUploadHearts, BunifuAnimatorNS.DecorationType.None);
             this.btnUploadHearts.Font = new System.Drawing.Font("TR Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUploadHearts.ForeColor = System.Drawing.Color.White;
             this.btnUploadHearts.IdleBorderThickness = 3;
             this.btnUploadHearts.IdleCornerRadius = 20;
-            this.btnUploadHearts.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btnUploadHearts.IdleForecolor = System.Drawing.Color.Silver;
-            this.btnUploadHearts.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnUploadHearts.IdleFillColor = System.Drawing.Color.SeaGreen;
+            this.btnUploadHearts.IdleForecolor = System.Drawing.Color.White;
+            this.btnUploadHearts.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btnUploadHearts.Location = new System.Drawing.Point(1320, 25);
             this.btnUploadHearts.Margin = new System.Windows.Forms.Padding(5);
             this.btnUploadHearts.Name = "btnUploadHearts";
@@ -109,10 +109,10 @@
             // 
             // cardHearts
             // 
-            this.cardHearts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(166)))), ((int)(((byte)(172)))));
+            this.cardHearts.BackColor = System.Drawing.Color.Gainsboro;
             this.cardHearts.BorderRadius = 5;
             this.cardHearts.BottomSahddow = true;
-            this.cardHearts.color = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(0)))), ((int)(((byte)(6)))));
+            this.cardHearts.color = System.Drawing.Color.Red;
             this.transitionTrain.SetDecoration(this.cardHearts, BunifuAnimatorNS.DecorationType.None);
             this.cardHearts.LeftSahddow = false;
             this.cardHearts.Location = new System.Drawing.Point(6, 25);
@@ -126,21 +126,21 @@
             // 
             this.btnUploadDiamonds.ActiveBorderThickness = 3;
             this.btnUploadDiamonds.ActiveCornerRadius = 20;
-            this.btnUploadDiamonds.ActiveFillColor = System.Drawing.Color.Silver;
-            this.btnUploadDiamonds.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnUploadDiamonds.ActiveLineColor = System.Drawing.Color.Black;
+            this.btnUploadDiamonds.ActiveFillColor = System.Drawing.Color.Gainsboro;
+            this.btnUploadDiamonds.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.btnUploadDiamonds.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.btnUploadDiamonds.BackColor = System.Drawing.Color.Transparent;
             this.btnUploadDiamonds.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUploadDiamonds.BackgroundImage")));
-            this.btnUploadDiamonds.ButtonText = "Resim Yükle";
+            this.btnUploadDiamonds.ButtonText = "Resim Ekle";
             this.btnUploadDiamonds.Cursor = System.Windows.Forms.Cursors.Hand;
             this.transitionTrain.SetDecoration(this.btnUploadDiamonds, BunifuAnimatorNS.DecorationType.None);
             this.btnUploadDiamonds.Font = new System.Drawing.Font("TR Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUploadDiamonds.ForeColor = System.Drawing.Color.White;
             this.btnUploadDiamonds.IdleBorderThickness = 3;
             this.btnUploadDiamonds.IdleCornerRadius = 20;
-            this.btnUploadDiamonds.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btnUploadDiamonds.IdleForecolor = System.Drawing.Color.Silver;
-            this.btnUploadDiamonds.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnUploadDiamonds.IdleFillColor = System.Drawing.Color.SeaGreen;
+            this.btnUploadDiamonds.IdleForecolor = System.Drawing.Color.White;
+            this.btnUploadDiamonds.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btnUploadDiamonds.Location = new System.Drawing.Point(1320, 25);
             this.btnUploadDiamonds.Margin = new System.Windows.Forms.Padding(5);
             this.btnUploadDiamonds.Name = "btnUploadDiamonds";
@@ -165,10 +165,10 @@
             // 
             // cardDiamonds
             // 
-            this.cardDiamonds.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(104)))), ((int)(((byte)(112)))));
+            this.cardDiamonds.BackColor = System.Drawing.Color.Gainsboro;
             this.cardDiamonds.BorderRadius = 5;
             this.cardDiamonds.BottomSahddow = true;
-            this.cardDiamonds.color = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(21)))), ((int)(((byte)(29)))));
+            this.cardDiamonds.color = System.Drawing.Color.Red;
             this.transitionTrain.SetDecoration(this.cardDiamonds, BunifuAnimatorNS.DecorationType.None);
             this.cardDiamonds.LeftSahddow = false;
             this.cardDiamonds.Location = new System.Drawing.Point(6, 25);
@@ -197,21 +197,21 @@
             // 
             this.btnUploadClubs.ActiveBorderThickness = 3;
             this.btnUploadClubs.ActiveCornerRadius = 20;
-            this.btnUploadClubs.ActiveFillColor = System.Drawing.Color.Silver;
-            this.btnUploadClubs.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnUploadClubs.ActiveLineColor = System.Drawing.Color.Black;
+            this.btnUploadClubs.ActiveFillColor = System.Drawing.Color.Gainsboro;
+            this.btnUploadClubs.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.btnUploadClubs.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.btnUploadClubs.BackColor = System.Drawing.Color.Transparent;
             this.btnUploadClubs.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUploadClubs.BackgroundImage")));
-            this.btnUploadClubs.ButtonText = "Resim Yükle";
+            this.btnUploadClubs.ButtonText = "Resim Ekle";
             this.btnUploadClubs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.transitionTrain.SetDecoration(this.btnUploadClubs, BunifuAnimatorNS.DecorationType.None);
             this.btnUploadClubs.Font = new System.Drawing.Font("TR Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUploadClubs.ForeColor = System.Drawing.Color.White;
             this.btnUploadClubs.IdleBorderThickness = 3;
             this.btnUploadClubs.IdleCornerRadius = 20;
-            this.btnUploadClubs.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btnUploadClubs.IdleForecolor = System.Drawing.Color.Silver;
-            this.btnUploadClubs.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnUploadClubs.IdleFillColor = System.Drawing.Color.SeaGreen;
+            this.btnUploadClubs.IdleForecolor = System.Drawing.Color.White;
+            this.btnUploadClubs.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btnUploadClubs.Location = new System.Drawing.Point(1320, 25);
             this.btnUploadClubs.Margin = new System.Windows.Forms.Padding(5);
             this.btnUploadClubs.Name = "btnUploadClubs";
@@ -222,10 +222,10 @@
             // 
             // cardClubs
             // 
-            this.cardClubs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(0)))), ((int)(((byte)(6)))));
+            this.cardClubs.BackColor = System.Drawing.Color.Gainsboro;
             this.cardClubs.BorderRadius = 5;
             this.cardClubs.BottomSahddow = true;
-            this.cardClubs.color = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(166)))), ((int)(((byte)(172)))));
+            this.cardClubs.color = System.Drawing.Color.Black;
             this.transitionTrain.SetDecoration(this.cardClubs, BunifuAnimatorNS.DecorationType.None);
             this.cardClubs.LeftSahddow = false;
             this.cardClubs.Location = new System.Drawing.Point(6, 25);
@@ -239,21 +239,21 @@
             // 
             this.btnUploadSpades.ActiveBorderThickness = 3;
             this.btnUploadSpades.ActiveCornerRadius = 20;
-            this.btnUploadSpades.ActiveFillColor = System.Drawing.Color.Silver;
-            this.btnUploadSpades.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnUploadSpades.ActiveLineColor = System.Drawing.Color.Black;
+            this.btnUploadSpades.ActiveFillColor = System.Drawing.Color.Gainsboro;
+            this.btnUploadSpades.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.btnUploadSpades.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.btnUploadSpades.BackColor = System.Drawing.Color.Transparent;
             this.btnUploadSpades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUploadSpades.BackgroundImage")));
-            this.btnUploadSpades.ButtonText = "Resim Yükle";
+            this.btnUploadSpades.ButtonText = "Resim Ekle";
             this.btnUploadSpades.Cursor = System.Windows.Forms.Cursors.Hand;
             this.transitionTrain.SetDecoration(this.btnUploadSpades, BunifuAnimatorNS.DecorationType.None);
             this.btnUploadSpades.Font = new System.Drawing.Font("TR Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUploadSpades.ForeColor = System.Drawing.Color.White;
             this.btnUploadSpades.IdleBorderThickness = 3;
             this.btnUploadSpades.IdleCornerRadius = 20;
-            this.btnUploadSpades.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btnUploadSpades.IdleForecolor = System.Drawing.Color.Silver;
-            this.btnUploadSpades.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnUploadSpades.IdleFillColor = System.Drawing.Color.SeaGreen;
+            this.btnUploadSpades.IdleForecolor = System.Drawing.Color.White;
+            this.btnUploadSpades.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btnUploadSpades.Location = new System.Drawing.Point(1320, 25);
             this.btnUploadSpades.Margin = new System.Windows.Forms.Padding(5);
             this.btnUploadSpades.Name = "btnUploadSpades";
@@ -264,10 +264,10 @@
             // 
             // cardSpades
             // 
-            this.cardSpades.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(21)))), ((int)(((byte)(29)))));
+            this.cardSpades.BackColor = System.Drawing.Color.Gainsboro;
             this.cardSpades.BorderRadius = 5;
             this.cardSpades.BottomSahddow = true;
-            this.cardSpades.color = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(104)))), ((int)(((byte)(112)))));
+            this.cardSpades.color = System.Drawing.Color.Black;
             this.transitionTrain.SetDecoration(this.cardSpades, BunifuAnimatorNS.DecorationType.None);
             this.cardSpades.LeftSahddow = false;
             this.cardSpades.Location = new System.Drawing.Point(6, 25);
@@ -295,7 +295,7 @@
             // 
             this.pnlTrain.BackColor = System.Drawing.Color.Transparent;
             this.pnlTrain.Controls.Add(this.btnTrain);
-            this.pnlTrain.Controls.Add(this.bunifuCustomLabel1);
+            this.pnlTrain.Controls.Add(this.lblDescription);
             this.pnlTrain.Controls.Add(this.gbHearts);
             this.pnlTrain.Controls.Add(this.gbClubs);
             this.pnlTrain.Controls.Add(this.gbSpades);
@@ -311,21 +311,21 @@
             // 
             this.btnTrain.ActiveBorderThickness = 3;
             this.btnTrain.ActiveCornerRadius = 20;
-            this.btnTrain.ActiveFillColor = System.Drawing.Color.Silver;
-            this.btnTrain.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnTrain.ActiveLineColor = System.Drawing.Color.Black;
+            this.btnTrain.ActiveFillColor = System.Drawing.Color.Gainsboro;
+            this.btnTrain.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.btnTrain.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.btnTrain.BackColor = System.Drawing.Color.Transparent;
             this.btnTrain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTrain.BackgroundImage")));
-            this.btnTrain.ButtonText = "Resim Yükle";
+            this.btnTrain.ButtonText = "Eğitim Aşaması";
             this.btnTrain.Cursor = System.Windows.Forms.Cursors.Hand;
             this.transitionTrain.SetDecoration(this.btnTrain, BunifuAnimatorNS.DecorationType.None);
             this.btnTrain.Font = new System.Drawing.Font("TR Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTrain.ForeColor = System.Drawing.Color.White;
             this.btnTrain.IdleBorderThickness = 3;
             this.btnTrain.IdleCornerRadius = 20;
-            this.btnTrain.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnTrain.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.btnTrain.IdleForecolor = System.Drawing.Color.White;
-            this.btnTrain.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnTrain.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btnTrain.Location = new System.Drawing.Point(635, 543);
             this.btnTrain.Margin = new System.Windows.Forms.Padding(5);
             this.btnTrain.Name = "btnTrain";
@@ -346,7 +346,7 @@
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
@@ -354,18 +354,19 @@
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 1F;
             this.transitionTrain.DefaultAnimation = animation1;
-            this.transitionTrain.MaxAnimationTime = 1000;
+            this.transitionTrain.MaxAnimationTime = 1250;
             // 
             // Train
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.pnlTrain);
             this.transitionTrain.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.Name = "Train";
             this.Size = new System.Drawing.Size(1500, 605);
+            this.Load += new System.EventHandler(this.Train_Load);
             this.gbHearts.ResumeLayout(false);
             this.gbDiamonds.ResumeLayout(false);
             this.gbClubs.ResumeLayout(false);
@@ -378,7 +379,7 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblDescription;
         private System.Windows.Forms.GroupBox gbHearts;
         private Bunifu.Framework.UI.BunifuThinButton2 btnUploadHearts;
         private Bunifu.Framework.UI.BunifuCards cardHearts;

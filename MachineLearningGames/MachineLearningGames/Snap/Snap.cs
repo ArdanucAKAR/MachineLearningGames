@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BunifuAnimatorNS;
 using MachineLearningGames.Snap.Tabs;
+using Bunifu.Framework.UI;
 
 namespace MachineLearningGames.Snap
 {
@@ -71,11 +72,27 @@ namespace MachineLearningGames.Snap
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            Panel pnl = main.Controls.Find("pnlMain", true).FirstOrDefault() as Panel;
-            pnl.Controls.Clear();
+            Panel pnlMain = main.Controls.Find("pnlMain", true).FirstOrDefault() as Panel;
+            Panel pnlTop = main.Controls.Find("pnlTop", true).FirstOrDefault() as Panel;
+            BunifuCustomLabel label = main.Controls.Find("lblHeader", true).FirstOrDefault() as BunifuCustomLabel;
+            label.Text = "Çocuklar İçin Makine Öğrenmesi";
+            label.Location = new Point((pnlTop.Width - label.Width) / 2, 12);
+            pnlMain.Controls.Clear();
             Games games = new Games();
             games.main = main;
-            pnl.Controls.Add(games);
+            pnlMain.Controls.Add(games);
+        }
+
+        private void Snap_Load(object sender, EventArgs e)
+        {
+            Panel pnl = main.Controls.Find("pnlTop", true).FirstOrDefault() as Panel;
+            BunifuCustomLabel label = main.Controls.Find("lblHeader", true).FirstOrDefault() as BunifuCustomLabel;
+            label.Text = "SNAP - Çocuklar İçin Makine Öğrenmesi";
+            label.Location = new Point((pnl.Width - label.Width) / 2, 12);
+            pbSnap.Location = new Point((pnlSnapMain.Width - pbSnap.Width) / 2, 71);
+            lblSnap.Location = new Point((pnlSnapMain.Width - lblSnap.Width) / 2, 400);
+            lblDescription.Text = "Bu oyunda eğitim aşamasında farklı tiplerde oyun kartlarına yükleyeceğiniz resimleri eğiterek\n    test aşamasında yükleyeceğiniz resmin hangi oyun kartına ait olduğunu öğrenebilirsiniz.";
+            lblDescription.Location = new Point((pnlSnapMain.Width - lblDescription.Width) / 2, 457);
         }
     }
 }
