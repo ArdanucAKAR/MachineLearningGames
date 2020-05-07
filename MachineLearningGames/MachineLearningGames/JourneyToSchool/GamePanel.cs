@@ -42,10 +42,5 @@ namespace MachineLearningGames
             mainGamingPanel.Controls.Add(add);
         }
 
-       
-
-      
-
-       
     }
 }
