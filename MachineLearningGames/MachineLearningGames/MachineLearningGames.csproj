@@ -242,12 +242,6 @@
       <DependentUpon>TestUc.cs</DependentUpon>
     </Compile>
     <Compile Include="JourneyToSchool\UlasSingleton.cs" />
-    <Compile Include="JourneyToSchool\UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="JourneyToSchool\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </Compile>
     <Compile Include="JourneyToSchool\WayToArrive.cs">
       <SubType>UserControl</SubType>
     </Compile>

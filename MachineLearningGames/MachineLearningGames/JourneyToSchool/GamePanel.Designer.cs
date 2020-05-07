@@ -34,7 +34,11 @@
             this.btnTest = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnTrain = new Bunifu.Framework.UI.BunifuTileButton();
             this.mainGamingPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblHome = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pnlBottom.SuspendLayout();
+            this.mainGamingPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBottom
@@ -111,11 +115,33 @@
             // 
             // mainGamingPanel
             // 
+            this.mainGamingPanel.Controls.Add(this.pictureBox1);
+            this.mainGamingPanel.Controls.Add(this.lblHome);
             this.mainGamingPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainGamingPanel.Location = new System.Drawing.Point(0, 0);
             this.mainGamingPanel.Name = "mainGamingPanel";
             this.mainGamingPanel.Size = new System.Drawing.Size(1500, 605);
             this.mainGamingPanel.TabIndex = 7;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(619, 166);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(222, 232);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblHome
+            // 
+            this.lblHome.AutoSize = true;
+            this.lblHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHome.ForeColor = System.Drawing.Color.White;
+            this.lblHome.Location = new System.Drawing.Point(448, 474);
+            this.lblHome.Name = "lblHome";
+            this.lblHome.Size = new System.Drawing.Size(579, 37);
+            this.lblHome.TabIndex = 7;
+            this.lblHome.Text = "Journey To School - Makine Öğrenmesi";
             // 
             // GamePanel
             // 
@@ -128,6 +154,9 @@
             this.Name = "GamePanel";
             this.Size = new System.Drawing.Size(1500, 705);
             this.pnlBottom.ResumeLayout(false);
+            this.mainGamingPanel.ResumeLayout(false);
+            this.mainGamingPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -139,5 +168,7 @@
         private Bunifu.Framework.UI.BunifuTileButton btnTest;
         private Bunifu.Framework.UI.BunifuTileButton btnTrain;
         private System.Windows.Forms.Panel mainGamingPanel;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblHome;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
