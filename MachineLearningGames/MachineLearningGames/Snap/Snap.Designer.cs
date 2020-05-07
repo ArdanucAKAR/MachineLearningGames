@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation13 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Snap));
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.btnHome = new Bunifu.Framework.UI.BunifuTileButton();
@@ -37,9 +37,9 @@
             this.btnTrain = new Bunifu.Framework.UI.BunifuTileButton();
             this.pnlSnapMain = new System.Windows.Forms.Panel();
             this.pbSnap = new System.Windows.Forms.PictureBox();
+            this.lblDescription = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblSnap = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.transitionTabs = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.lblDescription = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pnlBottom.SuspendLayout();
             this.pnlSnapMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSnap)).BeginInit();
@@ -150,6 +150,18 @@
             this.pbSnap.TabIndex = 5;
             this.pbSnap.TabStop = false;
             // 
+            // lblDescription
+            // 
+            this.lblDescription.AutoSize = true;
+            this.transitionTabs.SetDecoration(this.lblDescription, BunifuAnimatorNS.DecorationType.None);
+            this.lblDescription.Font = new System.Drawing.Font("TR Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.ForeColor = System.Drawing.Color.White;
+            this.lblDescription.Location = new System.Drawing.Point(692, 457);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(123, 28);
+            this.lblDescription.TabIndex = 6;
+            this.lblDescription.Text = "Açıklama";
+            // 
             // lblSnap
             // 
             this.lblSnap.AutoSize = true;
@@ -166,35 +178,23 @@
             // 
             this.transitionTabs.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.transitionTabs.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.transitionTabs.DefaultAnimation = animation1;
+            animation13.AnimateOnlyDifferences = true;
+            animation13.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.BlindCoeff")));
+            animation13.LeafCoeff = 0F;
+            animation13.MaxTime = 1F;
+            animation13.MinTime = 0F;
+            animation13.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicCoeff")));
+            animation13.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicShift")));
+            animation13.MosaicSize = 0;
+            animation13.Padding = new System.Windows.Forms.Padding(0);
+            animation13.RotateCoeff = 0F;
+            animation13.RotateLimit = 0F;
+            animation13.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.ScaleCoeff")));
+            animation13.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.SlideCoeff")));
+            animation13.TimeCoeff = 0F;
+            animation13.TransparencyCoeff = 1F;
+            this.transitionTabs.DefaultAnimation = animation13;
             this.transitionTabs.MaxAnimationTime = 1250;
-            // 
-            // lblDescription
-            // 
-            this.lblDescription.AutoSize = true;
-            this.transitionTabs.SetDecoration(this.lblDescription, BunifuAnimatorNS.DecorationType.None);
-            this.lblDescription.Font = new System.Drawing.Font("TR Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.ForeColor = System.Drawing.Color.White;
-            this.lblDescription.Location = new System.Drawing.Point(692, 457);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(123, 28);
-            this.lblDescription.TabIndex = 6;
-            this.lblDescription.Text = "Açıklama";
             // 
             // Snap
             // 
@@ -222,10 +222,10 @@
         private System.Windows.Forms.Panel pnlSnapMain;
         private System.Windows.Forms.PictureBox pbSnap;
         private Bunifu.Framework.UI.BunifuCustomLabel lblSnap;
-        private Bunifu.Framework.UI.BunifuTileButton btnTrain;
         private Bunifu.Framework.UI.BunifuTileButton btnHome;
-        private Bunifu.Framework.UI.BunifuTileButton btnTest;
         private BunifuAnimatorNS.BunifuTransition transitionTabs;
         private Bunifu.Framework.UI.BunifuCustomLabel lblDescription;
+        public Bunifu.Framework.UI.BunifuTileButton btnTrain;
+        public Bunifu.Framework.UI.BunifuTileButton btnTest;
     }
 }

@@ -39,8 +39,7 @@
             this.txtNegativeWord = new System.Windows.Forms.TextBox();
             this.lblPositiveWord = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblNegativeWord = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.btnRemovePositiveWords = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnRemoveNegativeWords = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnRemoveWords = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SuspendLayout();
             // 
             // txtPositiveWord
@@ -189,57 +188,31 @@
             this.lblNegativeWord.TabIndex = 9;
             this.lblNegativeWord.Text = "Olumsuz Cümleler";
             // 
-            // btnRemovePositiveWords
+            // btnRemoveWords
             // 
-            this.btnRemovePositiveWords.ActiveBorderThickness = 1;
-            this.btnRemovePositiveWords.ActiveCornerRadius = 20;
-            this.btnRemovePositiveWords.ActiveFillColor = System.Drawing.Color.White;
-            this.btnRemovePositiveWords.ActiveForecolor = System.Drawing.Color.Crimson;
-            this.btnRemovePositiveWords.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnRemovePositiveWords.BackColor = System.Drawing.Color.Transparent;
-            this.btnRemovePositiveWords.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemovePositiveWords.BackgroundImage")));
-            this.btnRemovePositiveWords.ButtonText = "Listeyi Boşalt";
-            this.btnRemovePositiveWords.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRemovePositiveWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemovePositiveWords.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnRemovePositiveWords.IdleBorderThickness = 3;
-            this.btnRemovePositiveWords.IdleCornerRadius = 20;
-            this.btnRemovePositiveWords.IdleFillColor = System.Drawing.Color.Crimson;
-            this.btnRemovePositiveWords.IdleForecolor = System.Drawing.Color.White;
-            this.btnRemovePositiveWords.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnRemovePositiveWords.Location = new System.Drawing.Point(414, 462);
-            this.btnRemovePositiveWords.Margin = new System.Windows.Forms.Padding(5);
-            this.btnRemovePositiveWords.Name = "btnRemovePositiveWords";
-            this.btnRemovePositiveWords.Size = new System.Drawing.Size(308, 41);
-            this.btnRemovePositiveWords.TabIndex = 10;
-            this.btnRemovePositiveWords.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRemovePositiveWords.Click += new System.EventHandler(this.btnRemovePositiveWords_Click);
-            // 
-            // btnRemoveNegativeWords
-            // 
-            this.btnRemoveNegativeWords.ActiveBorderThickness = 1;
-            this.btnRemoveNegativeWords.ActiveCornerRadius = 20;
-            this.btnRemoveNegativeWords.ActiveFillColor = System.Drawing.Color.White;
-            this.btnRemoveNegativeWords.ActiveForecolor = System.Drawing.Color.Crimson;
-            this.btnRemoveNegativeWords.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnRemoveNegativeWords.BackColor = System.Drawing.Color.Transparent;
-            this.btnRemoveNegativeWords.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveNegativeWords.BackgroundImage")));
-            this.btnRemoveNegativeWords.ButtonText = "Listeyi Boşalt";
-            this.btnRemoveNegativeWords.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRemoveNegativeWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveNegativeWords.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnRemoveNegativeWords.IdleBorderThickness = 3;
-            this.btnRemoveNegativeWords.IdleCornerRadius = 20;
-            this.btnRemoveNegativeWords.IdleFillColor = System.Drawing.Color.Crimson;
-            this.btnRemoveNegativeWords.IdleForecolor = System.Drawing.Color.White;
-            this.btnRemoveNegativeWords.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnRemoveNegativeWords.Location = new System.Drawing.Point(800, 462);
-            this.btnRemoveNegativeWords.Margin = new System.Windows.Forms.Padding(5);
-            this.btnRemoveNegativeWords.Name = "btnRemoveNegativeWords";
-            this.btnRemoveNegativeWords.Size = new System.Drawing.Size(308, 41);
-            this.btnRemoveNegativeWords.TabIndex = 11;
-            this.btnRemoveNegativeWords.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRemoveNegativeWords.Click += new System.EventHandler(this.btnRemoveNegativeWords_Click);
+            this.btnRemoveWords.ActiveBorderThickness = 1;
+            this.btnRemoveWords.ActiveCornerRadius = 20;
+            this.btnRemoveWords.ActiveFillColor = System.Drawing.Color.White;
+            this.btnRemoveWords.ActiveForecolor = System.Drawing.Color.Crimson;
+            this.btnRemoveWords.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnRemoveWords.BackColor = System.Drawing.Color.Transparent;
+            this.btnRemoveWords.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveWords.BackgroundImage")));
+            this.btnRemoveWords.ButtonText = "Listeyi Boşalt";
+            this.btnRemoveWords.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveWords.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnRemoveWords.IdleBorderThickness = 3;
+            this.btnRemoveWords.IdleCornerRadius = 20;
+            this.btnRemoveWords.IdleFillColor = System.Drawing.Color.Crimson;
+            this.btnRemoveWords.IdleForecolor = System.Drawing.Color.White;
+            this.btnRemoveWords.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnRemoveWords.Location = new System.Drawing.Point(611, 462);
+            this.btnRemoveWords.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRemoveWords.Name = "btnRemoveWords";
+            this.btnRemoveWords.Size = new System.Drawing.Size(308, 41);
+            this.btnRemoveWords.TabIndex = 10;
+            this.btnRemoveWords.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnRemoveWords.Click += new System.EventHandler(this.btnRemoveWords_Click);
             // 
             // Train
             // 
@@ -247,8 +220,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.Controls.Add(this.btnRemoveNegativeWords);
-            this.Controls.Add(this.btnRemovePositiveWords);
+            this.Controls.Add(this.btnRemoveWords);
             this.Controls.Add(this.lblNegativeWord);
             this.Controls.Add(this.lblPositiveWord);
             this.Controls.Add(this.btnNegativeWord);
@@ -279,7 +251,6 @@
         private System.Windows.Forms.TextBox txtNegativeWord;
         private Bunifu.Framework.UI.BunifuCustomLabel lblPositiveWord;
         private Bunifu.Framework.UI.BunifuCustomLabel lblNegativeWord;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnRemovePositiveWords;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveNegativeWords;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveWords;
     }
 }

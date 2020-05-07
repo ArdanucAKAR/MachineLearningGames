@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using BunifuAnimatorNS;
 using MachineLearningGames.Snap.Tabs;
 using Bunifu.Framework.UI;
+using MachineLearningGames.Snap.Classes;
 
 namespace MachineLearningGames.Snap
 {
@@ -21,6 +22,8 @@ namespace MachineLearningGames.Snap
         }
 
         public Form main;
+
+        Singleton db = Singleton.Nesne();
 
         private void btnHome_MouseHover(object sender, EventArgs e)
         {
@@ -55,19 +58,37 @@ namespace MachineLearningGames.Snap
         private void btnTrain_Click(object sender, EventArgs e)
         {
             Train train = new Train();
-            pnlSnapMain.Controls.Clear();            
+            pnlSnapMain.Controls.Clear();
             pnlSnapMain.Visible = false;
             pnlSnapMain.Controls.Add(train);
             transitionTabs.ShowSync(pnlSnapMain);
+            btnTest.color = Color.Transparent;
+            btnTrain.color = Color.DimGray;
         }
 
         private void btnTest_Click(object sender, EventArgs e)
         {
-            Make make = new Make();
-            pnlSnapMain.Controls.Clear();
-            pnlSnapMain.Visible = false;
-            pnlSnapMain.Controls.Add(make);
-            transitionTabs.ShowSync(pnlSnapMain);
+            if (db.club != 0 && db.diamond != 0 && db.heart != 0 && db.spade != 0)
+            {
+                Make make = new Make();
+                pnlSnapMain.Controls.Clear();
+                pnlSnapMain.Visible = false;
+                pnlSnapMain.Controls.Add(make);
+                transitionTabs.ShowSync(pnlSnapMain);
+                btnTrain.color = Color.Transparent;
+                btnTest.color = Color.DimGray;
+            }
+            else
+            {
+                MessageBox.Show("Eğitim için resim yüklemeden test aşamasına geçilemez.");
+                Train train = new Train();
+                pnlSnapMain.Controls.Clear();
+                pnlSnapMain.Visible = false;
+                pnlSnapMain.Controls.Add(train);
+                transitionTabs.ShowSync(pnlSnapMain);
+                btnTest.color = Color.Transparent;
+                btnTrain.color = Color.DimGray;
+            }
         }
 
         private void btnHome_Click(object sender, EventArgs e)

@@ -35,7 +35,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.mainPanel = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.homeButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.trainButton = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -44,7 +43,6 @@
             this.mainPanels.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.mainPanel.SuspendLayout();
-            this.bunifuGradientPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,10 +52,10 @@
             this.mainPanels.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mainPanels.BackgroundImage")));
             this.mainPanels.Controls.Add(this.label1);
             this.mainPanels.Controls.Add(this.pictureBox1);
-            this.mainPanels.Dock = System.Windows.Forms.DockStyle.Top;
+            this.mainPanels.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanels.Location = new System.Drawing.Point(0, 0);
             this.mainPanels.Name = "mainPanels";
-            this.mainPanels.Size = new System.Drawing.Size(1500, 617);
+            this.mainPanels.Size = new System.Drawing.Size(1500, 650);
             this.mainPanels.TabIndex = 1;
             // 
             // label1
@@ -94,7 +92,8 @@
             // 
             this.mainPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mainPanel.BackgroundImage")));
             this.mainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.mainPanel.Controls.Add(this.bunifuGradientPanel1);
+            this.mainPanel.Controls.Add(this.mainPanels);
+            this.mainPanel.Controls.Add(this.panel2);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.GradientBottomLeft = System.Drawing.Color.White;
             this.mainPanel.GradientBottomRight = System.Drawing.Color.White;
@@ -103,24 +102,8 @@
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Quality = 10;
-            this.mainPanel.Size = new System.Drawing.Size(1500, 850);
+            this.mainPanel.Size = new System.Drawing.Size(1500, 750);
             this.mainPanel.TabIndex = 5;
-            // 
-            // bunifuGradientPanel1
-            // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.panel2);
-            this.bunifuGradientPanel1.Controls.Add(this.mainPanels);
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1500, 717);
-            this.bunifuGradientPanel1.TabIndex = 1;
             // 
             // panel2
             // 
@@ -128,8 +111,8 @@
             this.panel2.Controls.Add(this.homeButton);
             this.panel2.Controls.Add(this.trainButton);
             this.panel2.Controls.Add(this.makeButton);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 617);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 650);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1500, 100);
             this.panel2.TabIndex = 5;
@@ -250,12 +233,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mainPanel);
             this.Name = "ChatMain";
-            this.Size = new System.Drawing.Size(1500, 850);
+            this.Size = new System.Drawing.Size(1500, 750);
             this.mainPanels.ResumeLayout(false);
             this.mainPanels.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.mainPanel.ResumeLayout(false);
-            this.bunifuGradientPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -268,7 +250,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuGradientPanel mainPanel;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuFlatButton homeButton;
         private Bunifu.Framework.UI.BunifuFlatButton trainButton;

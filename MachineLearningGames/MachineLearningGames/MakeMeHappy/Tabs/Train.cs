@@ -57,19 +57,9 @@ namespace MachineLearningGames.MakeMeHappy.Tabs
                 AddDictionaryWord(txtPositiveWord.Text, 1, lbPositiveWords, txtPositiveWord);
         }
 
-        private void btnRemovePositiveWords_Click(object sender, EventArgs e)
-        {
-            lbPositiveWords.Items.Clear();
-        }
-
         private void btnNegativeWord_Click(object sender, EventArgs e)
         {
             AddDictionaryWord(txtNegativeWord.Text, -1, lbNegativeWords, txtNegativeWord);
-        }
-
-        private void btnRemoveNegativeWords_Click(object sender, EventArgs e)
-        {
-            lbNegativeWords.Items.Clear();
         }
 
         private void txtNegativeWord_KeyDown(object sender, KeyEventArgs e)
@@ -93,6 +83,13 @@ namespace MachineLearningGames.MakeMeHappy.Tabs
         {
             if (e.KeyCode == Keys.Enter)
                 txtNegativeWord.Clear();
+        }
+
+        private void btnRemoveWords_Click(object sender, EventArgs e)
+        {
+            lbPositiveWords.Items.Clear();
+            lbNegativeWords.Items.Clear();
+            db.wordsDic.Clear();
         }
     }
 }

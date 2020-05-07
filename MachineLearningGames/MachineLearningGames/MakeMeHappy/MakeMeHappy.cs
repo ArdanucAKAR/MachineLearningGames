@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MachineLearningGames.MakeMeHappy.Tabs;
+using MachineLearningGames.MakeMeHappy.Classes;
 
 namespace MachineLearningGames.MakeMeHappy
 {
@@ -19,6 +20,8 @@ namespace MachineLearningGames.MakeMeHappy
         }
 
         public Form main;
+
+        Singleton db = Singleton.Nesne();
 
         private void btnHome_MouseHover(object sender, EventArgs e)
         {
@@ -70,11 +73,23 @@ namespace MachineLearningGames.MakeMeHappy
 
         private void btnTest_Click(object sender, EventArgs e)
         {
-            Test train = new Test();
-            pnlSnapMain.Controls.Clear();
-            pnlSnapMain.Visible = false;
-            pnlSnapMain.Controls.Add(train);
-            transitionTabs.ShowSync(pnlSnapMain);
+            if (db.wordsDic.Count > 20)
+            {
+                Test train = new Test();
+                pnlSnapMain.Controls.Clear();
+                pnlSnapMain.Visible = false;
+                pnlSnapMain.Controls.Add(train);
+                transitionTabs.ShowSync(pnlSnapMain);
+            }
+            else
+            {
+                MessageBox.Show("Cümle Girmeden Test Aşamasına Geçilemez");
+                Train train = new Train();
+                pnlSnapMain.Controls.Clear();
+                pnlSnapMain.Visible = false;
+                pnlSnapMain.Controls.Add(train);
+                transitionTabs.ShowSync(pnlSnapMain);
+            }
         }
     }
 }
