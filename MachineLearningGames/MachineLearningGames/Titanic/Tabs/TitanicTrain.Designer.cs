@@ -103,17 +103,19 @@
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.ForeColor = System.Drawing.Color.Coral;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
+            this.pnlMain.Margin = new System.Windows.Forms.Padding(2);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(2000, 745);
+            this.pnlMain.Size = new System.Drawing.Size(1500, 605);
             this.pnlMain.TabIndex = 0;
             // 
             // pictureBox2
             // 
             this.bunifuTransition1.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(776, 244);
+            this.pictureBox2.Location = new System.Drawing.Point(582, 198);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(445, 169);
+            this.pictureBox2.Size = new System.Drawing.Size(334, 137);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 35;
             this.pictureBox2.TabStop = false;
@@ -125,9 +127,10 @@
             this.bunifuTransition1.SetDecoration(this.lblModeTraining, BunifuAnimatorNS.DecorationType.None);
             this.lblModeTraining.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblModeTraining.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblModeTraining.Location = new System.Drawing.Point(917, 411);
+            this.lblModeTraining.Location = new System.Drawing.Point(688, 334);
+            this.lblModeTraining.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblModeTraining.Name = "lblModeTraining";
-            this.lblModeTraining.Size = new System.Drawing.Size(158, 25);
+            this.lblModeTraining.Size = new System.Drawing.Size(126, 20);
             this.lblModeTraining.TabIndex = 33;
             this.lblModeTraining.Text = "Model Eğitiliyor...";
             this.lblModeTraining.Visible = false;
@@ -138,9 +141,10 @@
             this.bunifuTransition1.SetDecoration(this.lblNotSurvived, BunifuAnimatorNS.DecorationType.None);
             this.lblNotSurvived.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblNotSurvived.ForeColor = System.Drawing.Color.Red;
-            this.lblNotSurvived.Location = new System.Drawing.Point(1417, 338);
+            this.lblNotSurvived.Location = new System.Drawing.Point(1063, 275);
+            this.lblNotSurvived.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNotSurvived.Name = "lblNotSurvived";
-            this.lblNotSurvived.Size = new System.Drawing.Size(295, 32);
+            this.lblNotSurvived.Size = new System.Drawing.Size(227, 26);
             this.lblNotSurvived.TabIndex = 30;
             this.lblNotSurvived.Text = "Hayatta Kalamayanlar";
             // 
@@ -150,9 +154,10 @@
             this.bunifuTransition1.SetDecoration(this.lblSurvived, BunifuAnimatorNS.DecorationType.None);
             this.lblSurvived.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblSurvived.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblSurvived.Location = new System.Drawing.Point(367, 338);
+            this.lblSurvived.Location = new System.Drawing.Point(275, 275);
+            this.lblSurvived.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSurvived.Name = "lblSurvived";
-            this.lblSurvived.Size = new System.Drawing.Size(226, 32);
+            this.lblSurvived.Size = new System.Drawing.Size(173, 26);
             this.lblSurvived.TabIndex = 29;
             this.lblSurvived.Text = "Hayatta Kalanlar";
             // 
@@ -168,13 +173,13 @@
             this.drpState.Items = new string[] {
         "Hayatta kaldı",
         "Hayatta kalamadı"};
-            this.drpState.Location = new System.Drawing.Point(1666, 93);
-            this.drpState.Margin = new System.Windows.Forms.Padding(4);
+            this.drpState.Location = new System.Drawing.Point(1250, 76);
+            this.drpState.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.drpState.Name = "drpState";
             this.drpState.NomalColor = System.Drawing.Color.Silver;
             this.drpState.onHoverColor = System.Drawing.Color.White;
             this.drpState.selectedIndex = 0;
-            this.drpState.Size = new System.Drawing.Size(282, 43);
+            this.drpState.Size = new System.Drawing.Size(212, 35);
             this.drpState.TabIndex = 25;
             // 
             // lblState
@@ -182,9 +187,10 @@
             this.lblState.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.lblState, BunifuAnimatorNS.DecorationType.None);
             this.lblState.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblState.Location = new System.Drawing.Point(1550, 101);
+            this.lblState.Location = new System.Drawing.Point(1162, 82);
+            this.lblState.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblState.Name = "lblState";
-            this.lblState.Size = new System.Drawing.Size(109, 29);
+            this.lblState.Size = new System.Drawing.Size(88, 24);
             this.lblState.TabIndex = 26;
             this.lblState.Text = "Durumu :";
             // 
@@ -207,10 +213,10 @@
             this.btnStartTrain.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnStartTrain.IdleForecolor = System.Drawing.Color.Orange;
             this.btnStartTrain.IdleLineColor = System.Drawing.Color.Orange;
-            this.btnStartTrain.Location = new System.Drawing.Point(1586, 244);
-            this.btnStartTrain.Margin = new System.Windows.Forms.Padding(5);
+            this.btnStartTrain.Location = new System.Drawing.Point(1190, 198);
+            this.btnStartTrain.Margin = new System.Windows.Forms.Padding(4);
             this.btnStartTrain.Name = "btnStartTrain";
-            this.btnStartTrain.Size = new System.Drawing.Size(319, 67);
+            this.btnStartTrain.Size = new System.Drawing.Size(239, 54);
             this.btnStartTrain.TabIndex = 9;
             this.btnStartTrain.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnStartTrain.Click += new System.EventHandler(this.btnStartTrain_Click);
@@ -220,9 +226,10 @@
             this.lblItemCount.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.lblItemCount, BunifuAnimatorNS.DecorationType.None);
             this.lblItemCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblItemCount.Location = new System.Drawing.Point(180, 279);
+            this.lblItemCount.Location = new System.Drawing.Point(135, 227);
+            this.lblItemCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblItemCount.Name = "lblItemCount";
-            this.lblItemCount.Size = new System.Drawing.Size(31, 32);
+            this.lblItemCount.Size = new System.Drawing.Size(24, 26);
             this.lblItemCount.TabIndex = 24;
             this.lblItemCount.Text = "0";
             // 
@@ -231,9 +238,10 @@
             this.lblDataCount.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.lblDataCount, BunifuAnimatorNS.DecorationType.None);
             this.lblDataCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDataCount.Location = new System.Drawing.Point(27, 279);
+            this.lblDataCount.Location = new System.Drawing.Point(20, 227);
+            this.lblDataCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDataCount.Name = "lblDataCount";
-            this.lblDataCount.Size = new System.Drawing.Size(160, 32);
+            this.lblDataCount.Size = new System.Drawing.Size(124, 26);
             this.lblDataCount.TabIndex = 23;
             this.lblDataCount.Text = "Veri sayısı :";
             // 
@@ -256,10 +264,10 @@
             this.btnAdd.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnAdd.IdleForecolor = System.Drawing.Color.Orange;
             this.btnAdd.IdleLineColor = System.Drawing.Color.Orange;
-            this.btnAdd.Location = new System.Drawing.Point(1586, 167);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAdd.Location = new System.Drawing.Point(1190, 136);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(319, 67);
+            this.btnAdd.Size = new System.Drawing.Size(239, 54);
             this.btnAdd.TabIndex = 8;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -270,9 +278,10 @@
             this.pnlList.Controls.Add(this.pnlSurvived);
             this.bunifuTransition1.SetDecoration(this.pnlList, BunifuAnimatorNS.DecorationType.None);
             this.pnlList.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlList.Location = new System.Drawing.Point(0, 373);
+            this.pnlList.Location = new System.Drawing.Point(0, 303);
+            this.pnlList.Margin = new System.Windows.Forms.Padding(2);
             this.pnlList.Name = "pnlList";
-            this.pnlList.Size = new System.Drawing.Size(2000, 372);
+            this.pnlList.Size = new System.Drawing.Size(1500, 302);
             this.pnlList.TabIndex = 21;
             // 
             // pnlNotSurvived
@@ -280,9 +289,10 @@
             this.pnlNotSurvived.Controls.Add(this.itemListNotSurvived);
             this.bunifuTransition1.SetDecoration(this.pnlNotSurvived, BunifuAnimatorNS.DecorationType.None);
             this.pnlNotSurvived.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlNotSurvived.Location = new System.Drawing.Point(1000, 0);
+            this.pnlNotSurvived.Location = new System.Drawing.Point(750, 0);
+            this.pnlNotSurvived.Margin = new System.Windows.Forms.Padding(2);
             this.pnlNotSurvived.Name = "pnlNotSurvived";
-            this.pnlNotSurvived.Size = new System.Drawing.Size(1000, 372);
+            this.pnlNotSurvived.Size = new System.Drawing.Size(750, 302);
             this.pnlNotSurvived.TabIndex = 1;
             // 
             // itemListNotSurvived
@@ -293,10 +303,11 @@
             this.itemListNotSurvived.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.itemListNotSurvived.ForeColor = System.Drawing.Color.White;
             this.itemListNotSurvived.FormattingEnabled = true;
-            this.itemListNotSurvived.ItemHeight = 18;
+            this.itemListNotSurvived.ItemHeight = 15;
             this.itemListNotSurvived.Location = new System.Drawing.Point(0, 0);
+            this.itemListNotSurvived.Margin = new System.Windows.Forms.Padding(2);
             this.itemListNotSurvived.Name = "itemListNotSurvived";
-            this.itemListNotSurvived.Size = new System.Drawing.Size(1000, 372);
+            this.itemListNotSurvived.Size = new System.Drawing.Size(750, 302);
             this.itemListNotSurvived.TabIndex = 1;
             // 
             // pnlSurvived
@@ -305,8 +316,9 @@
             this.bunifuTransition1.SetDecoration(this.pnlSurvived, BunifuAnimatorNS.DecorationType.None);
             this.pnlSurvived.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSurvived.Location = new System.Drawing.Point(0, 0);
+            this.pnlSurvived.Margin = new System.Windows.Forms.Padding(2);
             this.pnlSurvived.Name = "pnlSurvived";
-            this.pnlSurvived.Size = new System.Drawing.Size(1000, 372);
+            this.pnlSurvived.Size = new System.Drawing.Size(750, 302);
             this.pnlSurvived.TabIndex = 0;
             // 
             // itemListSurvived
@@ -317,10 +329,11 @@
             this.itemListSurvived.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.itemListSurvived.ForeColor = System.Drawing.Color.White;
             this.itemListSurvived.FormattingEnabled = true;
-            this.itemListSurvived.ItemHeight = 18;
+            this.itemListSurvived.ItemHeight = 15;
             this.itemListSurvived.Location = new System.Drawing.Point(0, 0);
+            this.itemListSurvived.Margin = new System.Windows.Forms.Padding(2);
             this.itemListSurvived.Name = "itemListSurvived";
-            this.itemListSurvived.Size = new System.Drawing.Size(1000, 372);
+            this.itemListSurvived.Size = new System.Drawing.Size(750, 302);
             this.itemListSurvived.TabIndex = 0;
             // 
             // txtTickerFare
@@ -331,12 +344,12 @@
             this.bunifuTransition1.SetDecoration(this.txtTickerFare, BunifuAnimatorNS.DecorationType.None);
             this.txtTickerFare.ForeColor = System.Drawing.Color.Black;
             this.txtTickerFare.Icon = ((System.Drawing.Image)(resources.GetObject("txtTickerFare.Icon")));
-            this.txtTickerFare.Location = new System.Drawing.Point(1019, 138);
-            this.txtTickerFare.Margin = new System.Windows.Forms.Padding(10);
+            this.txtTickerFare.Location = new System.Drawing.Point(764, 112);
+            this.txtTickerFare.Margin = new System.Windows.Forms.Padding(8);
             this.txtTickerFare.Name = "txtTickerFare";
-            this.txtTickerFare.Size = new System.Drawing.Size(282, 43);
+            this.txtTickerFare.Size = new System.Drawing.Size(212, 35);
             this.txtTickerFare.TabIndex = 6;
-            this.txtTickerFare.text = "";
+            this.txtTickerFare.text = "0";
             // 
             // txtAge
             // 
@@ -346,12 +359,12 @@
             this.bunifuTransition1.SetDecoration(this.txtAge, BunifuAnimatorNS.DecorationType.None);
             this.txtAge.ForeColor = System.Drawing.Color.Black;
             this.txtAge.Icon = ((System.Drawing.Image)(resources.GetObject("txtAge.Icon")));
-            this.txtAge.Location = new System.Drawing.Point(204, 138);
-            this.txtAge.Margin = new System.Windows.Forms.Padding(10);
+            this.txtAge.Location = new System.Drawing.Point(153, 112);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(8);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(282, 43);
+            this.txtAge.Size = new System.Drawing.Size(212, 35);
             this.txtAge.TabIndex = 3;
-            this.txtAge.text = "";
+            this.txtAge.text = "0";
             // 
             // drpEmbarked
             // 
@@ -366,13 +379,13 @@
         "Cherbourg (France)",
         "Southampton (England)",
         "Queenstown (Ireland)"};
-            this.drpEmbarked.Location = new System.Drawing.Point(1666, 42);
-            this.drpEmbarked.Margin = new System.Windows.Forms.Padding(4);
+            this.drpEmbarked.Location = new System.Drawing.Point(1250, 34);
+            this.drpEmbarked.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.drpEmbarked.Name = "drpEmbarked";
             this.drpEmbarked.NomalColor = System.Drawing.Color.Silver;
             this.drpEmbarked.onHoverColor = System.Drawing.Color.White;
             this.drpEmbarked.selectedIndex = 0;
-            this.drpEmbarked.Size = new System.Drawing.Size(282, 43);
+            this.drpEmbarked.Size = new System.Drawing.Size(212, 35);
             this.drpEmbarked.TabIndex = 7;
             // 
             // drpGender
@@ -387,13 +400,13 @@
             this.drpGender.Items = new string[] {
         "Erkek",
         "Kadın"};
-            this.drpGender.Location = new System.Drawing.Point(204, 87);
-            this.drpGender.Margin = new System.Windows.Forms.Padding(4);
+            this.drpGender.Location = new System.Drawing.Point(153, 71);
+            this.drpGender.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.drpGender.Name = "drpGender";
             this.drpGender.NomalColor = System.Drawing.Color.Silver;
             this.drpGender.onHoverColor = System.Drawing.Color.White;
             this.drpGender.selectedIndex = 0;
-            this.drpGender.Size = new System.Drawing.Size(282, 43);
+            this.drpGender.Size = new System.Drawing.Size(212, 35);
             this.drpGender.TabIndex = 2;
             // 
             // drpTicketClass
@@ -409,13 +422,13 @@
         "1",
         "2",
         "3"};
-            this.drpTicketClass.Location = new System.Drawing.Point(204, 36);
-            this.drpTicketClass.Margin = new System.Windows.Forms.Padding(4);
+            this.drpTicketClass.Location = new System.Drawing.Point(153, 29);
+            this.drpTicketClass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.drpTicketClass.Name = "drpTicketClass";
             this.drpTicketClass.NomalColor = System.Drawing.Color.Silver;
             this.drpTicketClass.onHoverColor = System.Drawing.Color.White;
             this.drpTicketClass.selectedIndex = 0;
-            this.drpTicketClass.Size = new System.Drawing.Size(282, 43);
+            this.drpTicketClass.Size = new System.Drawing.Size(212, 35);
             this.drpTicketClass.TabIndex = 1;
             // 
             // lblEmbarked
@@ -423,9 +436,10 @@
             this.lblEmbarked.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.lblEmbarked, BunifuAnimatorNS.DecorationType.None);
             this.lblEmbarked.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblEmbarked.Location = new System.Drawing.Point(1471, 50);
+            this.lblEmbarked.Location = new System.Drawing.Point(1103, 41);
+            this.lblEmbarked.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmbarked.Name = "lblEmbarked";
-            this.lblEmbarked.Size = new System.Drawing.Size(192, 29);
+            this.lblEmbarked.Size = new System.Drawing.Size(151, 24);
             this.lblEmbarked.TabIndex = 13;
             this.lblEmbarked.Text = "Gideceğiniz yer :";
             // 
@@ -434,9 +448,10 @@
             this.lblTicketFare.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.lblTicketFare, BunifuAnimatorNS.DecorationType.None);
             this.lblTicketFare.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTicketFare.Location = new System.Drawing.Point(868, 138);
+            this.lblTicketFare.Location = new System.Drawing.Point(651, 112);
+            this.lblTicketFare.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTicketFare.Name = "lblTicketFare";
-            this.lblTicketFare.Size = new System.Drawing.Size(138, 29);
+            this.lblTicketFare.Size = new System.Drawing.Size(106, 24);
             this.lblTicketFare.TabIndex = 11;
             this.lblTicketFare.Text = "Bilet ücreti :";
             // 
@@ -445,9 +460,10 @@
             this.lblParentOrChildren.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.lblParentOrChildren, BunifuAnimatorNS.DecorationType.None);
             this.lblParentOrChildren.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblParentOrChildren.Location = new System.Drawing.Point(690, 87);
+            this.lblParentOrChildren.Location = new System.Drawing.Point(518, 71);
+            this.lblParentOrChildren.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblParentOrChildren.Name = "lblParentOrChildren";
-            this.lblParentOrChildren.Size = new System.Drawing.Size(316, 29);
+            this.lblParentOrChildren.Size = new System.Drawing.Size(251, 24);
             this.lblParentOrChildren.TabIndex = 9;
             this.lblParentOrChildren.Text = "Ebeveyn ya da çocuk sayısı :";
             // 
@@ -459,21 +475,22 @@
             this.bunifuTransition1.SetDecoration(this.txtParentOrChildren, BunifuAnimatorNS.DecorationType.None);
             this.txtParentOrChildren.ForeColor = System.Drawing.Color.Black;
             this.txtParentOrChildren.Icon = ((System.Drawing.Image)(resources.GetObject("txtParentOrChildren.Icon")));
-            this.txtParentOrChildren.Location = new System.Drawing.Point(1019, 85);
-            this.txtParentOrChildren.Margin = new System.Windows.Forms.Padding(10);
+            this.txtParentOrChildren.Location = new System.Drawing.Point(764, 69);
+            this.txtParentOrChildren.Margin = new System.Windows.Forms.Padding(8);
             this.txtParentOrChildren.Name = "txtParentOrChildren";
-            this.txtParentOrChildren.Size = new System.Drawing.Size(282, 43);
+            this.txtParentOrChildren.Size = new System.Drawing.Size(212, 35);
             this.txtParentOrChildren.TabIndex = 5;
-            this.txtParentOrChildren.text = "";
+            this.txtParentOrChildren.text = "0";
             // 
             // lblSiblingsOrSpouse
             // 
             this.lblSiblingsOrSpouse.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.lblSiblingsOrSpouse, BunifuAnimatorNS.DecorationType.None);
             this.lblSiblingsOrSpouse.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSiblingsOrSpouse.Location = new System.Drawing.Point(749, 36);
+            this.lblSiblingsOrSpouse.Location = new System.Drawing.Point(562, 29);
+            this.lblSiblingsOrSpouse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSiblingsOrSpouse.Name = "lblSiblingsOrSpouse";
-            this.lblSiblingsOrSpouse.Size = new System.Drawing.Size(257, 29);
+            this.lblSiblingsOrSpouse.Size = new System.Drawing.Size(199, 24);
             this.lblSiblingsOrSpouse.TabIndex = 7;
             this.lblSiblingsOrSpouse.Text = "Kardeş ya da eş sayısı:";
             // 
@@ -485,21 +502,22 @@
             this.bunifuTransition1.SetDecoration(this.txtSiblingsOrSpouse, BunifuAnimatorNS.DecorationType.None);
             this.txtSiblingsOrSpouse.ForeColor = System.Drawing.Color.Black;
             this.txtSiblingsOrSpouse.Icon = ((System.Drawing.Image)(resources.GetObject("txtSiblingsOrSpouse.Icon")));
-            this.txtSiblingsOrSpouse.Location = new System.Drawing.Point(1019, 34);
-            this.txtSiblingsOrSpouse.Margin = new System.Windows.Forms.Padding(10);
+            this.txtSiblingsOrSpouse.Location = new System.Drawing.Point(764, 28);
+            this.txtSiblingsOrSpouse.Margin = new System.Windows.Forms.Padding(8);
             this.txtSiblingsOrSpouse.Name = "txtSiblingsOrSpouse";
-            this.txtSiblingsOrSpouse.Size = new System.Drawing.Size(282, 43);
+            this.txtSiblingsOrSpouse.Size = new System.Drawing.Size(212, 35);
             this.txtSiblingsOrSpouse.TabIndex = 4;
-            this.txtSiblingsOrSpouse.text = "";
+            this.txtSiblingsOrSpouse.text = "0";
             // 
             // lblAge
             // 
             this.lblAge.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.lblAge, BunifuAnimatorNS.DecorationType.None);
             this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAge.Location = new System.Drawing.Point(131, 138);
+            this.lblAge.Location = new System.Drawing.Point(98, 112);
+            this.lblAge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(66, 29);
+            this.lblAge.Size = new System.Drawing.Size(51, 24);
             this.lblAge.TabIndex = 5;
             this.lblAge.Text = "Yaş :";
             // 
@@ -508,9 +526,10 @@
             this.lblGender.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.lblGender, BunifuAnimatorNS.DecorationType.None);
             this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblGender.Location = new System.Drawing.Point(87, 87);
+            this.lblGender.Location = new System.Drawing.Point(65, 71);
+            this.lblGender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(110, 29);
+            this.lblGender.Size = new System.Drawing.Size(85, 24);
             this.lblGender.TabIndex = 3;
             this.lblGender.Text = "Cinsiyet :";
             // 
@@ -519,9 +538,10 @@
             this.lblTicketClass.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.lblTicketClass, BunifuAnimatorNS.DecorationType.None);
             this.lblTicketClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTicketClass.Location = new System.Drawing.Point(65, 36);
+            this.lblTicketClass.Location = new System.Drawing.Point(49, 29);
+            this.lblTicketClass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTicketClass.Name = "lblTicketClass";
-            this.lblTicketClass.Size = new System.Drawing.Size(132, 29);
+            this.lblTicketClass.Size = new System.Drawing.Size(99, 24);
             this.lblTicketClass.TabIndex = 1;
             this.lblTicketClass.Text = "Bilet Sınıfı :";
             // 
@@ -550,15 +570,17 @@
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
             this.bunifuTransition1.DefaultAnimation = animation1;
+            this.bunifuTransition1.MaxAnimationTime = 1000;
             // 
             // TitanicTrain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlMain);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TitanicTrain";
-            this.Size = new System.Drawing.Size(2000, 745);
+            this.Size = new System.Drawing.Size(1500, 605);
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

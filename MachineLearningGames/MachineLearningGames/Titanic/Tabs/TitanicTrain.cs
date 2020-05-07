@@ -27,10 +27,10 @@ namespace MachineLearningGames.Alihan.Tabs
 
         private void btnStartTrain_Click(object sender, EventArgs e)
         {
-            if (_itemSurvivedCount < 1)
+            if (_itemSurvivedCount < 10)
                 MessageBox.Show(
                     "Girmiş olduğunuz hayatta kalan veri sayısı yeterli değil!\nLütfen faha fazla veri giriniz");
-            else if (_itemNotSurvivedCount < 1)
+            else if (_itemNotSurvivedCount < 10)
                 MessageBox.Show(
                     "Girmiş olduğunuz hayatta kalamayan veri sayısı yeterli değil!\nLütfen faha fazla veri giriniz");
             else
@@ -46,7 +46,6 @@ namespace MachineLearningGames.Alihan.Tabs
                 timer1.Start();
                 lblModeTraining.Visible = true;
                 pictureBox2.Visible = true;
-
 
             }
 
@@ -98,6 +97,8 @@ namespace MachineLearningGames.Alihan.Tabs
                         "-------------------------------------------------------------------------------------------------------------------------");
                     _itemSurvivedCount++;
                     lblItemCount.Text = (_itemSurvivedCount + _itemNotSurvivedCount).ToString();
+                    DataClear();
+
                 }
                 else
                 {
@@ -112,17 +113,15 @@ namespace MachineLearningGames.Alihan.Tabs
                         "-------------------------------------------------------------------------------------------------------------------------");
                     _itemNotSurvivedCount++;
                     lblItemCount.Text = (_itemSurvivedCount + _itemNotSurvivedCount).ToString();
+                    DataClear();
+
                 }
-
-
-
             }
             catch (Exception exception)
             {
                 MessageBox.Show(exception.Message);
             }
 
-            DataClear();
         }
 
         private void DataClear()
@@ -146,12 +145,7 @@ namespace MachineLearningGames.Alihan.Tabs
                 pictureBox2.Visible = false;
                 MessageBox.Show("Eğitim Tamamlandı!\nArtık Test Edebilirisiniz.");
                 lblModeTraining.Text = "Eğitim Tamamlandı!";
-                Titanic titanic = new Titanic();
-                titanic.main = main;
-                pnlMain.Controls.Clear();
-                titanic.Visible = false;
-                pnlMain.Controls.Add(titanic);
-                bunifuTransition1.ShowSync(titanic);
+                TitanicTest._state = true;
             }
         }
     }
