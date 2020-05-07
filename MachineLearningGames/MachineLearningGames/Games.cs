@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MachineLearningGames.JudgeBook;
+using MachineLearningGames.Chatbot;
 
 
 namespace MachineLearningGames
@@ -53,12 +54,12 @@ namespace MachineLearningGames
 
         private void btnChatbot_Click(object sender, EventArgs e)
         {
-            //ChatbotMainForm chatbot = new ChatbotMainForm();
-            //chatbot.main = main;
-            //pnlMain.Controls.Clear();
-            //chatbot.Visible = false;
-            //pnlMain.Controls.Add(chatbot);
-            //transitionGames.ShowSync(chatbot);
+            ChatMain chatbot = new ChatMain();
+            chatbot.main = main;
+            pnlMain.Controls.Clear();
+            chatbot.Visible = false;
+            pnlMain.Controls.Add(chatbot);
+            transitionGames.ShowSync(chatbot);
         }
 
         private void btnJourneyToSchool_Click(object sender, EventArgs e)
