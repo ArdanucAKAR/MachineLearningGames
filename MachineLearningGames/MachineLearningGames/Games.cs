@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MachineLearningGames.JudgeBook;
 using MachineLearningGames.Chatbot;
-
+using MachineLearningGames.RockPaperScissors;
 
 namespace MachineLearningGames
 {
@@ -90,6 +90,16 @@ namespace MachineLearningGames
             makeMeHappy.Visible = false;
             pnlMain.Controls.Add(makeMeHappy);
             transitionGames.ShowSync(makeMeHappy);
+        }
+
+        private void btnRockPaperScissors_Click(object sender, EventArgs e)
+        {
+            RockPaperScissors.RockPaperScissors rockPaperScissors = new RockPaperScissors.RockPaperScissors();
+            rockPaperScissors.main = main;
+            pnlMain.Controls.Clear();
+            rockPaperScissors.Visible = false;
+            pnlMain.Controls.Add(rockPaperScissors);
+            transitionGames.ShowSync(rockPaperScissors);
         }
     }
 }

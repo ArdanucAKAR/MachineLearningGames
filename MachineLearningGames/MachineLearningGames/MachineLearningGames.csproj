@@ -144,6 +144,24 @@
     <Compile Include="JudgeBook\Tabs\JudgeBookTrain.Designer.cs">
       <DependentUpon>JudgeBookTrain.cs</DependentUpon>
     </Compile>
+    <Compile Include="RockPaperScissors\RockPaperScissors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RockPaperScissors\RockPaperScissors.Designer.cs">
+      <DependentUpon>RockPaperScissors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RockPaperScissors\Tabs\Test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RockPaperScissors\Tabs\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RockPaperScissors\Tabs\Train.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RockPaperScissors\Tabs\Train.Designer.cs">
+      <DependentUpon>Train.cs</DependentUpon>
+    </Compile>
     <Compile Include="SchoolLibrary\SchoolLibrary.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -278,6 +296,15 @@
     <EmbeddedResource Include="JudgeBook\Tabs\JudgeBookTrain.resx">
       <DependentUpon>JudgeBookTrain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RockPaperScissors\RockPaperScissors.resx">
+      <DependentUpon>RockPaperScissors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RockPaperScissors\Tabs\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RockPaperScissors\Tabs\Train.resx">
+      <DependentUpon>Train.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SchoolLibrary\SchoolLibrary.resx">
       <DependentUpon>SchoolLibrary.cs</DependentUpon>
     </EmbeddedResource>
@@ -349,6 +376,7 @@
   <ItemGroup>
     <Folder Include="Mehmetcik\" />
     <Folder Include="Resources\" />
+    <Folder Include="RockPaperScissors\Classes\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
