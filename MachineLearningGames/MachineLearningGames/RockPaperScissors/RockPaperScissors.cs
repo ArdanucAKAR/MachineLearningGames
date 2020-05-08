@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bunifu.Framework.UI;
+using MachineLearningGames.RockPaperScissors.Classes;
 using MachineLearningGames.RockPaperScissors.Tabs;
 
 namespace MachineLearningGames.RockPaperScissors
@@ -18,7 +19,7 @@ namespace MachineLearningGames.RockPaperScissors
         {
             InitializeComponent();
         }
-
+        SingletonRPC db = SingletonRPC.Instance();
         public Form main;
 
         private void btnHome_MouseHover(object sender, EventArgs e)
@@ -64,7 +65,8 @@ namespace MachineLearningGames.RockPaperScissors
 
         private void btnTest_Click(object sender, EventArgs e)
         {
-            if (true/*Burası Düzeltilecek*/)
+            
+            if (db.upload)
             {
                 Test make = new Test();
                 pnlSnapMain.Controls.Clear();

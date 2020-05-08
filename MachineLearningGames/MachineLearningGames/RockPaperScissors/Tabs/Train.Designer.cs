@@ -48,7 +48,7 @@
             this.gbPaper.BackColor = System.Drawing.Color.Transparent;
             this.gbPaper.Controls.Add(this.btnUploadPaper);
             this.gbPaper.Controls.Add(this.cardPaper);
-            this.gbPaper.Font = new System.Drawing.Font("TR Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbPaper.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbPaper.ForeColor = System.Drawing.Color.White;
             this.gbPaper.Location = new System.Drawing.Point(550, 25);
             this.gbPaper.Name = "gbPaper";
@@ -68,7 +68,7 @@
             this.btnUploadPaper.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUploadPaper.BackgroundImage")));
             this.btnUploadPaper.ButtonText = "Resim Ekle";
             this.btnUploadPaper.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUploadPaper.Font = new System.Drawing.Font("TR Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUploadPaper.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUploadPaper.ForeColor = System.Drawing.Color.White;
             this.btnUploadPaper.IdleBorderThickness = 3;
             this.btnUploadPaper.IdleCornerRadius = 20;
@@ -81,6 +81,7 @@
             this.btnUploadPaper.Size = new System.Drawing.Size(109, 56);
             this.btnUploadPaper.TabIndex = 1;
             this.btnUploadPaper.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUploadPaper.Click += new System.EventHandler(this.btnUploadPaper_Click);
             // 
             // cardPaper
             // 
@@ -101,7 +102,7 @@
             this.gbScissors.BackColor = System.Drawing.Color.Transparent;
             this.gbScissors.Controls.Add(this.btnScissors);
             this.gbScissors.Controls.Add(this.cardScissors);
-            this.gbScissors.Font = new System.Drawing.Font("TR Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbScissors.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbScissors.ForeColor = System.Drawing.Color.White;
             this.gbScissors.Location = new System.Drawing.Point(1046, 25);
             this.gbScissors.Name = "gbScissors";
@@ -121,7 +122,7 @@
             this.btnScissors.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnScissors.BackgroundImage")));
             this.btnScissors.ButtonText = "Resim Ekle";
             this.btnScissors.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnScissors.Font = new System.Drawing.Font("TR Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnScissors.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnScissors.ForeColor = System.Drawing.Color.White;
             this.btnScissors.IdleBorderThickness = 3;
             this.btnScissors.IdleCornerRadius = 20;
@@ -134,6 +135,7 @@
             this.btnScissors.Size = new System.Drawing.Size(109, 56);
             this.btnScissors.TabIndex = 1;
             this.btnScissors.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnScissors.Click += new System.EventHandler(this.btnScissors_Click);
             // 
             // cardScissors
             // 
@@ -154,7 +156,7 @@
             this.gbRock.BackColor = System.Drawing.Color.Transparent;
             this.gbRock.Controls.Add(this.btnUploadRock);
             this.gbRock.Controls.Add(this.cardRock);
-            this.gbRock.Font = new System.Drawing.Font("TR Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbRock.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbRock.ForeColor = System.Drawing.Color.White;
             this.gbRock.Location = new System.Drawing.Point(54, 25);
             this.gbRock.Name = "gbRock";
@@ -174,7 +176,7 @@
             this.btnUploadRock.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUploadRock.BackgroundImage")));
             this.btnUploadRock.ButtonText = "Resim Ekle";
             this.btnUploadRock.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUploadRock.Font = new System.Drawing.Font("TR Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUploadRock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUploadRock.ForeColor = System.Drawing.Color.White;
             this.btnUploadRock.IdleBorderThickness = 3;
             this.btnUploadRock.IdleCornerRadius = 20;
@@ -187,6 +189,7 @@
             this.btnUploadRock.Size = new System.Drawing.Size(109, 56);
             this.btnUploadRock.TabIndex = 1;
             this.btnUploadRock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUploadRock.Click += new System.EventHandler(this.btnUploadRock_Click);
             // 
             // cardRock
             // 

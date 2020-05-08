@@ -68,7 +68,7 @@ namespace MachineLearningGames.Snap
 
         private void btnTest_Click(object sender, EventArgs e)
         {
-            if (db.club != 0 && db.diamond != 0 && db.heart != 0 && db.spade != 0)
+            if (db.upload)
             {
                 Make make = new Make();
                 pnlSnapMain.Controls.Clear();

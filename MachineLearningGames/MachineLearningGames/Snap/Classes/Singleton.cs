@@ -15,6 +15,8 @@ namespace MachineLearningGames.Snap.Classes
                    heart = 0,
                    club = 0;
 
+        public bool upload = false;
+
         public Singleton()
         {
 

@@ -48,6 +48,7 @@ namespace MachineLearningGames.Snap.Tabs
                 db.diamond = 0;
                 db.heart = 0;
                 db.spade = 0;
+                db.upload = true;
                 tmrLearnTest.Start();
             }
         }

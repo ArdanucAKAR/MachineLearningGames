@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation11 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RockPaperScissors));
             this.pnlSnapMain = new System.Windows.Forms.Panel();
             this.pbSnap = new System.Windows.Forms.PictureBox();
@@ -73,11 +73,11 @@
             // 
             this.lblDescription.AutoSize = true;
             this.transitionTabs.SetDecoration(this.lblDescription, BunifuAnimatorNS.DecorationType.None);
-            this.lblDescription.Font = new System.Drawing.Font("TR Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescription.ForeColor = System.Drawing.Color.White;
             this.lblDescription.Location = new System.Drawing.Point(692, 457);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(123, 28);
+            this.lblDescription.Size = new System.Drawing.Size(110, 29);
             this.lblDescription.TabIndex = 6;
             this.lblDescription.Text = "Açıklama";
             // 
@@ -85,11 +85,11 @@
             // 
             this.lblSnap.AutoSize = true;
             this.transitionTabs.SetDecoration(this.lblSnap, BunifuAnimatorNS.DecorationType.None);
-            this.lblSnap.Font = new System.Drawing.Font("TR Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSnap.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSnap.ForeColor = System.Drawing.Color.White;
             this.lblSnap.Location = new System.Drawing.Point(436, 396);
             this.lblSnap.Name = "lblSnap";
-            this.lblSnap.Size = new System.Drawing.Size(634, 38);
+            this.lblSnap.Size = new System.Drawing.Size(608, 37);
             this.lblSnap.TabIndex = 6;
             this.lblSnap.Text = "Rock Paper Scissors - Makine Öğrenmesi";
             // 
@@ -112,7 +112,7 @@
             this.btnHome.colorActive = System.Drawing.Color.Transparent;
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.transitionTabs.SetDecoration(this.btnHome, BunifuAnimatorNS.DecorationType.None);
-            this.btnHome.Font = new System.Drawing.Font("TR Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImagePosition = 18;
@@ -135,7 +135,7 @@
             this.btnTest.colorActive = System.Drawing.Color.Transparent;
             this.btnTest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.transitionTabs.SetDecoration(this.btnTest, BunifuAnimatorNS.DecorationType.None);
-            this.btnTest.Font = new System.Drawing.Font("TR Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTest.ForeColor = System.Drawing.Color.White;
             this.btnTest.Image = ((System.Drawing.Image)(resources.GetObject("btnTest.Image")));
             this.btnTest.ImagePosition = 18;
@@ -147,7 +147,7 @@
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(100, 100);
             this.btnTest.TabIndex = 1;
-            this.btnTest.Click += new System.EventHandler(this.btnTrain_Click);
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             this.btnTest.MouseLeave += new System.EventHandler(this.btnTest_MouseLeave);
             this.btnTest.MouseHover += new System.EventHandler(this.btnTest_MouseHover);
             // 
@@ -158,7 +158,7 @@
             this.btnTrain.colorActive = System.Drawing.Color.Transparent;
             this.btnTrain.Cursor = System.Windows.Forms.Cursors.Hand;
             this.transitionTabs.SetDecoration(this.btnTrain, BunifuAnimatorNS.DecorationType.None);
-            this.btnTrain.Font = new System.Drawing.Font("TR Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrain.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTrain.ForeColor = System.Drawing.Color.White;
             this.btnTrain.Image = ((System.Drawing.Image)(resources.GetObject("btnTrain.Image")));
             this.btnTrain.ImagePosition = 18;
@@ -178,22 +178,22 @@
             // 
             this.transitionTabs.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.transitionTabs.Cursor = null;
-            animation11.AnimateOnlyDifferences = true;
-            animation11.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.BlindCoeff")));
-            animation11.LeafCoeff = 0F;
-            animation11.MaxTime = 1F;
-            animation11.MinTime = 0F;
-            animation11.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicCoeff")));
-            animation11.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicShift")));
-            animation11.MosaicSize = 0;
-            animation11.Padding = new System.Windows.Forms.Padding(0);
-            animation11.RotateCoeff = 0F;
-            animation11.RotateLimit = 0F;
-            animation11.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.ScaleCoeff")));
-            animation11.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.SlideCoeff")));
-            animation11.TimeCoeff = 0F;
-            animation11.TransparencyCoeff = 1F;
-            this.transitionTabs.DefaultAnimation = animation11;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.transitionTabs.DefaultAnimation = animation1;
             this.transitionTabs.MaxAnimationTime = 1250;
             // 
             // RockPaperScissors
