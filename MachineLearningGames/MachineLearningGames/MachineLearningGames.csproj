@@ -80,6 +80,25 @@
     <Compile Include="Chatbot\ChatMain.Designer.cs">
       <DependentUpon>ChatMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FaceLock\Classes\SingletonFL.cs" />
+    <Compile Include="FaceLock\FaceLock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FaceLock\FaceLock.Designer.cs">
+      <DependentUpon>FaceLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaceLock\Tabs\Test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FaceLock\Tabs\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaceLock\Tabs\Train.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FaceLock\Tabs\Train.Designer.cs">
+      <DependentUpon>Train.cs</DependentUpon>
+    </Compile>
     <Compile Include="MakeMeHappy\Classes\Singleton.cs" />
     <Compile Include="MakeMeHappy\MakeMeHappy.cs">
       <SubType>UserControl</SubType>
@@ -269,6 +288,15 @@
     <Compile Include="Titanic\Validation\FluentValidation\DataValidator.cs" />
     <EmbeddedResource Include="Chatbot\ChatMain.resx">
       <DependentUpon>ChatMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaceLock\FaceLock.resx">
+      <DependentUpon>FaceLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaceLock\Tabs\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaceLock\Tabs\Train.resx">
+      <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MakeMeHappy\MakeMeHappy.resx">
       <DependentUpon>MakeMeHappy.cs</DependentUpon>

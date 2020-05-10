@@ -101,5 +101,15 @@ namespace MachineLearningGames
             pnlMain.Controls.Add(rockPaperScissors);
             transitionGames.ShowSync(rockPaperScissors);
         }
+
+        private void btnFaceLock_Click(object sender, EventArgs e)
+        {
+            FaceLock.FaceLock faceLock = new FaceLock.FaceLock();
+            faceLock.main = main;
+            pnlMain.Controls.Clear();
+            faceLock.Visible = false;
+            pnlMain.Controls.Add(faceLock);
+            transitionGames.ShowSync(faceLock);
+        }
     }
 }

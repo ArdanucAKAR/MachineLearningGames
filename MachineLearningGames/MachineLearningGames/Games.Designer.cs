@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Games));
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnFaceLock = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnSnap = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnTitanic = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnRockPaperScissors = new Bunifu.Framework.UI.BunifuImageButton();
@@ -44,7 +44,7 @@
             this.btnJourneyToSchool = new Bunifu.Framework.UI.BunifuImageButton();
             this.transitionGames = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.pnlMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFaceLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSnap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTitanic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRockPaperScissors)).BeginInit();
@@ -59,7 +59,7 @@
             // pnlMain
             // 
             this.pnlMain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMain.BackgroundImage")));
-            this.pnlMain.Controls.Add(this.bunifuImageButton1);
+            this.pnlMain.Controls.Add(this.btnFaceLock);
             this.pnlMain.Controls.Add(this.btnSnap);
             this.pnlMain.Controls.Add(this.btnTitanic);
             this.pnlMain.Controls.Add(this.btnRockPaperScissors);
@@ -77,20 +77,21 @@
             this.pnlMain.Size = new System.Drawing.Size(1500, 705);
             this.pnlMain.TabIndex = 5;
             // 
-            // bunifuImageButton1
+            // btnFaceLock
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.transitionGames.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1152, 376);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(250, 177);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 15;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            this.btnFaceLock.BackColor = System.Drawing.Color.Transparent;
+            this.transitionGames.SetDecoration(this.btnFaceLock, BunifuAnimatorNS.DecorationType.None);
+            this.btnFaceLock.Image = ((System.Drawing.Image)(resources.GetObject("btnFaceLock.Image")));
+            this.btnFaceLock.ImageActive = null;
+            this.btnFaceLock.Location = new System.Drawing.Point(1152, 376);
+            this.btnFaceLock.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFaceLock.Name = "btnFaceLock";
+            this.btnFaceLock.Size = new System.Drawing.Size(250, 177);
+            this.btnFaceLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnFaceLock.TabIndex = 15;
+            this.btnFaceLock.TabStop = false;
+            this.btnFaceLock.Zoom = 10;
+            this.btnFaceLock.Click += new System.EventHandler(this.btnFaceLock_Click);
             // 
             // btnSnap
             // 
@@ -268,7 +269,7 @@
             this.Name = "Games";
             this.Size = new System.Drawing.Size(1500, 705);
             this.pnlMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFaceLock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSnap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTitanic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRockPaperScissors)).EndInit();
@@ -295,6 +296,6 @@
         private Bunifu.Framework.UI.BunifuImageButton btnSchoolLibrary;
         private Bunifu.Framework.UI.BunifuImageButton btnJourneyToSchool;
         private BunifuAnimatorNS.BunifuTransition transitionGames;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuImageButton btnFaceLock;
     }
 }

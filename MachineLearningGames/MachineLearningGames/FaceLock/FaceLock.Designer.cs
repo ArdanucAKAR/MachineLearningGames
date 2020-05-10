@@ -1,6 +1,6 @@
-﻿namespace MachineLearningGames.RockPaperScissors
+﻿namespace MachineLearningGames.FaceLock
 {
-    partial class RockPaperScissors
+    partial class FaceLock
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,44 +30,44 @@
         {
             this.components = new System.ComponentModel.Container();
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RockPaperScissors));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FaceLock));
             this.pnlSnapMain = new System.Windows.Forms.Panel();
-            this.pbRockPaperScissors = new System.Windows.Forms.PictureBox();
+            this.pbSnap = new System.Windows.Forms.PictureBox();
             this.lblDescription = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lblRockPaperScissors = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblSnap = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.btnHome = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnTest = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnTrain = new Bunifu.Framework.UI.BunifuTileButton();
             this.transitionTabs = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.pnlSnapMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRockPaperScissors)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSnap)).BeginInit();
             this.pnlBottom.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSnapMain
             // 
             this.pnlSnapMain.BackColor = System.Drawing.Color.Transparent;
-            this.pnlSnapMain.Controls.Add(this.pbRockPaperScissors);
+            this.pnlSnapMain.Controls.Add(this.pbSnap);
             this.pnlSnapMain.Controls.Add(this.lblDescription);
-            this.pnlSnapMain.Controls.Add(this.lblRockPaperScissors);
+            this.pnlSnapMain.Controls.Add(this.lblSnap);
             this.transitionTabs.SetDecoration(this.pnlSnapMain, BunifuAnimatorNS.DecorationType.None);
             this.pnlSnapMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlSnapMain.Location = new System.Drawing.Point(0, 0);
             this.pnlSnapMain.Name = "pnlSnapMain";
             this.pnlSnapMain.Size = new System.Drawing.Size(1500, 605);
-            this.pnlSnapMain.TabIndex = 3;
+            this.pnlSnapMain.TabIndex = 5;
             // 
-            // pbRockPaperScissors
+            // pbSnap
             // 
-            this.transitionTabs.SetDecoration(this.pbRockPaperScissors, BunifuAnimatorNS.DecorationType.None);
-            this.pbRockPaperScissors.Image = ((System.Drawing.Image)(resources.GetObject("pbRockPaperScissors.Image")));
-            this.pbRockPaperScissors.Location = new System.Drawing.Point(460, 71);
-            this.pbRockPaperScissors.Name = "pbRockPaperScissors";
-            this.pbRockPaperScissors.Size = new System.Drawing.Size(587, 305);
-            this.pbRockPaperScissors.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbRockPaperScissors.TabIndex = 5;
-            this.pbRockPaperScissors.TabStop = false;
+            this.transitionTabs.SetDecoration(this.pbSnap, BunifuAnimatorNS.DecorationType.None);
+            this.pbSnap.Image = ((System.Drawing.Image)(resources.GetObject("pbSnap.Image")));
+            this.pbSnap.Location = new System.Drawing.Point(460, 71);
+            this.pbSnap.Name = "pbSnap";
+            this.pbSnap.Size = new System.Drawing.Size(587, 305);
+            this.pbSnap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSnap.TabIndex = 5;
+            this.pbSnap.TabStop = false;
             // 
             // lblDescription
             // 
@@ -81,17 +81,17 @@
             this.lblDescription.TabIndex = 6;
             this.lblDescription.Text = "Açıklama";
             // 
-            // lblRockPaperScissors
+            // lblSnap
             // 
-            this.lblRockPaperScissors.AutoSize = true;
-            this.transitionTabs.SetDecoration(this.lblRockPaperScissors, BunifuAnimatorNS.DecorationType.None);
-            this.lblRockPaperScissors.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRockPaperScissors.ForeColor = System.Drawing.Color.White;
-            this.lblRockPaperScissors.Location = new System.Drawing.Point(436, 396);
-            this.lblRockPaperScissors.Name = "lblRockPaperScissors";
-            this.lblRockPaperScissors.Size = new System.Drawing.Size(608, 37);
-            this.lblRockPaperScissors.TabIndex = 6;
-            this.lblRockPaperScissors.Text = "Rock Paper Scissors - Makine Öğrenmesi";
+            this.lblSnap.AutoSize = true;
+            this.transitionTabs.SetDecoration(this.lblSnap, BunifuAnimatorNS.DecorationType.None);
+            this.lblSnap.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSnap.ForeColor = System.Drawing.Color.White;
+            this.lblSnap.Location = new System.Drawing.Point(436, 396);
+            this.lblSnap.Name = "lblSnap";
+            this.lblSnap.Size = new System.Drawing.Size(608, 37);
+            this.lblSnap.TabIndex = 6;
+            this.lblSnap.Text = "Rock Paper Scissors - Makine Öğrenmesi";
             // 
             // pnlBottom
             // 
@@ -103,7 +103,7 @@
             this.pnlBottom.Location = new System.Drawing.Point(0, 605);
             this.pnlBottom.Name = "pnlBottom";
             this.pnlBottom.Size = new System.Drawing.Size(1500, 100);
-            this.pnlBottom.TabIndex = 2;
+            this.pnlBottom.TabIndex = 4;
             // 
             // btnHome
             // 
@@ -196,7 +196,7 @@
             this.transitionTabs.DefaultAnimation = animation1;
             this.transitionTabs.MaxAnimationTime = 1250;
             // 
-            // RockPaperScissors
+            // FaceLock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -205,11 +205,11 @@
             this.Controls.Add(this.pnlSnapMain);
             this.Controls.Add(this.pnlBottom);
             this.transitionTabs.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
-            this.Name = "RockPaperScissors";
+            this.Name = "FaceLock";
             this.Size = new System.Drawing.Size(1500, 705);
             this.pnlSnapMain.ResumeLayout(false);
             this.pnlSnapMain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRockPaperScissors)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSnap)).EndInit();
             this.pnlBottom.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -218,13 +218,13 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlSnapMain;
-        private System.Windows.Forms.PictureBox pbRockPaperScissors;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblRockPaperScissors;
+        private System.Windows.Forms.PictureBox pbSnap;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblDescription;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblSnap;
         private System.Windows.Forms.Panel pnlBottom;
         private Bunifu.Framework.UI.BunifuTileButton btnHome;
         public Bunifu.Framework.UI.BunifuTileButton btnTest;
         public Bunifu.Framework.UI.BunifuTileButton btnTrain;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblDescription;
         private BunifuAnimatorNS.BunifuTransition transitionTabs;
     }
 }
