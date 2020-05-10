@@ -77,6 +77,7 @@
             this.btnUploadDenied.Size = new System.Drawing.Size(109, 56);
             this.btnUploadDenied.TabIndex = 1;
             this.btnUploadDenied.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUploadDenied.Click += new System.EventHandler(this.btnUploadDenied_Click);
             // 
             // cardDenied
             // 
@@ -130,6 +131,7 @@
             this.btnUploadGranted.Size = new System.Drawing.Size(109, 56);
             this.btnUploadGranted.TabIndex = 1;
             this.btnUploadGranted.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUploadGranted.Click += new System.EventHandler(this.btnUploadGranted_Click);
             // 
             // cardGranted
             // 

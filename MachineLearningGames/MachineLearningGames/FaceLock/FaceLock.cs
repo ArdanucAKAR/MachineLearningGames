@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MachineLearningGames.FaceLock.Tabs;
 using Bunifu.Framework.UI;
+using MachineLearningGames.FaceLock.Classes;
 
 namespace MachineLearningGames.FaceLock
 {
@@ -19,7 +20,7 @@ namespace MachineLearningGames.FaceLock
             InitializeComponent();
         }
 
-        //SingletonRPC db = SingletonRPC.Instance();
+        SingletonFL db = SingletonFL.Instance();
         public Form main;
 
         private void btnHome_MouseHover(object sender, EventArgs e)
@@ -66,7 +67,7 @@ namespace MachineLearningGames.FaceLock
         private void btnTest_Click(object sender, EventArgs e)
         {
 
-            if (true/*db.upload*/)
+            if (db.upload)
             {
                 Test make = new Test();
                 pnlSnapMain.Controls.Clear();
