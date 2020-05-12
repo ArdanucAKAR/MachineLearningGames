@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FaceLock));
             this.pnlSnapMain = new System.Windows.Forms.Panel();
             this.pbSnap = new System.Windows.Forms.PictureBox();
@@ -62,9 +62,9 @@
             // 
             this.transitionTabs.SetDecoration(this.pbSnap, BunifuAnimatorNS.DecorationType.None);
             this.pbSnap.Image = ((System.Drawing.Image)(resources.GetObject("pbSnap.Image")));
-            this.pbSnap.Location = new System.Drawing.Point(460, 71);
+            this.pbSnap.Location = new System.Drawing.Point(462, 71);
             this.pbSnap.Name = "pbSnap";
-            this.pbSnap.Size = new System.Drawing.Size(587, 305);
+            this.pbSnap.Size = new System.Drawing.Size(585, 305);
             this.pbSnap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSnap.TabIndex = 5;
             this.pbSnap.TabStop = false;
@@ -87,11 +87,11 @@
             this.transitionTabs.SetDecoration(this.lblSnap, BunifuAnimatorNS.DecorationType.None);
             this.lblSnap.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSnap.ForeColor = System.Drawing.Color.White;
-            this.lblSnap.Location = new System.Drawing.Point(436, 396);
+            this.lblSnap.Location = new System.Drawing.Point(529, 389);
             this.lblSnap.Name = "lblSnap";
-            this.lblSnap.Size = new System.Drawing.Size(608, 37);
+            this.lblSnap.Size = new System.Drawing.Size(460, 37);
             this.lblSnap.TabIndex = 6;
-            this.lblSnap.Text = "Rock Paper Scissors - Makine Öğrenmesi";
+            this.lblSnap.Text = "Face Lock - Makine Öğrenmesi";
             // 
             // pnlBottom
             // 
@@ -178,22 +178,22 @@
             // 
             this.transitionTabs.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.transitionTabs.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.transitionTabs.DefaultAnimation = animation1;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 1F;
+            this.transitionTabs.DefaultAnimation = animation3;
             this.transitionTabs.MaxAnimationTime = 1250;
             // 
             // FaceLock
@@ -207,6 +207,7 @@
             this.transitionTabs.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.Name = "FaceLock";
             this.Size = new System.Drawing.Size(1500, 705);
+            this.Load += new System.EventHandler(this.FaceLock_Load);
             this.pnlSnapMain.ResumeLayout(false);
             this.pnlSnapMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSnap)).EndInit();

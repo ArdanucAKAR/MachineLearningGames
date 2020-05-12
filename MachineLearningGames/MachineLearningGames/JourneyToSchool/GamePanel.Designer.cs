@@ -34,6 +34,7 @@
             this.btnTest = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnTrain = new Bunifu.Framework.UI.BunifuTileButton();
             this.mainGamingPanel = new System.Windows.Forms.Panel();
+            this.lblDescription = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblHome = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pnlBottom.SuspendLayout();
@@ -115,6 +116,7 @@
             // 
             // mainGamingPanel
             // 
+            this.mainGamingPanel.Controls.Add(this.lblDescription);
             this.mainGamingPanel.Controls.Add(this.pictureBox1);
             this.mainGamingPanel.Controls.Add(this.lblHome);
             this.mainGamingPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -123,10 +125,22 @@
             this.mainGamingPanel.Size = new System.Drawing.Size(1500, 605);
             this.mainGamingPanel.TabIndex = 7;
             // 
+            // lblDescription
+            // 
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.ForeColor = System.Drawing.Color.White;
+            this.lblDescription.Location = new System.Drawing.Point(677, 457);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(110, 29);
+            this.lblDescription.TabIndex = 10;
+            this.lblDescription.Text = "Açıklama";
+            this.lblDescription.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(619, 166);
+            this.pictureBox1.Location = new System.Drawing.Point(625, 130);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(222, 232);
             this.pictureBox1.TabIndex = 8;
@@ -137,7 +151,7 @@
             this.lblHome.AutoSize = true;
             this.lblHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHome.ForeColor = System.Drawing.Color.White;
-            this.lblHome.Location = new System.Drawing.Point(448, 474);
+            this.lblHome.Location = new System.Drawing.Point(438, 394);
             this.lblHome.Name = "lblHome";
             this.lblHome.Size = new System.Drawing.Size(579, 37);
             this.lblHome.TabIndex = 7;
@@ -153,6 +167,7 @@
             this.Controls.Add(this.pnlBottom);
             this.Name = "GamePanel";
             this.Size = new System.Drawing.Size(1500, 705);
+            this.Load += new System.EventHandler(this.GamePanel_Load);
             this.pnlBottom.ResumeLayout(false);
             this.mainGamingPanel.ResumeLayout(false);
             this.mainGamingPanel.PerformLayout();
@@ -170,5 +185,6 @@
         private System.Windows.Forms.Panel mainGamingPanel;
         private Bunifu.Framework.UI.BunifuCustomLabel lblHome;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblDescription;
     }
 }

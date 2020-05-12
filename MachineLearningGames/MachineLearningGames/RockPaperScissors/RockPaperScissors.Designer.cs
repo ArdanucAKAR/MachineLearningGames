@@ -207,6 +207,7 @@
             this.transitionTabs.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.Name = "RockPaperScissors";
             this.Size = new System.Drawing.Size(1500, 705);
+            this.Load += new System.EventHandler(this.RockPaperScissors_Load);
             this.pnlSnapMain.ResumeLayout(false);
             this.pnlSnapMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRockPaperScissors)).EndInit();

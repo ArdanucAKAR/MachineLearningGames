@@ -101,5 +101,11 @@ namespace MachineLearningGames.RockPaperScissors
             games.main = main;
             pnlMain.Controls.Add(games);
         }
+
+        private void RockPaperScissors_Load(object sender, EventArgs e)
+        {
+            lblDescription.Text = "Bu oyunda taş kağıt ve makas resimleri girildikten sonra girilen resmin taş mı kağıt mı yoksa makas mı olduğu tahmin edilir.";
+            lblDescription.Location = new Point((pnlSnapMain.Width - lblDescription.Width) / 2, 457);
+        }
     }
 }

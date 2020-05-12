@@ -42,5 +42,12 @@ namespace MachineLearningGames
             mainGamingPanel.Controls.Add(add);
         }
 
+        private void GamePanel_Load(object sender, EventArgs e)
+        {
+            lblDescription.Text = "Bu oyunda belirli verileri girdikten sonra okula hangi araçla gidiceğiniz tahmin edilir.";
+            lblDescription.Location = new Point((mainGamingPanel.Width - lblDescription.Width) / 2, 457);
+        }
+
+       
     }
 }
