@@ -55,7 +55,7 @@
             this.mainPanels.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanels.Location = new System.Drawing.Point(0, 0);
             this.mainPanels.Name = "mainPanels";
-            this.mainPanels.Size = new System.Drawing.Size(1500, 650);
+            this.mainPanels.Size = new System.Drawing.Size(1500, 605);
             this.mainPanels.TabIndex = 1;
             // 
             // label1
@@ -102,7 +102,7 @@
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Quality = 10;
-            this.mainPanel.Size = new System.Drawing.Size(1500, 750);
+            this.mainPanel.Size = new System.Drawing.Size(1500, 705);
             this.mainPanel.TabIndex = 5;
             // 
             // panel2
@@ -112,7 +112,7 @@
             this.panel2.Controls.Add(this.trainButton);
             this.panel2.Controls.Add(this.makeButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 650);
+            this.panel2.Location = new System.Drawing.Point(0, 605);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1500, 100);
             this.panel2.TabIndex = 5;
@@ -233,7 +233,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mainPanel);
             this.Name = "ChatMain";
-            this.Size = new System.Drawing.Size(1500, 750);
+            this.Size = new System.Drawing.Size(1500, 705);
             this.mainPanels.ResumeLayout(false);
             this.mainPanels.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
