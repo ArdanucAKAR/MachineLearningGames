@@ -99,6 +99,25 @@
     <Compile Include="FaceLock\Tabs\Train.Designer.cs">
       <DependentUpon>Train.cs</DependentUpon>
     </Compile>
+    <Compile Include="LocateLarry\Class\LtSingleton.cs" />
+    <Compile Include="LocateLarry\LocateLarryMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocateLarry\LocateLarryMain.Designer.cs">
+      <DependentUpon>LocateLarryMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocateLarry\Tabs\LocateLarryTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocateLarry\Tabs\LocateLarryTest.Designer.cs">
+      <DependentUpon>LocateLarryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocateLarry\Tabs\LocateLarryTrain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocateLarry\Tabs\LocateLarryTrain.Designer.cs">
+      <DependentUpon>LocateLarryTrain.cs</DependentUpon>
+    </Compile>
     <Compile Include="MakeMeHappy\Classes\Singleton.cs" />
     <Compile Include="MakeMeHappy\MakeMeHappy.cs">
       <SubType>UserControl</SubType>
@@ -298,6 +317,15 @@
     <EmbeddedResource Include="FaceLock\Tabs\Train.resx">
       <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LocateLarry\LocateLarryMain.resx">
+      <DependentUpon>LocateLarryMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocateLarry\Tabs\LocateLarryTest.resx">
+      <DependentUpon>LocateLarryTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocateLarry\Tabs\LocateLarryTrain.resx">
+      <DependentUpon>LocateLarryTrain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MakeMeHappy\MakeMeHappy.resx">
       <DependentUpon>MakeMeHappy.cs</DependentUpon>
     </EmbeddedResource>
@@ -403,7 +431,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Mehmetcik\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>

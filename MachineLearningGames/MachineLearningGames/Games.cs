@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MachineLearningGames.JudgeBook;
 using MachineLearningGames.Chatbot;
 using MachineLearningGames.RockPaperScissors;
+using MachineLearningGames.LocateLarry;
 
 namespace MachineLearningGames
 {
@@ -110,6 +111,16 @@ namespace MachineLearningGames
             faceLock.Visible = false;
             pnlMain.Controls.Add(faceLock);
             transitionGames.ShowSync(faceLock);
+        }
+
+        private void btnLocateLarry_Click(object sender, EventArgs e)
+        {
+            LocateLarryMain locateLarry = new LocateLarryMain();
+            locateLarry.main = main;
+            pnlMain.Controls.Clear();
+            locateLarry.Visible = false;
+            pnlMain.Controls.Add(locateLarry);
+            transitionGames.ShowSync(locateLarry);
         }
     }
 }

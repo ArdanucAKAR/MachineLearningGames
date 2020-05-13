@@ -36,7 +36,7 @@
             this.btnSnap = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnTitanic = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnRockPaperScissors = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton9 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnLocateLarry = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnJudgeBook = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMakeMeHappy = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnChatbot = new Bunifu.Framework.UI.BunifuImageButton();
@@ -48,7 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnSnap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTitanic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRockPaperScissors)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLocateLarry)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnJudgeBook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMakeMeHappy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnChatbot)).BeginInit();
@@ -63,7 +63,7 @@
             this.pnlMain.Controls.Add(this.btnSnap);
             this.pnlMain.Controls.Add(this.btnTitanic);
             this.pnlMain.Controls.Add(this.btnRockPaperScissors);
-            this.pnlMain.Controls.Add(this.bunifuImageButton9);
+            this.pnlMain.Controls.Add(this.btnLocateLarry);
             this.pnlMain.Controls.Add(this.btnJudgeBook);
             this.pnlMain.Controls.Add(this.btnMakeMeHappy);
             this.pnlMain.Controls.Add(this.btnChatbot);
@@ -141,20 +141,21 @@
             this.btnRockPaperScissors.Zoom = 10;
             this.btnRockPaperScissors.Click += new System.EventHandler(this.btnRockPaperScissors_Click);
             // 
-            // bunifuImageButton9
+            // btnLocateLarry
             // 
-            this.bunifuImageButton9.BackColor = System.Drawing.Color.Transparent;
-            this.transitionGames.SetDecoration(this.bunifuImageButton9, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton9.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton9.Image")));
-            this.bunifuImageButton9.ImageActive = null;
-            this.bunifuImageButton9.Location = new System.Drawing.Point(622, 376);
-            this.bunifuImageButton9.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuImageButton9.Name = "bunifuImageButton9";
-            this.bunifuImageButton9.Size = new System.Drawing.Size(250, 177);
-            this.bunifuImageButton9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton9.TabIndex = 10;
-            this.bunifuImageButton9.TabStop = false;
-            this.bunifuImageButton9.Zoom = 10;
+            this.btnLocateLarry.BackColor = System.Drawing.Color.Transparent;
+            this.transitionGames.SetDecoration(this.btnLocateLarry, BunifuAnimatorNS.DecorationType.None);
+            this.btnLocateLarry.Image = ((System.Drawing.Image)(resources.GetObject("btnLocateLarry.Image")));
+            this.btnLocateLarry.ImageActive = null;
+            this.btnLocateLarry.Location = new System.Drawing.Point(622, 376);
+            this.btnLocateLarry.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLocateLarry.Name = "btnLocateLarry";
+            this.btnLocateLarry.Size = new System.Drawing.Size(250, 177);
+            this.btnLocateLarry.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnLocateLarry.TabIndex = 10;
+            this.btnLocateLarry.TabStop = false;
+            this.btnLocateLarry.Zoom = 10;
+            this.btnLocateLarry.Click += new System.EventHandler(this.btnLocateLarry_Click);
             // 
             // btnJudgeBook
             // 
@@ -273,7 +274,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnSnap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTitanic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRockPaperScissors)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLocateLarry)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnJudgeBook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMakeMeHappy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnChatbot)).EndInit();
@@ -289,7 +290,7 @@
         private Bunifu.Framework.UI.BunifuImageButton btnSnap;
         private Bunifu.Framework.UI.BunifuImageButton btnTitanic;
         private Bunifu.Framework.UI.BunifuImageButton btnRockPaperScissors;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton9;
+        private Bunifu.Framework.UI.BunifuImageButton btnLocateLarry;
         private Bunifu.Framework.UI.BunifuImageButton btnJudgeBook;
         private Bunifu.Framework.UI.BunifuImageButton btnMakeMeHappy;
         private Bunifu.Framework.UI.BunifuImageButton btnChatbot;
