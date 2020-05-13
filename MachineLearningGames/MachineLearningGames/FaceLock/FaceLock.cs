@@ -102,5 +102,11 @@ namespace MachineLearningGames.FaceLock
             games.main = main;
             pnlMain.Controls.Add(games);
         }
+
+        private void FaceLock_Load(object sender, EventArgs e)
+        {
+            lblDescription.Text = "Bu oyunda geçerli ve geçersiz yüz fotoğrafları girdikten sonra yeni girilen fotoğrafın geçerli mi geçersiz mi olduğu ayırt edilmektedir";
+            lblDescription.Location = new Point((pnlSnapMain.Width - lblDescription.Width) / 2, 457);
+        }
     }
 }
