@@ -68,7 +68,7 @@
             this.btnTry.ActiveLineColor = System.Drawing.Color.Black;
             this.btnTry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
             this.btnTry.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTry.BackgroundImage")));
-            this.btnTry.ButtonText = "Try It!!";
+            this.btnTry.ButtonText = "Test Et!!";
             this.btnTry.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTry.ForeColor = System.Drawing.Color.White;
@@ -96,6 +96,7 @@
             this.lblResult.Size = new System.Drawing.Size(84, 46);
             this.lblResult.TabIndex = 29;
             this.lblResult.Text = "Car";
+            this.lblResult.Visible = false;
             // 
             // txtFriends
             // 
@@ -111,9 +112,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(142, 360);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 27;
-            this.label3.Text = "Friends";
+            this.label3.Text = "Arkadaş Sayısı";
             // 
             // txtDistance
             // 
@@ -129,9 +130,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(142, 272);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 25;
-            this.label2.Text = "Distance";
+            this.label2.Text = "Mesafe";
             // 
             // txtAge
             // 
@@ -147,15 +148,15 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(139, 176);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.Size = new System.Drawing.Size(25, 13);
             this.label1.TabIndex = 22;
-            this.label1.Text = "Age";
+            this.label1.Text = "Yaş";
             // 
             // TestUc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            //this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.panel1);
             this.Name = "TestUc";
             this.Size = new System.Drawing.Size(1500, 605);

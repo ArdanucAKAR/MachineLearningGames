@@ -55,7 +55,7 @@
             this.gbPaper.Size = new System.Drawing.Size(400, 555);
             this.gbPaper.TabIndex = 8;
             this.gbPaper.TabStop = false;
-            this.gbPaper.Text = "PAPER ✋";
+            this.gbPaper.Text = "KAĞIT ✋";
             // 
             // btnUploadPaper
             // 

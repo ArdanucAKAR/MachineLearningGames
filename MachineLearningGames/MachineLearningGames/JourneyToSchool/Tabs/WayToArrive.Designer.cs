@@ -36,27 +36,30 @@
             // lblAge
             // 
             this.lblAge.AutoSize = true;
-            this.lblAge.Location = new System.Drawing.Point(33, 11);
+            this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAge.Location = new System.Drawing.Point(3, 10);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(35, 13);
+            this.lblAge.Size = new System.Drawing.Size(46, 17);
             this.lblAge.TabIndex = 0;
             this.lblAge.Text = "label1";
             // 
             // lblDistance
             // 
             this.lblDistance.AutoSize = true;
-            this.lblDistance.Location = new System.Drawing.Point(33, 40);
+            this.lblDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDistance.Location = new System.Drawing.Point(3, 38);
             this.lblDistance.Name = "lblDistance";
-            this.lblDistance.Size = new System.Drawing.Size(35, 13);
+            this.lblDistance.Size = new System.Drawing.Size(46, 17);
             this.lblDistance.TabIndex = 1;
             this.lblDistance.Text = "label2";
             // 
             // lblFriends
             // 
             this.lblFriends.AutoSize = true;
-            this.lblFriends.Location = new System.Drawing.Point(33, 71);
+            this.lblFriends.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFriends.Location = new System.Drawing.Point(3, 65);
             this.lblFriends.Name = "lblFriends";
-            this.lblFriends.Size = new System.Drawing.Size(35, 13);
+            this.lblFriends.Size = new System.Drawing.Size(46, 17);
             this.lblFriends.TabIndex = 2;
             this.lblFriends.Text = "label3";
             // 
@@ -69,7 +72,7 @@
             this.Controls.Add(this.lblDistance);
             this.Controls.Add(this.lblAge);
             this.Name = "WayToArrive";
-            this.Size = new System.Drawing.Size(100, 100);
+            this.Size = new System.Drawing.Size(152, 131);
             this.ResumeLayout(false);
             this.PerformLayout();
 

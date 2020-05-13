@@ -69,7 +69,7 @@
             this.btnCycle.ActiveLineColor = System.Drawing.Color.Black;
             this.btnCycle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
             this.btnCycle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCycle.BackgroundImage")));
-            this.btnCycle.ButtonText = "Add Cycle";
+            this.btnCycle.ButtonText = "Ekle";
             this.btnCycle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCycle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCycle.ForeColor = System.Drawing.Color.White;
@@ -95,7 +95,7 @@
             this.btnCar.ActiveLineColor = System.Drawing.Color.Black;
             this.btnCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
             this.btnCar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCar.BackgroundImage")));
-            this.btnCar.ButtonText = "Add Car";
+            this.btnCar.ButtonText = "Ekle";
             this.btnCar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCar.ForeColor = System.Drawing.Color.White;
@@ -121,7 +121,7 @@
             this.btnWalk.ActiveLineColor = System.Drawing.Color.Black;
             this.btnWalk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
             this.btnWalk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWalk.BackgroundImage")));
-            this.btnWalk.ButtonText = "Add Walk";
+            this.btnWalk.ButtonText = "Ekle";
             this.btnWalk.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnWalk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWalk.ForeColor = System.Drawing.Color.White;
@@ -156,7 +156,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(332, 25);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Cycle";
+            this.label3.Text = "Bisiklet";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // flowLayoutPanel2
@@ -177,7 +177,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(332, 25);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Car";
+            this.label2.Text = "Araba";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // flowLayoutPanel1
@@ -198,7 +198,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(332, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Walk";
+            this.label1.Text = "Yürüme";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // JourneyToSchoolUC
@@ -206,7 +206,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.panel1);
             this.Name = "JourneyToSchoolUC";
             this.Size = new System.Drawing.Size(1500, 605);

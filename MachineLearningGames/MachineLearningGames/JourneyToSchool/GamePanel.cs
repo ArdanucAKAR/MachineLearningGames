@@ -12,6 +12,7 @@ namespace MachineLearningGames
 {
     public partial class GamePanel : UserControl
     {
+        UlasSingleton singleton = UlasSingleton.Instance;
         public Form main;
         public GamePanel()
         {
@@ -21,9 +22,16 @@ namespace MachineLearningGames
        
         private void btnTest_Click(object sender, EventArgs e)
         {
-            TestUc add = new TestUc();
-            mainGamingPanel.Controls.Clear();
-            mainGamingPanel.Controls.Add(add);
+            if (singleton.Journeys.Count>0)
+            {
+                TestUc add = new TestUc();
+                mainGamingPanel.Controls.Clear();
+                mainGamingPanel.Controls.Add(add);
+            }
+            else
+            {
+                MessageBox.Show("Model eğitmeden test aşamasına geçilemez");
+            }
         }
 
         private void btnHome_Click(object sender, EventArgs e)

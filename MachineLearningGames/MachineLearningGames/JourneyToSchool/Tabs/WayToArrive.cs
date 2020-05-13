@@ -18,15 +18,15 @@ namespace MachineLearningGames
         }
         public void setAge(string age)
         {
-            lblAge.Text ="age :" + age;
+            lblAge.Text ="Yaş :" + age;
         }
         public void setDistance(string distance)
         {
-            lblDistance.Text = "distance :" + distance;
+            lblDistance.Text = "Mesafe :" + distance;
         }
         public void setFriends(string friends)
         {
-            lblFriends.Text = "friends :" + friends;
+            lblFriends.Text = "Arkadaşlar :" + friends;
         }
     }
 }

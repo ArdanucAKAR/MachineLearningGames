@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtAge = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,6 +45,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.lblWarning);
             this.panel1.Controls.Add(this.btnSubmit);
             this.panel1.Controls.Add(this.txtFriends);
             this.panel1.Controls.Add(this.label3);
@@ -66,7 +68,7 @@
             this.btnSubmit.ActiveLineColor = System.Drawing.Color.Black;
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
             this.btnSubmit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSubmit.BackgroundImage")));
-            this.btnSubmit.ButtonText = "Submit";
+            this.btnSubmit.ButtonText = "Yükle";
             this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
@@ -97,9 +99,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(133, 331);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 35;
-            this.label3.Text = "Friends";
+            this.label3.Text = "Arkadaş Sayısı";
             // 
             // txtDistance
             // 
@@ -115,9 +117,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(133, 243);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 33;
-            this.label2.Text = "Distance";
+            this.label2.Text = "Mesafe";
             // 
             // txtAge
             // 
@@ -133,9 +135,21 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(130, 147);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.Size = new System.Drawing.Size(25, 13);
             this.label1.TabIndex = 31;
-            this.label1.Text = "Age";
+            this.label1.Text = "Yaş";
+            // 
+            // lblWarning
+            // 
+            this.lblWarning.AutoSize = true;
+            this.lblWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.ForeColor = System.Drawing.Color.White;
+            this.lblWarning.Location = new System.Drawing.Point(517, 206);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Size = new System.Drawing.Size(86, 31);
+            this.lblWarning.TabIndex = 38;
+            this.lblWarning.Text = "label4";
+            this.lblWarning.Visible = false;
             // 
             // AddPanelUc
             // 
@@ -160,5 +174,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblWarning;
     }
 }
