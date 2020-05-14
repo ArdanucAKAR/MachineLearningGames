@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnTestet.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnForecastLarry.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALUAAAAsCAYAAAAjOvkiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHnSURBVHhe7dwhVwJBFMXxiUQjkUg0GolEIpGPQbTxMYhG
@@ -132,7 +132,7 @@
         YVwv8BllPlnyXeOT5wZT1C1LWdxGoKcRUwAAAAAAzknpCzofWvL0sBC2AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnLtUpload5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAnimalUpload4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFoAAAAxCAYAAABam76bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHhSURBVHhe7dsvTwNBEAXwSiQSicS1uw0JDiQSiezHQOL6
@@ -146,7 +146,7 @@
         Z2A4vXIfIfTND8zwmGGkbv6sj0ZHREREda3WNzHws6Zc2k3kAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnLtUpload4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAnimalUpload2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFoAAAAzCAYAAAAXUx+QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHnSURBVHhe7dsvTwNBEAXwSiQSicS1uw0JDiQSiezHQOL6
@@ -160,7 +160,7 @@
         G/56jlF2HGG7ReU+Quibt4DxmGFIdL57TaMjIiKiulbrG5XTvgZt6B7kAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnLtUpload3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAnimalUpload5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFoAAAA1CAYAAADBCvyNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHtSURBVHhe7dsvTwNBEAXwSiQSicS1uw0JDiQSiezHQOL6
@@ -174,7 +174,7 @@
         bLJa7Md0w19P5soeOmwgqtxHCH3zpkYeM4w9z/djanRERERU12p9Az44yGZJIt3XAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnLtUpload2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAnimalUpload3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFoAAAA1CAYAAADBCvyNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHtSURBVHhe7dsvTwNBEAXwSiQSicS1uw0JDiQSiezHQOL6
@@ -188,7 +188,7 @@
         bLJa7Md0w19P5soeOmwgqtxHCH3zpkYeM4w9z/djanRERERU12p9Az44yGZJIt3XAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnLtUpload1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAnimalUpload1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFoAAAAxCAYAAABam76bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHhSURBVHhe7dsvTwNBEAXwSiQSicS1uw0JDiQSiezHQOL6

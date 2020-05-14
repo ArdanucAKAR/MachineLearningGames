@@ -20,17 +20,17 @@ namespace MachineLearningGames.LocateLarry.Tabs
             lblTahmin.Visible = false;
             lblTahminBox.Visible = false;
             listView1.Visible = false;
-            btnTestet.Visible = false;
+            btnForecastLarry.Visible = false;
             
             LtPicBox1.Visible = false;
-            LtPicBox2.Visible = false;
             LtPicBox3.Visible = false;
-            LtPicBox4.Visible = false;
             LtPicBox5.Visible = false;
-            btnLtUpload2.Visible = false;
-            btnLtUpload3.Visible = false;
-            btnLtUpload4.Visible = false;
-            btnLtUpload5.Visible = false;
+            LtPicBox2.Visible = false;
+            LtPicBox4.Visible = false;
+            btnAnimalUpload3.Visible = false;
+            btnAnimalUpload5.Visible = false;
+            btnAnimalUpload2.Visible = false;
+            btnAnimalUpload4.Visible = false;
         }
 
         LtSingleton db = LtSingleton.SingleInstance();
@@ -75,52 +75,52 @@ namespace MachineLearningGames.LocateLarry.Tabs
             }
         }
 
-        private void btnLtUpload1_Click(object sender, EventArgs e)
+        private void btnAnimalUpload1_Click(object sender, EventArgs e)
         {
             Lto.ShowDialog();
             LtPicBox1.ImageLocation = Lto.FileName;
-            btnLtUpload1.Visible = false;
+            btnAnimalUpload1.Visible = false;
             LtPicBox1.Visible = true;
-            btnLtUpload2.Visible = true;
+            btnAnimalUpload2.Visible = true;
         }
 
-        private void btnLtUpload2_Click(object sender, EventArgs e)
+        private void btnAnimalUpload2_Click(object sender, EventArgs e)
         {
             Lto.ShowDialog();
             LtPicBox2.ImageLocation = Lto.FileName;
-            btnLtUpload2.Visible = false;
+            btnAnimalUpload2.Visible = false;
             LtPicBox2.Visible = true;
-            btnLtUpload3.Visible = true;
+            btnAnimalUpload3.Visible = true;
         }     
 
-        private void btnLtUpload3_Click_1(object sender, EventArgs e)
+        private void btnAnimalUpload3_Click(object sender, EventArgs e)
         {
             Lto.ShowDialog();
             LtPicBox3.ImageLocation = Lto.FileName;
-            btnLtUpload3.Visible = false;
+            btnAnimalUpload3.Visible = false;
             LtPicBox3.Visible = true;
-            btnLtUpload4.Visible = true;
+            btnAnimalUpload4.Visible = true;
         }
 
-        private void btnLtUpload4_Click_1(object sender, EventArgs e)
+        private void btnAnimalUpload4_Click(object sender, EventArgs e)
         {
             Lto.ShowDialog();
             LtPicBox4.ImageLocation = Lto.FileName;
-            btnLtUpload4.Visible = false;
+            btnAnimalUpload4.Visible = false;
             LtPicBox4.Visible = true;
-            btnLtUpload5.Visible = true;
+            btnAnimalUpload5.Visible = true;
         }
         
-        private void btnLtUpload5_Click_1(object sender, EventArgs e)
+        private void btnAnimalUpload5_Click(object sender, EventArgs e)
         {
             Lto.ShowDialog();
             LtPicBox5.ImageLocation = Lto.FileName;
-            btnLtUpload5.Visible = false;
-            btnTestet.Visible = true;
+            btnAnimalUpload5.Visible = false;
+            btnForecastLarry.Visible = true;
             LtPicBox5.Visible = true;
         }
         
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        private void btnForecastLarry_Click(object sender, EventArgs e)
         {
             Update(listView1);
             
@@ -140,5 +140,7 @@ namespace MachineLearningGames.LocateLarry.Tabs
                 listView1.Visible = false;
             }
         }
+
+        
     }
 }
