@@ -19,6 +19,7 @@ namespace MachineLearningGames.LocateLarry.Tabs
         {
             InitializeComponent();
         }
+
         LtSingleton db = LtSingleton.SingleInstance();
         
         ImageList myImageList = new ImageList();
@@ -46,8 +47,6 @@ namespace MachineLearningGames.LocateLarry.Tabs
                     using (FileStream stream = new FileStream(fi.FullName, FileMode.Open, FileAccess.Read))
                     {
                         myImageList.Images.Add(Image.FromStream(stream));
-
-
                     }
                     listView.LargeImageList = myImageList;
 
@@ -59,7 +58,6 @@ namespace MachineLearningGames.LocateLarry.Tabs
                     });
                     count++;
                 }
-
             }
         }
 
@@ -72,15 +70,11 @@ namespace MachineLearningGames.LocateLarry.Tabs
                 if (LarryList.Items[i].Text == "larry.jpg")
                 {
                     db.tahmin = "EVET LARRY BURDA";
-
                 }
-               
-
-                
             }
         }
 
-        private void btnAnimalUpload_Click(object sender, EventArgs e)
+        private void btnLilyUpload_Click(object sender, EventArgs e)
         {
             Update(LilyList);
             
@@ -91,15 +85,9 @@ namespace MachineLearningGames.LocateLarry.Tabs
                 if (LilyList.Items[i].Text == "lily.jpg")
                 {
                     db.tahmin = "HAYIR BU MALESEF LARRY DEĞİL TEKRAR DENE.";
-
                 }
-
-
-
             }
         }
-
-    
 
         private void btnLadyUpload_Click(object sender, EventArgs e)
         {
@@ -112,11 +100,7 @@ namespace MachineLearningGames.LocateLarry.Tabs
                 if (LadyList.Items[i].Text == "lady.jpg")
                 {
                     db.tahmin = "HAYIR BU MALESEF LARRY DEĞİL TEKRAR DENE.";
-
                 }
-
-
-
             }
         }
 
@@ -125,18 +109,13 @@ namespace MachineLearningGames.LocateLarry.Tabs
             Update(GoldenList);
 
             db.golden = 1;
-            
 
             for (int i = 0; i < GoldenList.Items.Count; i++)
             {
                 if (GoldenList.Items[i].Text == "golden.jpg")
                 {
                     db.tahmin = "HAYIR BU MALESEF LARRY DEĞİL TEKRAR DENE.";
-
                 }
-
-
-
             }
         }
 
@@ -151,11 +130,7 @@ namespace MachineLearningGames.LocateLarry.Tabs
                 if (KingsList.Items[i].Text == "kings.jpg")
                 {
                     db.tahmin = "HAYIR BU MALESEF LARRY DEĞİL TEKRAR DENE.";
-
                 }
-
-
-
             }
         }
     }

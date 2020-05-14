@@ -114,6 +114,7 @@
             this.btnKingsUpload.Size = new System.Drawing.Size(122, 59);
             this.btnKingsUpload.TabIndex = 1;
             this.btnKingsUpload.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnKingsUpload.Click += new System.EventHandler(this.btnKingsUpload_Click);
             // 
             // groupBox4
             // 
@@ -162,6 +163,7 @@
             this.btnGoldenUpload.Size = new System.Drawing.Size(122, 59);
             this.btnGoldenUpload.TabIndex = 1;
             this.btnGoldenUpload.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGoldenUpload.Click += new System.EventHandler(this.btnGoldenUpload_Click);
             // 
             // groupBox3
             // 
@@ -211,6 +213,7 @@
             this.btnLadyUpload.Size = new System.Drawing.Size(122, 59);
             this.btnLadyUpload.TabIndex = 1;
             this.btnLadyUpload.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLadyUpload.Click += new System.EventHandler(this.btnLadyUpload_Click);
             // 
             // groupBox2
             // 
@@ -260,6 +263,7 @@
             this.btnLilyUpload.Size = new System.Drawing.Size(122, 59);
             this.btnLilyUpload.TabIndex = 1;
             this.btnLilyUpload.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLilyUpload.Click += new System.EventHandler(this.btnLilyUpload_Click);
             // 
             // groupBox1
             // 
@@ -308,6 +312,7 @@
             this.btnLarryUpload.Size = new System.Drawing.Size(122, 59);
             this.btnLarryUpload.TabIndex = 1;
             this.btnLarryUpload.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLarryUpload.Click += new System.EventHandler(this.btnLarryUpload_Click);
             // 
             // LocateLarryTrain
             // 

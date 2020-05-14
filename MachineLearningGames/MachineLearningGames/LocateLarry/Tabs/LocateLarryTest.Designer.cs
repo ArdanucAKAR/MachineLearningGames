@@ -99,6 +99,7 @@
             this.btnTestet.Size = new System.Drawing.Size(181, 44);
             this.btnTestet.TabIndex = 39;
             this.btnTestet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTestet.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // listView1
             // 
@@ -156,6 +157,7 @@
             this.btnLtUpload5.Size = new System.Drawing.Size(90, 49);
             this.btnLtUpload5.TabIndex = 36;
             this.btnLtUpload5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLtUpload5.Click += new System.EventHandler(this.btnLtUpload4_Click_1);
             // 
             // btnLtUpload4
             // 
@@ -181,6 +183,7 @@
             this.btnLtUpload4.Size = new System.Drawing.Size(90, 51);
             this.btnLtUpload4.TabIndex = 35;
             this.btnLtUpload4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLtUpload4.Click += new System.EventHandler(this.btnLtUpload2_Click);
             // 
             // btnLtUpload3
             // 
@@ -206,6 +209,7 @@
             this.btnLtUpload3.Size = new System.Drawing.Size(90, 53);
             this.btnLtUpload3.TabIndex = 34;
             this.btnLtUpload3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLtUpload3.Click += new System.EventHandler(this.btnLtUpload5_Click_1);
             // 
             // btnLtUpload2
             // 
@@ -231,6 +235,7 @@
             this.btnLtUpload2.Size = new System.Drawing.Size(90, 53);
             this.btnLtUpload2.TabIndex = 33;
             this.btnLtUpload2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLtUpload2.Click += new System.EventHandler(this.btnLtUpload3_Click_1);
             // 
             // btnLtUpload1
             // 
@@ -256,6 +261,7 @@
             this.btnLtUpload1.Size = new System.Drawing.Size(90, 49);
             this.btnLtUpload1.TabIndex = 32;
             this.btnLtUpload1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLtUpload1.Click += new System.EventHandler(this.btnLtUpload1_Click);
             // 
             // LtPicBox5
             // 

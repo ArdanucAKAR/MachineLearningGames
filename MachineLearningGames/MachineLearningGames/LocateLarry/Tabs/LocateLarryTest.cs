@@ -31,9 +31,8 @@ namespace MachineLearningGames.LocateLarry.Tabs
             btnLtUpload3.Visible = false;
             btnLtUpload4.Visible = false;
             btnLtUpload5.Visible = false;
-
-
         }
+
         LtSingleton db = LtSingleton.SingleInstance();
 
         ImageList myImageList = new ImageList();
@@ -62,8 +61,6 @@ namespace MachineLearningGames.LocateLarry.Tabs
                     using (FileStream stream = new FileStream(fi.FullName, FileMode.Open, FileAccess.Read))
                     {
                         myImageList.Images.Add(Image.FromStream(stream));
-
-
                     }
                     listView.LargeImageList = myImageList;
 
@@ -75,10 +72,8 @@ namespace MachineLearningGames.LocateLarry.Tabs
                     });
                     count++;
                 }
-
             }
         }
-        
 
         private void btnLtUpload1_Click(object sender, EventArgs e)
         {
@@ -87,7 +82,6 @@ namespace MachineLearningGames.LocateLarry.Tabs
             btnLtUpload1.Visible = false;
             LtPicBox1.Visible = true;
             btnLtUpload2.Visible = true;
-
         }
 
         private void btnLtUpload2_Click(object sender, EventArgs e)
@@ -97,8 +91,7 @@ namespace MachineLearningGames.LocateLarry.Tabs
             btnLtUpload2.Visible = false;
             LtPicBox2.Visible = true;
             btnLtUpload3.Visible = true;
-        }
-        
+        }     
 
         private void btnLtUpload3_Click_1(object sender, EventArgs e)
         {
@@ -116,11 +109,8 @@ namespace MachineLearningGames.LocateLarry.Tabs
             btnLtUpload4.Visible = false;
             LtPicBox4.Visible = true;
             btnLtUpload5.Visible = true;
-
         }
         
-           
-
         private void btnLtUpload5_Click_1(object sender, EventArgs e)
         {
             Lto.ShowDialog();
@@ -128,10 +118,7 @@ namespace MachineLearningGames.LocateLarry.Tabs
             btnLtUpload5.Visible = false;
             btnTestet.Visible = true;
             LtPicBox5.Visible = true;
-
-
         }
-
         
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
@@ -152,7 +139,6 @@ namespace MachineLearningGames.LocateLarry.Tabs
                 lblTahmin.Visible = true;
                 listView1.Visible = false;
             }
-
         }
     }
 }
