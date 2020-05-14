@@ -9,5 +9,5 @@
 # Uygulama İçi Ekran Görüntüleri
 ![Ekran Görüntüsü 1](https://i.hizliresim.com/vFAh8h.png)
 <p align="center">Açılış Ekranı</p>
-![Ekran Görüntüsü 1](https://i.hizliresim.com/7ZOT4y.png)
+![Ekran Görüntüsü 2](https://i.hizliresim.com/7ZOT4y.png)
 <p align="center">Oyun Ekranı</p>
