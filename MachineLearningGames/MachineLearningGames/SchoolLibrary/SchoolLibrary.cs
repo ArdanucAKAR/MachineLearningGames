@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Security.Policy;
 
 namespace MachineLearningGames
 {
@@ -19,7 +19,7 @@ namespace MachineLearningGames
         }
 
         public Form main;
-
+        public bool isTrained = false;
         private void btnHome_MouseHover(object sender, EventArgs e)
         {
             btnHome.LabelText = "Anasayfa";
@@ -61,6 +61,7 @@ namespace MachineLearningGames
 
         private void btnTrain_Click(object sender, EventArgs e)
         {
+            isTrained = true;
             pnlSchoolLibraryMain.Controls.Clear();
             TrainSchoolLibrary train = new TrainSchoolLibrary();
             pnlSchoolLibraryMain.Controls.Add(train);
@@ -68,9 +69,16 @@ namespace MachineLearningGames
 
         private void btnTest_Click(object sender, EventArgs e)
         {
-            TestSchoolLibrary test = new TestSchoolLibrary();
-            pnlSchoolLibraryMain.Controls.Clear();
-            pnlSchoolLibraryMain.Controls.Add(test);
+            if(isTrained)
+            {
+                TestSchoolLibrary test = new TestSchoolLibrary();
+                pnlSchoolLibraryMain.Controls.Clear();
+                pnlSchoolLibraryMain.Controls.Add(test);
+            } 
+            else {
+                MessageBox.Show("Test Etmeden Önce Yapay Zekayı Eğitmeniz Gerekmektedir...");
+            }
+            
         }
     }
 }

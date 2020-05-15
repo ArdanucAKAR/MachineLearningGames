@@ -72,11 +72,11 @@
             this.lblYearR.BackColor = System.Drawing.Color.Transparent;
             this.lblYearR.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblYearR.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblYearR.Location = new System.Drawing.Point(326, 26);
+            this.lblYearR.Location = new System.Drawing.Point(298, 26);
             this.lblYearR.Name = "lblYearR";
-            this.lblYearR.Size = new System.Drawing.Size(67, 24);
+            this.lblYearR.Size = new System.Drawing.Size(134, 24);
             this.lblYearR.TabIndex = 1;
-            this.lblYearR.Text = "Year R";
+            this.lblYearR.Text = "Çocuk Kitapları";
             // 
             // txtPageYearR
             // 
@@ -143,9 +143,9 @@
             this.lblPageYearR.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblPageYearR.Location = new System.Drawing.Point(208, 363);
             this.lblPageYearR.Name = "lblPageYearR";
-            this.lblPageYearR.Size = new System.Drawing.Size(42, 18);
+            this.lblPageYearR.Size = new System.Drawing.Size(45, 18);
             this.lblPageYearR.TabIndex = 3;
-            this.lblPageYearR.Text = "Page";
+            this.lblPageYearR.Text = "Sayfa";
             // 
             // lblLineYearR
             // 
@@ -155,9 +155,9 @@
             this.lblLineYearR.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblLineYearR.Location = new System.Drawing.Point(215, 419);
             this.lblLineYearR.Name = "lblLineYearR";
-            this.lblLineYearR.Size = new System.Drawing.Size(35, 18);
+            this.lblLineYearR.Size = new System.Drawing.Size(38, 18);
             this.lblLineYearR.TabIndex = 3;
-            this.lblLineYearR.Text = "Line";
+            this.lblLineYearR.Text = "Satır";
             // 
             // lblImageYearR
             // 
@@ -167,9 +167,9 @@
             this.lblImageYearR.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblImageYearR.Location = new System.Drawing.Point(202, 475);
             this.lblImageYearR.Name = "lblImageYearR";
-            this.lblImageYearR.Size = new System.Drawing.Size(48, 18);
+            this.lblImageYearR.Size = new System.Drawing.Size(51, 18);
             this.lblImageYearR.TabIndex = 3;
-            this.lblImageYearR.Text = "Image";
+            this.lblImageYearR.Text = "Resim";
             // 
             // btnAddYearR
             // 
@@ -178,9 +178,9 @@
             this.btnAddYearR.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnAddYearR.ActiveForecolor = System.Drawing.Color.White;
             this.btnAddYearR.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnAddYearR.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddYearR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
             this.btnAddYearR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddYearR.BackgroundImage")));
-            this.btnAddYearR.ButtonText = "Add";
+            this.btnAddYearR.ButtonText = "Ekle";
             this.btnAddYearR.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddYearR.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddYearR.ForeColor = System.Drawing.Color.Honeydew;
@@ -213,9 +213,9 @@
             this.lblKeyStage1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblKeyStage1.Location = new System.Drawing.Point(680, 26);
             this.lblKeyStage1.Name = "lblKeyStage1";
-            this.lblKeyStage1.Size = new System.Drawing.Size(110, 24);
+            this.lblKeyStage1.Size = new System.Drawing.Size(122, 24);
             this.lblKeyStage1.TabIndex = 1;
-            this.lblKeyStage1.Text = "Key Stage 1";
+            this.lblKeyStage1.Text = "Birinci Seviye";
             // 
             // txtPageKeyStage1
             // 
@@ -282,9 +282,9 @@
             this.lblPageKeyStage1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblPageKeyStage1.Location = new System.Drawing.Point(576, 363);
             this.lblPageKeyStage1.Name = "lblPageKeyStage1";
-            this.lblPageKeyStage1.Size = new System.Drawing.Size(42, 18);
+            this.lblPageKeyStage1.Size = new System.Drawing.Size(45, 18);
             this.lblPageKeyStage1.TabIndex = 3;
-            this.lblPageKeyStage1.Text = "Page";
+            this.lblPageKeyStage1.Text = "Sayfa";
             // 
             // lblImageKeyStage1
             // 
@@ -294,9 +294,9 @@
             this.lblImageKeyStage1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblImageKeyStage1.Location = new System.Drawing.Point(570, 475);
             this.lblImageKeyStage1.Name = "lblImageKeyStage1";
-            this.lblImageKeyStage1.Size = new System.Drawing.Size(48, 18);
+            this.lblImageKeyStage1.Size = new System.Drawing.Size(51, 18);
             this.lblImageKeyStage1.TabIndex = 3;
-            this.lblImageKeyStage1.Text = "Image";
+            this.lblImageKeyStage1.Text = "Resim";
             // 
             // btnAddKeyStage1
             // 
@@ -305,9 +305,9 @@
             this.btnAddKeyStage1.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnAddKeyStage1.ActiveForecolor = System.Drawing.Color.White;
             this.btnAddKeyStage1.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnAddKeyStage1.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddKeyStage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
             this.btnAddKeyStage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddKeyStage1.BackgroundImage")));
-            this.btnAddKeyStage1.ButtonText = "Add";
+            this.btnAddKeyStage1.ButtonText = "Ekle";
             this.btnAddKeyStage1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddKeyStage1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddKeyStage1.ForeColor = System.Drawing.Color.Honeydew;
@@ -332,9 +332,9 @@
             this.lblLineKeyStage1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblLineKeyStage1.Location = new System.Drawing.Point(576, 419);
             this.lblLineKeyStage1.Name = "lblLineKeyStage1";
-            this.lblLineKeyStage1.Size = new System.Drawing.Size(35, 18);
+            this.lblLineKeyStage1.Size = new System.Drawing.Size(38, 18);
             this.lblLineKeyStage1.TabIndex = 3;
-            this.lblLineKeyStage1.Text = "Line";
+            this.lblLineKeyStage1.Text = "Satır";
             // 
             // lbKeyStage2
             // 
@@ -409,9 +409,9 @@
             this.lblPageKeyStage2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblPageKeyStage2.Location = new System.Drawing.Point(949, 363);
             this.lblPageKeyStage2.Name = "lblPageKeyStage2";
-            this.lblPageKeyStage2.Size = new System.Drawing.Size(42, 18);
+            this.lblPageKeyStage2.Size = new System.Drawing.Size(45, 18);
             this.lblPageKeyStage2.TabIndex = 3;
-            this.lblPageKeyStage2.Text = "Page";
+            this.lblPageKeyStage2.Text = "Sayfa";
             // 
             // lblLineKeyStage2
             // 
@@ -421,9 +421,9 @@
             this.lblLineKeyStage2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblLineKeyStage2.Location = new System.Drawing.Point(956, 419);
             this.lblLineKeyStage2.Name = "lblLineKeyStage2";
-            this.lblLineKeyStage2.Size = new System.Drawing.Size(35, 18);
+            this.lblLineKeyStage2.Size = new System.Drawing.Size(38, 18);
             this.lblLineKeyStage2.TabIndex = 3;
-            this.lblLineKeyStage2.Text = "Line";
+            this.lblLineKeyStage2.Text = "Satır";
             // 
             // lblImageKeyStage2
             // 
@@ -433,9 +433,9 @@
             this.lblImageKeyStage2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblImageKeyStage2.Location = new System.Drawing.Point(943, 475);
             this.lblImageKeyStage2.Name = "lblImageKeyStage2";
-            this.lblImageKeyStage2.Size = new System.Drawing.Size(48, 18);
+            this.lblImageKeyStage2.Size = new System.Drawing.Size(51, 18);
             this.lblImageKeyStage2.TabIndex = 3;
-            this.lblImageKeyStage2.Text = "Image";
+            this.lblImageKeyStage2.Text = "Resim";
             // 
             // btnAddKeyStage2
             // 
@@ -444,9 +444,9 @@
             this.btnAddKeyStage2.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnAddKeyStage2.ActiveForecolor = System.Drawing.Color.White;
             this.btnAddKeyStage2.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnAddKeyStage2.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddKeyStage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(16)))), ((int)(((byte)(22)))));
             this.btnAddKeyStage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddKeyStage2.BackgroundImage")));
-            this.btnAddKeyStage2.ButtonText = "Add";
+            this.btnAddKeyStage2.ButtonText = "Ekle";
             this.btnAddKeyStage2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddKeyStage2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddKeyStage2.ForeColor = System.Drawing.Color.Honeydew;
@@ -471,9 +471,9 @@
             this.lblKeyStage2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblKeyStage2.Location = new System.Drawing.Point(1049, 26);
             this.lblKeyStage2.Name = "lblKeyStage2";
-            this.lblKeyStage2.Size = new System.Drawing.Size(110, 24);
+            this.lblKeyStage2.Size = new System.Drawing.Size(113, 24);
             this.lblKeyStage2.TabIndex = 1;
-            this.lblKeyStage2.Text = "Key Stage 2";
+            this.lblKeyStage2.Text = "İkinci Seviye";
             // 
             // TrainSchoolLibrary
             // 

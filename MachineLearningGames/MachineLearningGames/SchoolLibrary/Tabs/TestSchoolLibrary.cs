@@ -19,18 +19,27 @@ namespace MachineLearningGames
 
         private void btnTestEt_Click(object sender, EventArgs e)
         {
-            int pageCount = Convert.ToInt32(txtPageTest.Text);
-            int lineCount = Convert.ToInt32(txtLineTest.Text);
-            int imageCount = Convert.ToInt32(txtImageTest.Text);
+            int pageCount;
+            int lineCount;
+            int imageCount;
 
-            if (pageCount <= 100 && imageCount >= 1)
-                lblSonuc.Text = "Year R";
-            else if (pageCount >= 100 && pageCount <= 300 && lineCount >= 10 && imageCount <= 20)
-                lblSonuc.Text = "Key Stage 1";
-            else if (pageCount >= 300 && lineCount >= 15)
-                lblSonuc.Text = "Key Stage 2";
+            if (int.TryParse(txtPageTest.Text, out pageCount) && int.TryParse(txtLineTest.Text, out lineCount) && int.TryParse(txtImageTest.Text, out imageCount))
+            {
+                if (pageCount <= 100 && imageCount >= 1)
+                    lblSonuc.Text = "Çocuk Kitabı";
+                else if (pageCount >= 100 && pageCount <= 300 && lineCount >= 10 && imageCount <= 20)
+                    lblSonuc.Text = "Birinci Seviye";
+                else if (pageCount >= 300 && lineCount >= 15)
+                    lblSonuc.Text = "İkinci Seviye";
+                else
+                    lblSonuc.Text = "İkinci Seviye";
+            }
             else
-                lblSonuc.Text = "Key Stage 2";
+            {
+                MessageBox.Show("Sayfa, Satır ve Resim Değerleri Integer Olmak Zorundadır...");
+            }
+
+            
         }
     }
 }
