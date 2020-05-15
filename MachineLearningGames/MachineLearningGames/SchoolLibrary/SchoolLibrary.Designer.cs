@@ -36,6 +36,7 @@
             this.btnHome = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnTest = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnTrain = new Bunifu.Framework.UI.BunifuTileButton();
+            this.lblDescription = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pnlSchoolLibraryMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             this.pnlBottom.SuspendLayout();
@@ -44,6 +45,7 @@
             // pnlSchoolLibraryMain
             // 
             this.pnlSchoolLibraryMain.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSchoolLibraryMain.Controls.Add(this.lblDescription);
             this.pnlSchoolLibraryMain.Controls.Add(this.pbHome);
             this.pnlSchoolLibraryMain.Controls.Add(this.lblHome);
             this.pnlSchoolLibraryMain.Location = new System.Drawing.Point(0, 0);
@@ -151,6 +153,18 @@
             this.btnTrain.MouseLeave += new System.EventHandler(this.btnTrain_MouseLeave);
             this.btnTrain.MouseHover += new System.EventHandler(this.btnTrain_MouseHover);
             // 
+            // lblDescription
+            // 
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblDescription.ForeColor = System.Drawing.Color.White;
+            this.lblDescription.Location = new System.Drawing.Point(468, 509);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(567, 48);
+            this.lblDescription.TabIndex = 7;
+            this.lblDescription.Text = "Kitaplardaki sayfa, satır ve resim sayısına göre türlerini belirleyen \r\nve kullan" +
+    "ıcıya girdiği değerlere göre kitap türü öneren bir uygulama";
+            // 
             // SchoolLibrary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,5 +192,6 @@
         private Bunifu.Framework.UI.BunifuTileButton btnHome;
         private Bunifu.Framework.UI.BunifuTileButton btnTest;
         private Bunifu.Framework.UI.BunifuTileButton btnTrain;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblDescription;
     }
 }
