@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MachineLearningGames.Ayberk;
+using MachineLearningGames.Chatbot.Tabs;
 
 namespace MachineLearningGames.Chatbot
 {
@@ -17,7 +17,9 @@ namespace MachineLearningGames.Chatbot
         {
             InitializeComponent();
         }
+
         public Form main;
+
         private void homeButton_Click_1(object sender, EventArgs e)
         {
             Panel pnl = main.Controls.Find("pnlMain", true).FirstOrDefault() as Panel;

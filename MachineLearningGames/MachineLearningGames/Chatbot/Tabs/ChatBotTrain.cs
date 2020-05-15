@@ -7,29 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MachineLearningGames.Chatbot.Classes;
 
-namespace MachineLearningGames.Ayberk
+namespace MachineLearningGames.Chatbot.Tabs
 {
     
     public partial class ChatBotTrain : UserControl
-    {
-        public static List<String> konular = new List<String>();
-        public static List<String> sorular = new List<String>();
-        
+    {        
         public ChatBotTrain()
         {
             InitializeComponent();
         }
-        Cevap ce = Cevap.GetCevap();
 
-        
-        private void ChatBotTrain_Load(object sender, EventArgs e)
-        {
-           
-        }       
+        SingletonCB db = SingletonCB.GetInstance();
+
         private void cevapBtn_Click(object sender, EventArgs e)
         {           
-            ce.cevaplar.Add(cevapTextBox.text);
+            db.answers.Add(cevapTextBox.text);
             MessageBox.Show("Cümlen eklendi..");
         }
     }

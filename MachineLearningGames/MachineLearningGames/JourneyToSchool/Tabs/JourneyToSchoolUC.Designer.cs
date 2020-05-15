@@ -1,4 +1,4 @@
-﻿namespace MachineLearningGames
+﻿namespace MachineLearningGames.JourneyToSchool.Tabs
 {
     partial class JourneyToSchoolUC
     {

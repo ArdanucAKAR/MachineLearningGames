@@ -9,7 +9,6 @@ namespace MachineLearningGames.RockPaperScissors.Classes
     public class SingletonRPC
     {
         private static SingletonRPC instance;
-       
 
         public bool upload = false;
 
@@ -18,7 +17,7 @@ namespace MachineLearningGames.RockPaperScissors.Classes
 
         }
 
-        public static SingletonRPC Instance()
+        public static SingletonRPC GetInstance()
         {
             if (instance == null)
                 instance = new SingletonRPC();

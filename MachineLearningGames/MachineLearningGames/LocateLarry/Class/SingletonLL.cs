@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace MachineLearningGames.LocateLarry.Class
 {
-    class LtSingleton
+    public class SingletonLL
     {
-        private static LtSingleton singleInstance;
+        private static SingletonLL instance;
+
         public string tahmin = "";
         public string tahminLarry = "Evet bu larry";
         public string tahminotLarry = "Hayır bu larry değil";
@@ -17,15 +18,18 @@ namespace MachineLearningGames.LocateLarry.Class
         public int lily = 0;
         public int kings = 0;
         public int golden = 0;
-      
-        public static LtSingleton SingleInstance()
-        {
-            if (singleInstance == null)
-            {
-                singleInstance = new LtSingleton();
-            }
-            return singleInstance;
 
+        private SingletonLL()
+        {
+
+        }
+
+        public static SingletonLL GetInstance()
+        {
+            if (instance == null)
+                instance = new SingletonLL();
+
+            return instance;
         }
     }
 }

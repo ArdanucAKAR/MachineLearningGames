@@ -270,7 +270,6 @@
             this.Controls.Add(this.pnlJudgeBookTrain);
             this.Name = "JudgeBookTrain";
             this.Size = new System.Drawing.Size(1500, 605);
-            this.Load += new System.EventHandler(this.JudgeBookTrain_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);

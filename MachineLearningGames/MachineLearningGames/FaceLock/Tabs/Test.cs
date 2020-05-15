@@ -16,6 +16,7 @@ namespace MachineLearningGames.FaceLock.Tabs
         {
             InitializeComponent();
         }
+
         private void btnTest_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
@@ -51,7 +52,6 @@ namespace MachineLearningGames.FaceLock.Tabs
 
         private void btnNewTest_Click(object sender, EventArgs e)
         {
-
             pnlTest.Location = new Point((pnlMain.Width - pnlTest.Width) / 2, 28);
             transitionResult.Hide(pnlResult);
             transitionResult.ShowSync(pnlTest);

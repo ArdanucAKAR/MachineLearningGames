@@ -42,7 +42,6 @@ namespace MachineLearningGames.Alihan.Tabs
                 lblResult.ForeColor = Color.Red;
                 lblResult.Text = "HAYATTA KALAMADI";
             }
-
         }
     }
 }

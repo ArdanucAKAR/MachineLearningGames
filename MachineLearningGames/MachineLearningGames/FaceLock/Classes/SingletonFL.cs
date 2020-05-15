@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace MachineLearningGames.FaceLock.Classes
 {
-    class SingletonFL
+    public class SingletonFL
     {
-        private static SingletonFL instance;
-
-
+        private static SingletonFL instance = null;
         public bool upload = false;
 
         private SingletonFL()
@@ -18,7 +16,7 @@ namespace MachineLearningGames.FaceLock.Classes
 
         }
 
-        public static SingletonFL Instance()
+        public static SingletonFL GetInstance()
         {
             if (instance == null)
                 instance = new SingletonFL();

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MachineLearningGames
+namespace MachineLearningGames.JourneyToSchool.Tabs
 {
     public partial class TestUc : UserControl
     {
@@ -16,8 +16,6 @@ namespace MachineLearningGames
         {
             InitializeComponent();
         }
-        
-        
 
         private void btnTry_Click(object sender, EventArgs e)
         {
@@ -25,8 +23,12 @@ namespace MachineLearningGames
             double distance;
             int friends;
 
-            if (int.TryParse(txtAge.Text, out age) && double.TryParse(txtDistance.Text, out distance) &&
-                int.TryParse(txtFriends.Text, out friends)&& !String.IsNullOrEmpty(txtDistance.Text) && !String.IsNullOrEmpty(txtAge.Text) && !String.IsNullOrEmpty(txtFriends.Text))
+            if (int.TryParse(txtAge.Text, out age) &&
+                double.TryParse(txtDistance.Text, out distance) &&
+                int.TryParse(txtFriends.Text, out friends) &&
+                !String.IsNullOrEmpty(txtDistance.Text) &&
+                !String.IsNullOrEmpty(txtAge.Text) &&
+                !String.IsNullOrEmpty(txtFriends.Text))
             {
                 lblWarning.Visible = false;
                 lblResult.Visible = true;
@@ -35,17 +37,11 @@ namespace MachineLearningGames
                 int _random = rnd.Next(3);
 
                 if (_random == 0)
-                {
                     lblResult.Text = "Araba ile";
-                }
                 else if (_random == 1)
-                {
                     lblResult.Text = "Yürüyerek";
-                }
                 else
-                {
                     lblResult.Text = "Bisikleti ile";
-                }
             }
             else
             {
@@ -55,12 +51,7 @@ namespace MachineLearningGames
                 txtAge.Text = "";
                 txtDistance.Text = "";
                 lblWarning.Visible = true;
-
             }
-
-
-
         }
-        }
+    }
 }
-

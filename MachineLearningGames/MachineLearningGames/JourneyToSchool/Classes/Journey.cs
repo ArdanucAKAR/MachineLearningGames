@@ -4,20 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MachineLearningGames
+namespace MachineLearningGames.JourneyToSchool.Classes
 {
-    class Journey
+    /*
+        Journeytype 1 =  Walk
+        Journeytype 2 =  Car
+        Journeytype 3 =  Cycle
+    */
+    public class Journey
     {
-       
-            public int Age { get; set; }
-            public double Distance { get; set; }
-            public int Friends { get; set; }
-            public int JouneyType { get; set; }
-            /*Journeytype 1 =  car
-            /*Journeytype 2 =  walk
-            /*Journeytype 3 =  cycle*/
-
-
-        
+        public int Age { get; set; }
+        public double Distance { get; set; }
+        public int Friends { get; set; }
+        public int JouneyType { get; set; }
     }
 }

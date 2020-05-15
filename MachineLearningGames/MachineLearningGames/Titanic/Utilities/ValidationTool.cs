@@ -8,9 +8,7 @@ namespace MachineLearningGames.Alihan.Utilities
         {
             var result = validator.Validate(entity);
             if (result.Errors.Count > 0)
-            {
                 throw new ValidationException(result.Errors);
-            }
         }
     }
 }

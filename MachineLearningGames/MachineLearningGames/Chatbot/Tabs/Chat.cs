@@ -7,49 +7,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MachineLearningGames.Ayberk;
+using MachineLearningGames.Chatbot.Classes;
 
-namespace MachineLearningGames.Ayberk
+namespace MachineLearningGames.Chatbot.Tabs
 {
     public partial class Chat : UserControl
     {
-        Cevap c = Cevap.GetCevap();
-        //char[] seperator = { "" };
-   
+        SingletonCB db = SingletonCB.GetInstance();
+
         public Chat()
         {
             InitializeComponent();
         }
-        
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+
+        private void btnAskLion_Click(object sender, EventArgs e)
         {
-            string[] strlist = c.cevaplar.ToArray();
+            string[] strlist = db.answers.ToArray();
             strlist.ToString();
-            //string[] words = strlist.Split('.',' ');
-            string[] words = soruTextbx.text.Split(' ','?','.');
-            
-            foreach (string cevap in c.cevaplar)
+            string[] words = soruTextbx.text.Split(' ', '?', '.');
+
+            foreach (string cevap in db.answers)
             {
-                for(int i =0;i<words.Length;i++)
+                for (int i = 0; i < words.Length; i++)
                 {
                     if (words[i] == "Aslan" && words[i] == "Aslanlar")
-                    {
                         break;
-                    }
                     if (cevap.Contains(words[i]))
                     {
-                       
                         cvpLabel.Text = cevap;
                         continue;
                     }
                     else
-                    {
                         cvpLabel.Text = "Üzgünüm sizi anlayamadım. RAWWWWWWWWRRRRRRRR!";
-                    }
                 }
-                             
             }
-                 
         }
     }
 }

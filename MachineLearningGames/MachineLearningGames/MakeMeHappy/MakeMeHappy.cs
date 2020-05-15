@@ -21,7 +21,7 @@ namespace MachineLearningGames.MakeMeHappy
 
         public Form main;
 
-        Singleton db = Singleton.Nesne();
+        SingletonMMH db = SingletonMMH.GetInstance();
 
         private void btnHome_MouseHover(object sender, EventArgs e)
         {

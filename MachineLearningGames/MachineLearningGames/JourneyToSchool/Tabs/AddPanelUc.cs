@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MachineLearningGames.JourneyToSchool.Classes;
 
-namespace MachineLearningGames
+namespace MachineLearningGames.JourneyToSchool.Tabs
 {
     public partial class AddPanelUc : UserControl
     {
@@ -20,30 +21,28 @@ namespace MachineLearningGames
         private int age = 0;
         private double distance = 0;
         private int friends = 0;
-        private void btnSubmit_Click_1(object sender, EventArgs e)
+
+        SingletonJTS db = SingletonJTS.GetInstance();
+
+        private void btnSubmit_Click(object sender, EventArgs e)
         {
             lblWarning.Visible = false;
-            UlasSingleton singleton = UlasSingleton.Instance;
-            if(int.TryParse(txtAge.Text,out age)&& double.TryParse(txtDistance.Text, out distance) && int.TryParse(txtFriends.Text, out friends))
+
+            if (int.TryParse(txtAge.Text, out age) && double.TryParse(txtDistance.Text, out distance) && int.TryParse(txtFriends.Text, out friends))
             {
-                if (age>0)
+                if (age > 0)
                 {
-                    singleton.Journeys.LastOrDefault().Age = age;
-                    singleton.Journeys.LastOrDefault().Friends = friends;
-                    singleton.Journeys.LastOrDefault().Distance = distance;
+                    db.Journeys.LastOrDefault().Age = age;
+                    db.Journeys.LastOrDefault().Friends = friends;
+                    db.Journeys.LastOrDefault().Distance = distance;
 
                     JourneyToSchoolUC add = new JourneyToSchoolUC();
                     panel1.Controls.Clear();
                     panel1.Controls.Add(add);
                 }
                 else
-                {
-                    singleton.Journeys.RemoveAt(singleton.Journeys.Count - 1);
-                }
-               
+                    db.Journeys.RemoveAt(db.Journeys.Count - 1);
             }
-
-                
             else
             {
                 lblWarning.Text = "Hatalı giriş yaptınız tekrar sayı giriniz";
@@ -52,9 +51,6 @@ namespace MachineLearningGames
                 txtDistance.Text = "";
                 lblWarning.Visible = true;
             }
-           
-            
-
         }
     }
 }

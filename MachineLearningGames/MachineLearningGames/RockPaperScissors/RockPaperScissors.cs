@@ -19,7 +19,8 @@ namespace MachineLearningGames.RockPaperScissors
         {
             InitializeComponent();
         }
-        SingletonRPC db = SingletonRPC.Instance();
+
+        SingletonRPC db = SingletonRPC.GetInstance();
         public Form main;
 
         private void btnHome_MouseHover(object sender, EventArgs e)

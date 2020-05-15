@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation13 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Snap));
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.btnHome = new Bunifu.Framework.UI.BunifuTileButton();
@@ -61,7 +61,7 @@
             // 
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
             this.btnHome.color = System.Drawing.Color.Transparent;
-            this.btnHome.colorActive = System.Drawing.Color.Transparent;
+            this.btnHome.colorActive = System.Drawing.Color.Silver;
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.transitionTabs.SetDecoration(this.btnHome, BunifuAnimatorNS.DecorationType.None);
             this.btnHome.Font = new System.Drawing.Font("TR Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -84,7 +84,7 @@
             // 
             this.btnTest.BackColor = System.Drawing.Color.Transparent;
             this.btnTest.color = System.Drawing.Color.Transparent;
-            this.btnTest.colorActive = System.Drawing.Color.Transparent;
+            this.btnTest.colorActive = System.Drawing.Color.Silver;
             this.btnTest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.transitionTabs.SetDecoration(this.btnTest, BunifuAnimatorNS.DecorationType.None);
             this.btnTest.Font = new System.Drawing.Font("TR Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -107,7 +107,7 @@
             // 
             this.btnTrain.BackColor = System.Drawing.Color.Transparent;
             this.btnTrain.color = System.Drawing.Color.Transparent;
-            this.btnTrain.colorActive = System.Drawing.Color.Transparent;
+            this.btnTrain.colorActive = System.Drawing.Color.Silver;
             this.btnTrain.Cursor = System.Windows.Forms.Cursors.Hand;
             this.transitionTabs.SetDecoration(this.btnTrain, BunifuAnimatorNS.DecorationType.None);
             this.btnTrain.Font = new System.Drawing.Font("TR Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -178,22 +178,22 @@
             // 
             this.transitionTabs.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.transitionTabs.Cursor = null;
-            animation13.AnimateOnlyDifferences = true;
-            animation13.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.BlindCoeff")));
-            animation13.LeafCoeff = 0F;
-            animation13.MaxTime = 1F;
-            animation13.MinTime = 0F;
-            animation13.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicCoeff")));
-            animation13.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicShift")));
-            animation13.MosaicSize = 0;
-            animation13.Padding = new System.Windows.Forms.Padding(0);
-            animation13.RotateCoeff = 0F;
-            animation13.RotateLimit = 0F;
-            animation13.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.ScaleCoeff")));
-            animation13.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.SlideCoeff")));
-            animation13.TimeCoeff = 0F;
-            animation13.TransparencyCoeff = 1F;
-            this.transitionTabs.DefaultAnimation = animation13;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 1F;
+            this.transitionTabs.DefaultAnimation = animation4;
             this.transitionTabs.MaxAnimationTime = 1250;
             // 
             // Snap

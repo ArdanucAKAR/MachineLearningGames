@@ -33,7 +33,7 @@ namespace MachineLearningGames.LocateLarry.Tabs
             btnAnimalUpload4.Visible = false;
         }
 
-        LtSingleton db = LtSingleton.SingleInstance();
+        SingletonLL db = SingletonLL.GetInstance();
 
         ImageList myImageList = new ImageList();
         int count = 0;

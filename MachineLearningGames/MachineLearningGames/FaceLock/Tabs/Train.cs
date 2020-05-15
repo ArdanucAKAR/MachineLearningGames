@@ -18,7 +18,9 @@ namespace MachineLearningGames.FaceLock.Tabs
         {
             InitializeComponent();
         }
-        SingletonFL db = SingletonFL.Instance();
+
+        SingletonFL db = SingletonFL.GetInstance();
+
         private int Dialog(BunifuCards cards, string title)
         {
             cards.Controls.Clear();
@@ -57,18 +59,16 @@ namespace MachineLearningGames.FaceLock.Tabs
             return ofd.FileNames.Count();
         }
 
-
         private void btnUploadGranted_Click(object sender, EventArgs e)
         {
             Dialog(cardGranted, "Lütfen Geçerli Yüz Resimlerini Seçiniz");
             db.upload = true;
         }
+
         private void btnUploadDenied_Click(object sender, EventArgs e)
         {
             Dialog(cardDenied, "Lütfen Geçersiz Yüz Resimlerini Seçiniz");
             db.upload = true;
         }
-
-      
     }
 }

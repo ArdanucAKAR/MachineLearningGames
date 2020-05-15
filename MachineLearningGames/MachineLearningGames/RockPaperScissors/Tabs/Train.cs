@@ -18,7 +18,9 @@ namespace MachineLearningGames.RockPaperScissors.Tabs
         {
             InitializeComponent();
         }
-        SingletonRPC db = SingletonRPC.Instance();
+
+        SingletonRPC db = SingletonRPC.GetInstance();
+
         private int Dialog(BunifuCards cards, string title)
         {
             cards.Controls.Clear();

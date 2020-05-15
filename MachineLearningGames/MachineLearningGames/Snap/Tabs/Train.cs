@@ -18,7 +18,9 @@ namespace MachineLearningGames.Snap.Tabs
         {
             InitializeComponent();
         }
-        Singleton db = Singleton.Nesne();
+
+        SingletonS db = SingletonS.GetInstance();
+
         private int Dialog(BunifuCards cards, string title)
         {
             cards.Controls.Clear();

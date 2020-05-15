@@ -20,7 +20,7 @@ namespace MachineLearningGames.FaceLock
             InitializeComponent();
         }
 
-        SingletonFL db = SingletonFL.Instance();
+        SingletonFL db = SingletonFL.GetInstance();
         public Form main;
 
         private void btnHome_MouseHover(object sender, EventArgs e)

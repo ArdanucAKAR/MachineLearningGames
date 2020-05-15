@@ -99,9 +99,7 @@ namespace MachineLearningGames
                 pnlMain.Controls.Add(test);
             }
             else
-            {
                 MessageBox.Show("Lütfen önce eğitme işlemini yapınız!");
-            }
         }
     }
 }

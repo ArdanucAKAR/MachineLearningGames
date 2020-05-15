@@ -99,7 +99,7 @@
     <Compile Include="FaceLock\Tabs\Train.Designer.cs">
       <DependentUpon>Train.cs</DependentUpon>
     </Compile>
-    <Compile Include="LocateLarry\Class\LtSingleton.cs" />
+    <Compile Include="LocateLarry\Class\SingletonLL.cs" />
     <Compile Include="LocateLarry\LocateLarryMain.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -118,7 +118,7 @@
     <Compile Include="LocateLarry\Tabs\LocateLarryTrain.Designer.cs">
       <DependentUpon>LocateLarryTrain.cs</DependentUpon>
     </Compile>
-    <Compile Include="MakeMeHappy\Classes\Singleton.cs" />
+    <Compile Include="MakeMeHappy\Classes\SingletonMMH.cs" />
     <Compile Include="MakeMeHappy\MakeMeHappy.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,28 +142,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Chatbot\Cevap.cs" />
-    <Compile Include="Chatbot\Chat.cs">
+    <Compile Include="Chatbot\Classes\SingletonCB.cs" />
+    <Compile Include="Chatbot\Tabs\Chat.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Chatbot\Chat.Designer.cs">
+    <Compile Include="Chatbot\Tabs\Chat.Designer.cs">
       <DependentUpon>Chat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Chatbot\ChatBotTrain.cs">
+    <Compile Include="Chatbot\Tabs\ChatBotTrain.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Chatbot\ChatBotTrain.Designer.cs">
+    <Compile Include="Chatbot\Tabs\ChatBotTrain.Designer.cs">
       <DependentUpon>ChatBotTrain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Chatbot\Konu.cs" />
-    <Compile Include="Chatbot\Soru.cs" />
     <Compile Include="Games.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Games.Designer.cs">
       <DependentUpon>Games.cs</DependentUpon>
     </Compile>
-    <Compile Include="JudgeBook\Class\JB_Singleton.cs" />
+    <Compile Include="JudgeBook\Class\SingletonJB.cs" />
     <Compile Include="JudgeBook\JudgeBookMain.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -219,7 +217,7 @@
     <Compile Include="SchoolLibrary\Tabs\TrainSchoolLibrary.Designer.cs">
       <DependentUpon>TrainSchoolLibrary.cs</DependentUpon>
     </Compile>
-    <Compile Include="Snap\Classes\Singleton.cs" />
+    <Compile Include="Snap\Classes\SingletonS.cs" />
     <Compile Include="Snap\Snap.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -232,11 +230,11 @@
     <Compile Include="Snap\Tabs\LearnTest.Designer.cs">
       <DependentUpon>LearnTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Snap\Tabs\Make.cs">
+    <Compile Include="Snap\Tabs\Test.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Snap\Tabs\Make.Designer.cs">
-      <DependentUpon>Make.cs</DependentUpon>
+    <Compile Include="Snap\Tabs\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
     </Compile>
     <Compile Include="Snap\Tabs\Train.cs">
       <SubType>UserControl</SubType>
@@ -277,7 +275,7 @@
     <Compile Include="JourneyToSchool\Tabs\TestUc.Designer.cs">
       <DependentUpon>TestUc.cs</DependentUpon>
     </Compile>
-    <Compile Include="JourneyToSchool\Classes\UlasSingleton.cs" />
+    <Compile Include="JourneyToSchool\Classes\SingletonJTS.cs" />
     <Compile Include="JourneyToSchool\Tabs\WayToArrive.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -335,10 +333,10 @@
     <EmbeddedResource Include="MakeMeHappy\Tabs\Train.resx">
       <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Chatbot\Chat.resx">
+    <EmbeddedResource Include="Chatbot\Tabs\Chat.resx">
       <DependentUpon>Chat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Chatbot\ChatBotTrain.resx">
+    <EmbeddedResource Include="Chatbot\Tabs\ChatBotTrain.resx">
       <DependentUpon>ChatBotTrain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Games.resx">
@@ -377,8 +375,8 @@
     <EmbeddedResource Include="Snap\Tabs\LearnTest.resx">
       <DependentUpon>LearnTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Snap\Tabs\Make.resx">
-      <DependentUpon>Make.cs</DependentUpon>
+    <EmbeddedResource Include="Snap\Tabs\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Snap\Tabs\Train.resx">
       <DependentUpon>Train.cs</DependentUpon>

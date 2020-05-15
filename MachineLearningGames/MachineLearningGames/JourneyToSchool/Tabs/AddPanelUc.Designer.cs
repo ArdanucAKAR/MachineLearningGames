@@ -1,4 +1,4 @@
-﻿namespace MachineLearningGames
+﻿namespace MachineLearningGames.JourneyToSchool.Tabs
 {
     partial class AddPanelUc
     {
@@ -94,7 +94,7 @@
             this.btnSubmit.Size = new System.Drawing.Size(131, 55);
             this.btnSubmit.TabIndex = 37;
             this.btnSubmit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click_1);
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // txtFriends
             // 

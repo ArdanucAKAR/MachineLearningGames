@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace MachineLearningGames.JudgeBook.Class
 {
-    public class JB_Singleton
+    public class SingletonJB
     {
-        private static JB_Singleton singleInstance;
+        private static SingletonJB instance;
         public string genre = "";
         public int childrenBook = 0;
         public int romanceBook = 0;
         public int thrillerBook = 0;
         public int scifiBook = 0;
-        private JB_Singleton()
+
+        private SingletonJB()
         {
 
         }
-        public static JB_Singleton SingleInstance()
-        {
-            if (singleInstance == null)
-            {
-                singleInstance = new JB_Singleton();
-            }
-            return singleInstance;
 
+        public static SingletonJB GetInstance()
+        {
+            if (instance == null)
+                instance = new SingletonJB();
+
+            return instance;
         }
     }
 }

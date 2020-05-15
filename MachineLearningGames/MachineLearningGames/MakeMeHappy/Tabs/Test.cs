@@ -18,7 +18,7 @@ namespace MachineLearningGames.MakeMeHappy.Tabs
             InitializeComponent();
         }
 
-        Singleton db = Singleton.Nesne();
+        SingletonMMH db = SingletonMMH.GetInstance();
 
         public int ScorePhrase(string[] phrase)
         {

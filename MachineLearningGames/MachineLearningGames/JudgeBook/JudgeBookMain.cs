@@ -14,14 +14,14 @@ namespace MachineLearningGames.JudgeBook
 {
     public partial class JudgeBookMain : UserControl
     {
-        public Form main;
-        JB_Singleton db = JB_Singleton.SingleInstance();
-
         public JudgeBookMain()
         {
             InitializeComponent();
-        }     
-        
+        }
+
+        SingletonJB db = SingletonJB.GetInstance();
+        public Form main;
+
         private void btnHome_Click(object sender, EventArgs e)
         {
             Panel pnl = main.Controls.Find("pnlMain", true).FirstOrDefault() as Panel;
@@ -71,20 +71,15 @@ namespace MachineLearningGames.JudgeBook
         private void btnTest_Click(object sender, EventArgs e)
         {
             if (db.childrenBook == 0 && db.romanceBook == 0 && db.thrillerBook == 0 && db.scifiBook == 0)
-            {
                 MessageBox.Show("Lütfen önce makineyi eğitin", "Önemli", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
             else if (db.childrenBook == 0 || db.romanceBook == 0 || db.thrillerBook == 0 || db.scifiBook == 0)
-            {
-                MessageBox.Show("Lütfen bütün kitap türlerine resim yükleyin","Önemli", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
-            }            
+                MessageBox.Show("Lütfen bütün kitap türlerine resim yükleyin", "Önemli", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             else
             {
                 JudgeBookTest test = new JudgeBookTest();
                 pnlJudgeBookMain.Controls.Clear();
                 pnlJudgeBookMain.Controls.Add(test);
             }
-
         }
     }
 }

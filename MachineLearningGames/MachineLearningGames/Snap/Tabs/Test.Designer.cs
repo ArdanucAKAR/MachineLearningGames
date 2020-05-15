@@ -1,6 +1,6 @@
 ﻿namespace MachineLearningGames.Snap.Tabs
 {
-    partial class Make
+    partial class Test
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Make));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Test));
             BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.lblDescription = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnTest = new Bunifu.Framework.UI.BunifuThinButton2();

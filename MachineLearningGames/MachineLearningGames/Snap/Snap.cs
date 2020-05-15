@@ -11,6 +11,7 @@ using BunifuAnimatorNS;
 using MachineLearningGames.Snap.Tabs;
 using Bunifu.Framework.UI;
 using MachineLearningGames.Snap.Classes;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace MachineLearningGames.Snap
 {
@@ -22,8 +23,18 @@ namespace MachineLearningGames.Snap
         }
 
         public Form main;
+        public UserControl current;
 
-        Singleton db = Singleton.Nesne();
+        SingletonS db = SingletonS.GetInstance();
+
+        void ButtonAnimation(BunifuTileButton train, string trainText, Color trainColor, BunifuTileButton test, string testText, Color testColor, UserControl current)
+        {
+            train.color = trainColor;
+            train.LabelText = trainText;
+            test.color = testColor;
+            test.LabelText = testText;
+            this.current = current;
+        }
 
         private void btnHome_MouseHover(object sender, EventArgs e)
         {
@@ -42,7 +53,8 @@ namespace MachineLearningGames.Snap
 
         private void btnTrain_MouseLeave(object sender, EventArgs e)
         {
-            btnTrain.LabelText = "";
+            if (!(current is Train))
+                btnTrain.LabelText = "";
         }
 
         private void btnTest_MouseHover(object sender, EventArgs e)
@@ -52,42 +64,46 @@ namespace MachineLearningGames.Snap
 
         private void btnTest_MouseLeave(object sender, EventArgs e)
         {
-            btnTest.LabelText = "";
+            if (!(current is Test))
+                btnTest.LabelText = "";
         }
 
         private void btnTrain_Click(object sender, EventArgs e)
         {
-            Train train = new Train();
-            pnlSnapMain.Controls.Clear();
-            pnlSnapMain.Visible = false;
-            pnlSnapMain.Controls.Add(train);
-            transitionTabs.ShowSync(pnlSnapMain);
-            btnTest.color = Color.Transparent;
-            btnTrain.color = Color.DimGray;
+            if (!(current is Train))
+            {
+                Train train = new Train();
+                pnlSnapMain.Controls.Clear();
+                pnlSnapMain.Visible = false;
+                pnlSnapMain.Controls.Add(train);
+                transitionTabs.ShowSync(pnlSnapMain);
+                ButtonAnimation(btnTrain, "Eğitme", Color.Silver, btnTest, "", Color.Transparent, train);
+            }
         }
 
         private void btnTest_Click(object sender, EventArgs e)
         {
             if (db.upload)
             {
-                Make make = new Make();
+                Test test = new Test();
                 pnlSnapMain.Controls.Clear();
                 pnlSnapMain.Visible = false;
-                pnlSnapMain.Controls.Add(make);
+                pnlSnapMain.Controls.Add(test);
                 transitionTabs.ShowSync(pnlSnapMain);
-                btnTrain.color = Color.Transparent;
-                btnTest.color = Color.DimGray;
+                ButtonAnimation(btnTrain, "", Color.Transparent, btnTest, "Test", Color.Silver, test);
             }
             else
             {
                 MessageBox.Show("Eğitim için resim yüklemeden test aşamasına geçilemez.");
-                Train train = new Train();
-                pnlSnapMain.Controls.Clear();
-                pnlSnapMain.Visible = false;
-                pnlSnapMain.Controls.Add(train);
-                transitionTabs.ShowSync(pnlSnapMain);
-                btnTest.color = Color.Transparent;
-                btnTrain.color = Color.DimGray;
+                if (!(current is Train))
+                {
+                    Train train = new Train();
+                    pnlSnapMain.Controls.Clear();
+                    pnlSnapMain.Visible = false;
+                    pnlSnapMain.Controls.Add(train);
+                    transitionTabs.ShowSync(pnlSnapMain);
+                    ButtonAnimation(btnTrain, "Eğitme", Color.Silver, btnTest, "", Color.Transparent, train);
+                }
             }
         }
 

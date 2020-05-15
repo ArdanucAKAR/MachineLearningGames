@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MachineLearningGames.MakeMeHappy.Classes
 {
-    public class Singleton
+    public class SingletonMMH
     {
-        public static Singleton nesne;
+        private static SingletonMMH instance;
         public Dictionary<string, int> wordsDic = new Dictionary<string, int>();
 
         public string PreparePhrase(string phrase)
@@ -24,19 +24,18 @@ namespace MachineLearningGames.MakeMeHappy.Classes
 
             return formatted;
         }
-        //public Form main = new Main();
 
-        public Singleton()
+        public SingletonMMH()
         {
 
         }
 
-        public static Singleton Nesne()
+        public static SingletonMMH GetInstance()
         {
-            if (nesne == null)
-                nesne = new Singleton();
+            if (instance == null)
+                instance = new SingletonMMH();
 
-            return nesne;
+            return instance;
         }
     }
 }

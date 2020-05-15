@@ -7,9 +7,10 @@ using System.Windows.Forms;
 
 namespace MachineLearningGames.Snap.Classes
 {
-    public class Singleton
+    public class SingletonS
     {
-        public static Singleton nesne;
+        private static SingletonS instance;
+
         public int spade = 0,
                    diamond = 0,
                    heart = 0,
@@ -17,17 +18,17 @@ namespace MachineLearningGames.Snap.Classes
 
         public bool upload = false;
 
-        public Singleton()
+        public SingletonS()
         {
 
         }
 
-        public static Singleton Nesne()
+        public static SingletonS GetInstance()
         {
-            if (nesne == null)
-                nesne = new Singleton();
+            if (instance == null)
+                instance = new SingletonS();
 
-            return nesne;
+            return instance;
         }
     }
 }

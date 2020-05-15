@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MachineLearningGames
+namespace MachineLearningGames.JourneyToSchool.Tabs
 {
     public partial class WayToArrive : UserControl
     {
@@ -16,14 +16,17 @@ namespace MachineLearningGames
         {
             InitializeComponent();
         }
+
         public void setAge(string age)
         {
             lblAge.Text ="Yaş :" + age;
         }
+
         public void setDistance(string distance)
         {
             lblDistance.Text = "Mesafe :" + distance;
         }
+
         public void setFriends(string friends)
         {
             lblFriends.Text = "Arkadaşlar :" + friends;

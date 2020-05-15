@@ -20,7 +20,7 @@ namespace MachineLearningGames.LocateLarry.Tabs
             InitializeComponent();
         }
 
-        LtSingleton db = LtSingleton.SingleInstance();
+        SingletonLL db = SingletonLL.GetInstance();
         
         ImageList myImageList = new ImageList();
         int count = 0;

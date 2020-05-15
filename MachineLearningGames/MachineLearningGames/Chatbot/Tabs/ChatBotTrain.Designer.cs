@@ -1,4 +1,4 @@
-﻿namespace MachineLearningGames.Ayberk
+﻿namespace MachineLearningGames.Chatbot.Tabs
 {
     partial class ChatBotTrain
     {
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChatBotTrain));
             this.cevapBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.cevapTextBox = new Bunifu.Framework.UI.BunifuTextbox();
@@ -36,11 +35,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cbmainPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.konuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.cbmainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.konuBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // cevapBtn
@@ -141,10 +138,6 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
-            // konuBindingSource
-            // 
-            this.konuBindingSource.DataSource = typeof(MachineLearningGames.Ayberk.Konu);
-            // 
             // ChatBotTrain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,18 +145,15 @@
             this.Controls.Add(this.cbmainPanel);
             this.Name = "ChatBotTrain";
             this.Size = new System.Drawing.Size(1500, 650);
-            this.Load += new System.EventHandler(this.ChatBotTrain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.cbmainPanel.ResumeLayout(false);
             this.cbmainPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.konuBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.BindingSource konuBindingSource;
         private Bunifu.Framework.UI.BunifuFlatButton cevapBtn;
         private Bunifu.Framework.UI.BunifuTextbox cevapTextBox;
         private System.Windows.Forms.Label label4;

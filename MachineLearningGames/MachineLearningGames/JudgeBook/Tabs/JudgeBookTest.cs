@@ -14,16 +14,16 @@ namespace MachineLearningGames.JudgeBook.Tabs
 {
     public partial class JudgeBookTest : UserControl
     {
-        JB_Singleton db = JB_Singleton.SingleInstance();
-        System.Windows.Forms.ImageList myImageList = new ImageList();
+        SingletonJB db = SingletonJB.GetInstance();
+        ImageList myImageList = new ImageList();
 
         OpenFileDialog ofd = new OpenFileDialog()
         {
             Multiselect = true,
             ValidateNames = true,
-            Filter =
-         "JPG|*jpg|JPEG|*.jpeg|PNG|*.png"
+            Filter = "JPG|*jpg|JPEG|*.jpeg|PNG|*.png"
         };
+
         public JudgeBookTest()
         {
             InitializeComponent();

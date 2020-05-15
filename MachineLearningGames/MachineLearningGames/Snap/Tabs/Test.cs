@@ -7,13 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MachineLearningGames.Ayberk;
 
 namespace MachineLearningGames.Snap.Tabs
 {
-    public partial class Make : UserControl
+    public partial class Test : UserControl
     {
-        public Make()
+        public Test()
         {
             InitializeComponent();
         }

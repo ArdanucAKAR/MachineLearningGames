@@ -18,7 +18,7 @@ namespace MachineLearningGames.MakeMeHappy.Tabs
             InitializeComponent();
         }
 
-        Singleton db = Singleton.Nesne();
+        SingletonMMH db = SingletonMMH.GetInstance();
 
         private void AddDictionaryWord(string sentence, int score, ListBox list, TextBox textBox)
         {

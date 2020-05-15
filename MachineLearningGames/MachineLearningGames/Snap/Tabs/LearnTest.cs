@@ -25,7 +25,7 @@ namespace MachineLearningGames.Snap.Tabs
         }
         #endregion
 
-        Singleton db = Singleton.Nesne();
+        SingletonS db = SingletonS.GetInstance();
         Random random = new Random();
 
         private void btnLearnTest_Click(object sender, EventArgs e)
