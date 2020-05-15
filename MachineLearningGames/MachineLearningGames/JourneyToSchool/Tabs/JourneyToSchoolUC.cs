@@ -12,57 +12,62 @@ namespace MachineLearningGames
 {
     public partial class JourneyToSchoolUC : UserControl
     {
+        UlasSingleton singleton = UlasSingleton.Instance;
         public JourneyToSchoolUC()
         {
             InitializeComponent();
-            UlasSingleton singleton = UlasSingleton.Instance;
+
             if (singleton.Journeys.Count > 0)
             {
                 for (int i = 0; i < singleton.Journeys.Count; i++)
                 {
-                    if (singleton.Journeys[i].JouneyType == 1)
-                    {
+                   
+                        if (singleton.Journeys[i].JouneyType == 1)
+                        {
 
-                        WayToArrive wayToArrive = new WayToArrive();
+                            WayToArrive wayToArrive = new WayToArrive();
 
-                        wayToArrive.setAge(singleton.Journeys[i].Age.ToString());
-                        wayToArrive.setDistance(singleton.Journeys[i].Distance.ToString());
-                        wayToArrive.setFriends(singleton.Journeys[i].Friends.ToString());
-                        flowLayoutPanel1.Controls.Add(wayToArrive);
-                    }
-                    if (singleton.Journeys[i].JouneyType == 2)
-                    {
+                            wayToArrive.setAge(singleton.Journeys[i].Age.ToString());
+                            wayToArrive.setDistance(singleton.Journeys[i].Distance.ToString());
+                            wayToArrive.setFriends(singleton.Journeys[i].Friends.ToString());
+                            flowLayoutPanel1.Controls.Add(wayToArrive);
+                        }
+                        if (singleton.Journeys[i].JouneyType == 2)
+                        {
 
-                        WayToArrive wayToArrive = new WayToArrive();
+                            WayToArrive wayToArrive = new WayToArrive();
 
-                        wayToArrive.setAge(singleton.Journeys[i].Age.ToString());
-                        wayToArrive.setDistance(singleton.Journeys[i].Distance.ToString());
-                        wayToArrive.setFriends(singleton.Journeys[i].Friends.ToString());
-                        flowLayoutPanel2.Controls.Add(wayToArrive);
-                    }
-                    if (singleton.Journeys[i].JouneyType == 3)
-                    {
+                            wayToArrive.setAge(singleton.Journeys[i].Age.ToString());
+                            wayToArrive.setDistance(singleton.Journeys[i].Distance.ToString());
+                            wayToArrive.setFriends(singleton.Journeys[i].Friends.ToString());
+                            flowLayoutPanel2.Controls.Add(wayToArrive);
+                        }
+                        if (singleton.Journeys[i].JouneyType == 3)
+                        {
 
-                        WayToArrive wayToArrive = new WayToArrive();
+                            WayToArrive wayToArrive = new WayToArrive();
 
-                        wayToArrive.setAge(singleton.Journeys[i].Age.ToString());
-                        wayToArrive.setDistance(singleton.Journeys[i].Distance.ToString());
-                        wayToArrive.setFriends(singleton.Journeys[i].Friends.ToString());
-                        flowLayoutPanel3.Controls.Add(wayToArrive);
-                    }
+                            wayToArrive.setAge(singleton.Journeys[i].Age.ToString());
+                            wayToArrive.setDistance(singleton.Journeys[i].Distance.ToString());
+                            wayToArrive.setFriends(singleton.Journeys[i].Friends.ToString());
+                            flowLayoutPanel3.Controls.Add(wayToArrive);
+                        }
+                    
+                   
+
                 }
             }
         }
 
-        
+
 
         private void btnWalk_Click_1(object sender, EventArgs e)
         {
-            UlasSingleton singleton = UlasSingleton.Instance;
+            
             Journey jn = new Journey();
             jn.JouneyType = 1;
             singleton.Journeys.Add(jn);
-            
+
             AddPanelUc add = new AddPanelUc();
             panel1.Controls.Clear();
             panel1.Controls.Add(add);
@@ -70,7 +75,7 @@ namespace MachineLearningGames
 
         private void btnCar_Click(object sender, EventArgs e)
         {
-            UlasSingleton singleton = UlasSingleton.Instance;
+  
             Journey jn = new Journey();
             jn.JouneyType = 2;
             singleton.Journeys.Add(jn);
@@ -82,7 +87,6 @@ namespace MachineLearningGames
 
         private void btnCycle_Click(object sender, EventArgs e)
         {
-            UlasSingleton singleton = UlasSingleton.Instance;
             Journey jn = new Journey();
             jn.JouneyType = 3;
             singleton.Journeys.Add(jn);

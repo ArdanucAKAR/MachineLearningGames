@@ -26,15 +26,24 @@ namespace MachineLearningGames
             UlasSingleton singleton = UlasSingleton.Instance;
             if(int.TryParse(txtAge.Text,out age)&& double.TryParse(txtDistance.Text, out distance) && int.TryParse(txtFriends.Text, out friends))
             {
+                if (age>0)
+                {
+                    singleton.Journeys.LastOrDefault().Age = age;
+                    singleton.Journeys.LastOrDefault().Friends = friends;
+                    singleton.Journeys.LastOrDefault().Distance = distance;
 
-                singleton.Journeys.LastOrDefault().Age = age;
-                singleton.Journeys.LastOrDefault().Friends = friends;
-                singleton.Journeys.LastOrDefault().Distance = distance;
-
-                JourneyToSchoolUC add = new JourneyToSchoolUC();
-                panel1.Controls.Clear();
-                panel1.Controls.Add(add);
+                    JourneyToSchoolUC add = new JourneyToSchoolUC();
+                    panel1.Controls.Clear();
+                    panel1.Controls.Add(add);
+                }
+                else
+                {
+                    singleton.Journeys.RemoveAt(singleton.Journeys.Count - 1);
+                }
+               
             }
+
+                
             else
             {
                 lblWarning.Text = "Hatalı giriş yaptınız tekrar sayı giriniz";

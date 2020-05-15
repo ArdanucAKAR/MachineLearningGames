@@ -28,6 +28,7 @@ namespace MachineLearningGames
             if (int.TryParse(txtAge.Text, out age) && double.TryParse(txtDistance.Text, out distance) &&
                 int.TryParse(txtFriends.Text, out friends)&& !String.IsNullOrEmpty(txtDistance.Text) && !String.IsNullOrEmpty(txtAge.Text) && !String.IsNullOrEmpty(txtFriends.Text))
             {
+                lblWarning.Visible = false;
                 lblResult.Visible = true;
 
                 Random rnd = new Random();
@@ -46,9 +47,20 @@ namespace MachineLearningGames
                     lblResult.Text = "Bisikleti ile";
                 }
             }
+            else
+            {
+                lblResult.Visible = false;
+                lblWarning.Text = "Hatalı giriş yaptınız tekrar sayı giriniz";
+                txtFriends.Text = "";
+                txtAge.Text = "";
+                txtDistance.Text = "";
+                lblWarning.Visible = true;
+
+            }
 
 
-           
+
         }
         }
 }
+

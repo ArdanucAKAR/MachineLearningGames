@@ -17,12 +17,12 @@ namespace MachineLearningGames
         public GamePanel()
         {
             InitializeComponent();
-           
+
         }
-       
+
         private void btnTest_Click(object sender, EventArgs e)
         {
-            if (singleton.Journeys.Count>0)
+            if (singleton.Journeys.Count > 0)
             {
                 TestUc add = new TestUc();
                 mainGamingPanel.Controls.Clear();
@@ -36,18 +36,30 @@ namespace MachineLearningGames
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            if (singleton.Journeys.Count > 0 && singleton.Journeys[singleton.Journeys.Count - 1].Age <= 0)
+            {
+                singleton.Journeys.RemoveAt(singleton.Journeys.Count - 1);
+            }
             Panel pnl = main.Controls.Find("pnlMain", true).FirstOrDefault() as Panel;
             pnl.Controls.Clear();
             Games games = new Games();
             games.main = main;
             pnl.Controls.Add(games);
+            
         }
 
         private void btnTrain_Click(object sender, EventArgs e)
         {
+
+            if (singleton.Journeys.Count > 0 && singleton.Journeys[singleton.Journeys.Count - 1].Age <= 0)
+            {
+                singleton.Journeys.RemoveAt(singleton.Journeys.Count - 1);
+            }
             JourneyToSchoolUC add = new JourneyToSchoolUC();
             mainGamingPanel.Controls.Clear();
             mainGamingPanel.Controls.Add(add);
+
+
         }
 
         private void GamePanel_Load(object sender, EventArgs e)
@@ -56,6 +68,6 @@ namespace MachineLearningGames
             lblDescription.Location = new Point((mainGamingPanel.Width - lblDescription.Width) / 2, 457);
         }
 
-       
+
     }
 }
