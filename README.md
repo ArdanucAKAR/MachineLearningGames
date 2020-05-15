@@ -66,13 +66,13 @@ Kategorilere yükleyeceğiniz resimlerle test aşamasını tamamlayabilirsiniz.
 ### Test Aşaması
 Yükleyeceğiniz 5 adet resim ile birlikte yüklediğiniz resimlerde **Larry** olup olmadığı kontrol edilerek sonuçlar gösterilir.
 
-# Rock Paper Scissors
+## Rock Paper Scissors
 ### Eğitim Aşaması
 3 adet kategoriye yükleyeceğiniz en az 1 en çok 18 tane resim ile eğitim aşamasını tamamlayabilirsiniz.
 ### Test Aşaması
 Sonuç görüntülemek için yükleyeceğiniz resmin **rock.jpg**, **kağıt.png** gibi isimlere sahip olması gerekmektedir. Bu isimlere sahip olmayan resimler yüklediğinizde sonuç bulunamadı gösterilecektir.
 
-# Face Lock
+## Face Lock
 ### Eğitim Aşaması
 2 adet kategoriye yükleyeceğiniz en az 1 en çok 18 tane resim ile eğitim aşamasını tamamlayabilirsiniz.
 ### Test Aşaması
