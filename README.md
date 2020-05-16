@@ -77,3 +77,6 @@ Sonuç görüntülemek için yükleyeceğiniz resmin **rock.jpg**, **kağıt.png
 2 adet kategoriye yükleyeceğiniz en az 1 en çok 18 tane resim ile eğitim aşamasını tamamlayabilirsiniz.
 ### Test Aşaması
 Sonuç görüntülemek için yükleyeceğiniz resmin **geçerli.jpg**, **invalid.png** gibi isimlere sahip olması gerekmektedir. Bu isimlere sahip olmayan resimler yüklediğinizde sonuç bulunamadı gösterilecektir.
+
+# Dökümantasyon
+[Dökümantasyon için buraya tıklayın.](https://cbuedu.sharepoint.com/:w:/r/sites/ProjeEkibi/_layouts/15/doc2.aspx?sourcedoc=%7B35DA43D0-585E-4155-AF96-17521F8FAD2B%7D&file=Proje%20Ekibi%20Do%CC%88ku%CC%88mantasyon.docx&action=default&mobileredirect=true)
