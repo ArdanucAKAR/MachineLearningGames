@@ -74,351 +74,274 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chatbot\ChatMain.cs">
+    <Compile Include="Games\FaceLock\Classes\DBFaceLock.cs" />
+    <Compile Include="Games\FaceLock\Tabs\Test.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Chatbot\ChatMain.Designer.cs">
-      <DependentUpon>ChatMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FaceLock\Classes\SingletonFL.cs" />
-    <Compile Include="FaceLock\FaceLock.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="FaceLock\FaceLock.Designer.cs">
-      <DependentUpon>FaceLock.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FaceLock\Tabs\Test.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="FaceLock\Tabs\Test.Designer.cs">
+    <Compile Include="Games\FaceLock\Tabs\Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <Compile Include="FaceLock\Tabs\Train.cs">
+    <Compile Include="Games\FaceLock\Tabs\Train.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FaceLock\Tabs\Train.Designer.cs">
+    <Compile Include="Games\FaceLock\Tabs\Train.Designer.cs">
       <DependentUpon>Train.cs</DependentUpon>
     </Compile>
-    <Compile Include="LocateLarry\Class\SingletonLL.cs" />
-    <Compile Include="LocateLarry\LocateLarryMain.cs">
+    <Compile Include="Games\LocateLarry\Class\DBLocateLarry.cs" />
+    <Compile Include="Games\LocateLarry\Tabs\Test.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LocateLarry\LocateLarryMain.Designer.cs">
-      <DependentUpon>LocateLarryMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LocateLarry\Tabs\LocateLarryTest.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="LocateLarry\Tabs\LocateLarryTest.Designer.cs">
-      <DependentUpon>LocateLarryTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LocateLarry\Tabs\LocateLarryTrain.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="LocateLarry\Tabs\LocateLarryTrain.Designer.cs">
-      <DependentUpon>LocateLarryTrain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MakeMeHappy\Classes\SingletonMMH.cs" />
-    <Compile Include="MakeMeHappy\MakeMeHappy.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MakeMeHappy\MakeMeHappy.Designer.cs">
-      <DependentUpon>MakeMeHappy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MakeMeHappy\Tabs\Test.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MakeMeHappy\Tabs\Test.Designer.cs">
+    <Compile Include="Games\LocateLarry\Tabs\Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <Compile Include="MakeMeHappy\Tabs\Train.cs">
+    <Compile Include="Games\LocateLarry\Tabs\Train.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MakeMeHappy\Tabs\Train.Designer.cs">
+    <Compile Include="Games\LocateLarry\Tabs\Train.Designer.cs">
       <DependentUpon>Train.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Chatbot\Classes\SingletonCB.cs" />
-    <Compile Include="Chatbot\Tabs\Chat.cs">
+    <Compile Include="Games\MakeMeHappy\Classes\DBMakeMeHappy.cs" />
+    <Compile Include="Games\MakeMeHappy\Tabs\Test.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Chatbot\Tabs\Chat.Designer.cs">
-      <DependentUpon>Chat.cs</DependentUpon>
+    <Compile Include="Games\MakeMeHappy\Tabs\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <Compile Include="Chatbot\Tabs\ChatBotTrain.cs">
+    <Compile Include="Games\MakeMeHappy\Tabs\Train.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Chatbot\Tabs\ChatBotTrain.Designer.cs">
-      <DependentUpon>ChatBotTrain.cs</DependentUpon>
+    <Compile Include="Games\MakeMeHappy\Tabs\Train.Designer.cs">
+      <DependentUpon>Train.cs</DependentUpon>
     </Compile>
-    <Compile Include="Games.cs">
+    <Compile Include="Games\Chatbot\Classes\DBChatBot.cs" />
+    <Compile Include="Games\Chatbot\Tabs\Test.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Games.Designer.cs">
+    <Compile Include="Games\Chatbot\Tabs\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Chatbot\Tabs\Train.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Games\Chatbot\Tabs\Train.Designer.cs">
+      <DependentUpon>Train.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\SchoolLibrary\Classes\DBSchoolLibrary.cs" />
+    <Compile Include="Games\Titanic\Classes\DBTitanic.cs" />
+    <Compile Include="Games\Titanic\Tabs\Train.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Games\Titanic\Tabs\Train.Designer.cs">
+      <DependentUpon>Train.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Classes\Game.cs" />
+    <Compile Include="Main\Classes\Singleton.cs" />
+    <Compile Include="Main\Classes\Tab.cs" />
+    <Compile Include="Main\GameMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\GameMain.Designer.cs">
+      <DependentUpon>GameMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Games.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\Games.Designer.cs">
       <DependentUpon>Games.cs</DependentUpon>
     </Compile>
-    <Compile Include="JudgeBook\Class\SingletonJB.cs" />
-    <Compile Include="JudgeBook\JudgeBookMain.cs">
+    <Compile Include="Games\JudgeBook\Class\DBJudgeBook.cs" />
+    <Compile Include="Games\JudgeBook\Tabs\Test.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="JudgeBook\JudgeBookMain.Designer.cs">
-      <DependentUpon>JudgeBookMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="JudgeBook\Tabs\JudgeBookTest.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="JudgeBook\Tabs\JudgeBookTest.Designer.cs">
-      <DependentUpon>JudgeBookTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="JudgeBook\Tabs\JudgeBookTrain.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="JudgeBook\Tabs\JudgeBookTrain.Designer.cs">
-      <DependentUpon>JudgeBookTrain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RockPaperScissors\Classes\SingletonRPC.cs" />
-    <Compile Include="RockPaperScissors\RockPaperScissors.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="RockPaperScissors\RockPaperScissors.Designer.cs">
-      <DependentUpon>RockPaperScissors.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RockPaperScissors\Tabs\Test.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="RockPaperScissors\Tabs\Test.Designer.cs">
+    <Compile Include="Games\JudgeBook\Tabs\Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <Compile Include="RockPaperScissors\Tabs\Train.cs">
+    <Compile Include="Games\JudgeBook\Tabs\Train.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="RockPaperScissors\Tabs\Train.Designer.cs">
+    <Compile Include="Games\JudgeBook\Tabs\Train.Designer.cs">
       <DependentUpon>Train.cs</DependentUpon>
     </Compile>
-    <Compile Include="SchoolLibrary\SchoolLibrary.cs">
+    <Compile Include="Games\RockPaperScissors\Classes\DBRockPaperScissors.cs" />
+    <Compile Include="Games\RockPaperScissors\Tabs\Test.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SchoolLibrary\SchoolLibrary.Designer.cs">
-      <DependentUpon>SchoolLibrary.cs</DependentUpon>
+    <Compile Include="Games\RockPaperScissors\Tabs\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <Compile Include="SchoolLibrary\Tabs\TestSchoolLibrary.cs">
+    <Compile Include="Games\RockPaperScissors\Tabs\Train.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SchoolLibrary\Tabs\TestSchoolLibrary.Designer.cs">
-      <DependentUpon>TestSchoolLibrary.cs</DependentUpon>
+    <Compile Include="Games\RockPaperScissors\Tabs\Train.Designer.cs">
+      <DependentUpon>Train.cs</DependentUpon>
     </Compile>
-    <Compile Include="SchoolLibrary\Tabs\TrainSchoolLibrary.cs">
+    <Compile Include="Games\SchoolLibrary\Tabs\Test.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SchoolLibrary\Tabs\TrainSchoolLibrary.Designer.cs">
-      <DependentUpon>TrainSchoolLibrary.cs</DependentUpon>
+    <Compile Include="Games\SchoolLibrary\Tabs\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <Compile Include="Snap\Classes\SingletonS.cs" />
-    <Compile Include="Snap\Snap.cs">
+    <Compile Include="Games\SchoolLibrary\Tabs\Train.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Snap\Snap.Designer.cs">
-      <DependentUpon>Snap.cs</DependentUpon>
+    <Compile Include="Games\SchoolLibrary\Tabs\Train.Designer.cs">
+      <DependentUpon>Train.cs</DependentUpon>
     </Compile>
-    <Compile Include="Snap\Tabs\LearnTest.cs">
+    <Compile Include="Games\Snap\Classes\DBSnap.cs" />
+    <Compile Include="Games\Snap\Tabs\LearnTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Snap\Tabs\LearnTest.Designer.cs">
+    <Compile Include="Games\Snap\Tabs\LearnTest.Designer.cs">
       <DependentUpon>LearnTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Snap\Tabs\Test.cs">
+    <Compile Include="Games\Snap\Tabs\Test.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Snap\Tabs\Test.Designer.cs">
+    <Compile Include="Games\Snap\Tabs\Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <Compile Include="Snap\Tabs\Train.cs">
+    <Compile Include="Games\Snap\Tabs\Train.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Snap\Tabs\Train.Designer.cs">
+    <Compile Include="Games\Snap\Tabs\Train.Designer.cs">
       <DependentUpon>Train.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="Main\Master.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="Main\Master.Designer.cs">
+      <DependentUpon>Master.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="JourneyToSchool\Tabs\AddPanelUc.cs">
+    <Compile Include="Games\JourneyToSchool\Tabs\AddPanelUc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="JourneyToSchool\Tabs\AddPanelUc.Designer.cs">
+    <Compile Include="Games\JourneyToSchool\Tabs\AddPanelUc.Designer.cs">
       <DependentUpon>AddPanelUc.cs</DependentUpon>
     </Compile>
-    <Compile Include="JourneyToSchool\GamePanel.cs">
+    <Compile Include="Games\JourneyToSchool\Classes\Journey.cs" />
+    <Compile Include="Games\JourneyToSchool\Tabs\Train.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="JourneyToSchool\GamePanel.Designer.cs">
-      <DependentUpon>GamePanel.cs</DependentUpon>
+    <Compile Include="Games\JourneyToSchool\Tabs\Train.Designer.cs">
+      <DependentUpon>Train.cs</DependentUpon>
     </Compile>
-    <Compile Include="JourneyToSchool\Classes\Journey.cs" />
-    <Compile Include="JourneyToSchool\Tabs\JourneyToSchoolUC.cs">
+    <Compile Include="Games\JourneyToSchool\Tabs\Test.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="JourneyToSchool\Tabs\JourneyToSchoolUC.Designer.cs">
-      <DependentUpon>JourneyToSchoolUC.cs</DependentUpon>
+    <Compile Include="Games\JourneyToSchool\Tabs\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <Compile Include="JourneyToSchool\Tabs\TestUc.cs">
+    <Compile Include="Games\JourneyToSchool\Classes\DBJourneyToSchool.cs" />
+    <Compile Include="Games\JourneyToSchool\Tabs\WayToArrive.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="JourneyToSchool\Tabs\TestUc.Designer.cs">
-      <DependentUpon>TestUc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="JourneyToSchool\Classes\SingletonJTS.cs" />
-    <Compile Include="JourneyToSchool\Tabs\WayToArrive.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="JourneyToSchool\Tabs\WayToArrive.Designer.cs">
+    <Compile Include="Games\JourneyToSchool\Tabs\WayToArrive.Designer.cs">
       <DependentUpon>WayToArrive.cs</DependentUpon>
     </Compile>
-    <Compile Include="Titanic\Entity\Customer.cs" />
-    <Compile Include="Titanic\Tabs\TitanicTest.cs">
+    <Compile Include="Games\Titanic\Entity\Customer.cs" />
+    <Compile Include="Games\Titanic\Tabs\Test.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Titanic\Tabs\TitanicTest.Designer.cs">
-      <DependentUpon>TitanicTest.cs</DependentUpon>
+    <Compile Include="Games\Titanic\Tabs\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <Compile Include="Titanic\Tabs\TitanicTrain.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Titanic\Tabs\TitanicTrain.Designer.cs">
-      <DependentUpon>TitanicTrain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Titanic\Titanic.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Titanic\Titanic.Designer.cs">
-      <DependentUpon>Titanic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Titanic\Utilities\ValidationTool.cs" />
-    <Compile Include="Titanic\Validation\FluentValidation\DataValidator.cs" />
-    <EmbeddedResource Include="Chatbot\ChatMain.resx">
-      <DependentUpon>ChatMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FaceLock\FaceLock.resx">
-      <DependentUpon>FaceLock.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FaceLock\Tabs\Test.resx">
+    <Compile Include="Games\Titanic\Utilities\ValidationTool.cs" />
+    <Compile Include="Games\Titanic\Validation\FluentValidation\DataValidator.cs" />
+    <EmbeddedResource Include="Games\FaceLock\Tabs\Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FaceLock\Tabs\Train.resx">
+    <EmbeddedResource Include="Games\FaceLock\Tabs\Train.resx">
       <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LocateLarry\LocateLarryMain.resx">
-      <DependentUpon>LocateLarryMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LocateLarry\Tabs\LocateLarryTest.resx">
-      <DependentUpon>LocateLarryTest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LocateLarry\Tabs\LocateLarryTrain.resx">
-      <DependentUpon>LocateLarryTrain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MakeMeHappy\MakeMeHappy.resx">
-      <DependentUpon>MakeMeHappy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MakeMeHappy\Tabs\Test.resx">
+    <EmbeddedResource Include="Games\LocateLarry\Tabs\Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MakeMeHappy\Tabs\Train.resx">
+    <EmbeddedResource Include="Games\LocateLarry\Tabs\Train.resx">
       <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Chatbot\Tabs\Chat.resx">
-      <DependentUpon>Chat.cs</DependentUpon>
+    <EmbeddedResource Include="Games\MakeMeHappy\Tabs\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Chatbot\Tabs\ChatBotTrain.resx">
-      <DependentUpon>ChatBotTrain.cs</DependentUpon>
+    <EmbeddedResource Include="Games\MakeMeHappy\Tabs\Train.resx">
+      <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Games.resx">
+    <EmbeddedResource Include="Games\Chatbot\Tabs\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\Chatbot\Tabs\Train.resx">
+      <DependentUpon>Train.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\Titanic\Tabs\Train.resx">
+      <DependentUpon>Train.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GameMain.resx">
+      <DependentUpon>GameMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Games.resx">
       <DependentUpon>Games.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JudgeBook\JudgeBookMain.resx">
-      <DependentUpon>JudgeBookMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="JudgeBook\Tabs\JudgeBookTest.resx">
-      <DependentUpon>JudgeBookTest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="JudgeBook\Tabs\JudgeBookTrain.resx">
-      <DependentUpon>JudgeBookTrain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RockPaperScissors\RockPaperScissors.resx">
-      <DependentUpon>RockPaperScissors.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RockPaperScissors\Tabs\Test.resx">
+    <EmbeddedResource Include="Games\JudgeBook\Tabs\Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RockPaperScissors\Tabs\Train.resx">
+    <EmbeddedResource Include="Games\JudgeBook\Tabs\Train.resx">
       <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SchoolLibrary\SchoolLibrary.resx">
-      <DependentUpon>SchoolLibrary.cs</DependentUpon>
+    <EmbeddedResource Include="Games\RockPaperScissors\Tabs\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SchoolLibrary\Tabs\TestSchoolLibrary.resx">
-      <DependentUpon>TestSchoolLibrary.cs</DependentUpon>
+    <EmbeddedResource Include="Games\RockPaperScissors\Tabs\Train.resx">
+      <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SchoolLibrary\Tabs\TrainSchoolLibrary.resx">
-      <DependentUpon>TrainSchoolLibrary.cs</DependentUpon>
+    <EmbeddedResource Include="Games\SchoolLibrary\Tabs\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Snap\Snap.resx">
-      <DependentUpon>Snap.cs</DependentUpon>
+    <EmbeddedResource Include="Games\SchoolLibrary\Tabs\Train.resx">
+      <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Snap\Tabs\LearnTest.resx">
+    <EmbeddedResource Include="Games\Snap\Tabs\LearnTest.resx">
       <DependentUpon>LearnTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Snap\Tabs\Test.resx">
+    <EmbeddedResource Include="Games\Snap\Tabs\Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Snap\Tabs\Train.resx">
+    <EmbeddedResource Include="Games\Snap\Tabs\Train.resx">
       <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="Main\Master.resx">
+      <DependentUpon>Master.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="JourneyToSchool\Tabs\AddPanelUc.resx">
+    <EmbeddedResource Include="Games\JourneyToSchool\Tabs\AddPanelUc.resx">
       <DependentUpon>AddPanelUc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JourneyToSchool\GamePanel.resx">
-      <DependentUpon>GamePanel.cs</DependentUpon>
+    <EmbeddedResource Include="Games\JourneyToSchool\Tabs\Train.resx">
+      <DependentUpon>Train.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JourneyToSchool\Tabs\JourneyToSchoolUC.resx">
-      <DependentUpon>JourneyToSchoolUC.cs</DependentUpon>
+    <EmbeddedResource Include="Games\JourneyToSchool\Tabs\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JourneyToSchool\Tabs\TestUc.resx">
-      <DependentUpon>TestUc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="JourneyToSchool\Tabs\WayToArrive.resx">
+    <EmbeddedResource Include="Games\JourneyToSchool\Tabs\WayToArrive.resx">
       <DependentUpon>WayToArrive.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Titanic\Tabs\TitanicTest.resx">
-      <DependentUpon>TitanicTest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Titanic\Tabs\TitanicTrain.resx">
-      <DependentUpon>TitanicTrain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Titanic\Titanic.resx">
-      <DependentUpon>Titanic.cs</DependentUpon>
+    <EmbeddedResource Include="Games\Titanic\Tabs\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\MachineLearningGames.Ayberk.Konu.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -429,7 +352,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\chatbotLogo.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -444,13 +367,40 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="MakeMeHappy\Image\happy.png" />
+    <None Include="Games\MakeMeHappy\Image\happy.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="MakeMeHappy\Image\unhappy.png" />
+    <None Include="Games\MakeMeHappy\Image\unhappy.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="MakeMeHappy\Image\expressionless.png" />
+    <None Include="Games\MakeMeHappy\Image\expressionless.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snapLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facelockLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\journeytoschoolLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\judgebookLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locatelarryLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makemehappyLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rockpaperscissorsLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schoollibraryLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titanicLogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -118,13 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="expressionless" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\MakeMeHappy\Image\expressionless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="unhappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Games\MakeMeHappy\Image\unhappy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="locatelarryLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locatelarryLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="facelockLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\facelockLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="journeytoschoolLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\journeytoschoolLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="happy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\MakeMeHappy\Image\happy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Games\MakeMeHappy\Image\happy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="unhappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\MakeMeHappy\Image\unhappy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="schoollibraryLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\schoollibraryLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="expressionless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Games\MakeMeHappy\Image\expressionless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="judgebookLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\judgebookLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="makemehappyLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\makemehappyLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snapLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snapLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rockpaperscissorsLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rockpaperscissorsLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chatbotLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chatbotLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titanicLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titanicLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
