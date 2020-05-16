@@ -18,19 +18,9 @@ namespace MachineLearningGames
 {
     public partial class Games : UserControl
     {
-        public Games()
-        {
-            InitializeComponent();
-        }
-
         public Form master;
         private Panel pnlMaster;
         private GameMain gameMain;
-
-        private void Games_Load(object sender, EventArgs e)
-        {
-            pnlMaster = master.Controls.Find("pnlMain", true).FirstOrDefault() as Panel;
-        }
 
         void OpenGame(_Game _game)
         {
@@ -45,6 +35,16 @@ namespace MachineLearningGames
             pnlMaster.Controls.Clear();
             pnlMaster.Controls.Add(gameMain);
             transitionGames.ShowSync(gameMain);
+        }
+
+        public Games()
+        {
+            InitializeComponent();
+        }
+
+        private void Games_Load(object sender, EventArgs e)
+        {
+            pnlMaster = master.Controls.Find("pnlMain", true).FirstOrDefault() as Panel;
         }
 
         private void btnSnap_Click(object sender, EventArgs e)
@@ -64,7 +64,7 @@ namespace MachineLearningGames
             {
                 Game = Game.JudgeBook,
                 Name = "JUDGE BOOK",
-                Description = "",
+                Description = "Bu oyun sayesinde kitapları kapaklarına göre yargılamanın mümkün olup olmadığını öğreneceksiniz.\n       Her bir kitap türü için kitap kapağı fotoğraflarını ekleyerek model eğitilir. Sonra da test edilir.",
                 Image = Properties.Resources.judgebookLogo
             });
         }
@@ -75,7 +75,7 @@ namespace MachineLearningGames
             {
                 Game = Game.SchoolLibrary,
                 Name = "SCHOOL LIBRARY",
-                Description = "",
+                Description = "Sayfa, satır ve resim sayısına göre bir kitabın seviyesini tahmin eden bir uygulama.",
                 Image = Properties.Resources.schoollibraryLogo
             });
         }
@@ -86,7 +86,7 @@ namespace MachineLearningGames
             {
                 Game = Game.ChatBot,
                 Name = "CHATBOT",
-                Description = "",
+                Description = "Aslanla ilgili bildigimiz şeyleri girip modeli eğitip daha sonrasinda aslanla konusabildigimiz bir oyun.",
                 Image = Properties.Resources.chatbotLogo
             });
         }
@@ -108,7 +108,7 @@ namespace MachineLearningGames
             {
                 Game = Game.Titanic,
                 Name = "TITANIC",
-                Description = "",
+                Description = "Bu oyunda Titanic gemisinde yolculuk yapan yolcuların geminin batması sonucu hayatta kalıp kalmadığını öğrenebilirisiniz.\n                                  Bunun için yolcuların bazı bilgileriniz girmeniz yeterlidir.Daha sonra test edebilirsiniz.",
                 Image = Properties.Resources.titanicLogo
             });
         }
@@ -119,7 +119,7 @@ namespace MachineLearningGames
             {
                 Game = Game.MakeMeHappy,
                 Name = "MAKE ME HAPPY",
-                Description = "",
+                Description = "                                  Olumlu ve olumsuz cümleler ile modeli eğitip\ndaha sonra bir cümlenin olumlu veya olumsuz olduğunun tahminini yapan bir oyun.",
                 Image = Properties.Resources.makemehappyLogo
             });
         }
@@ -152,7 +152,7 @@ namespace MachineLearningGames
             {
                 Game = Game.LocateLarry,
                 Name = "LOCATE LARRY",
-                Description = "",
+                Description = "Oyun tanıttığımız Larry ve arkadaşları arasından Larry'i tahmin etmemize olanak sağlayan bir uygulama.",
                 Image = Properties.Resources.locatelarryLogo
             });
         }

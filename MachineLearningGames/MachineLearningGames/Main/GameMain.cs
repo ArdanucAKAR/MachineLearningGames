@@ -14,11 +14,6 @@ namespace MachineLearningGames.Main
 {
     public partial class GameMain : UserControl
     {
-        public GameMain()
-        {
-            InitializeComponent();
-        }
-
         Singleton db = Singleton.GetInstance();
 
         public Form master;
@@ -233,6 +228,11 @@ namespace MachineLearningGames.Main
                     current = tab;
                 }
             }
+        }
+
+        public GameMain()
+        {
+            InitializeComponent();
         }
 
         #region Home Butonu
