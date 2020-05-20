@@ -130,7 +130,7 @@ namespace MachineLearningGames
             {
                 Game = Game.RockPaperScissors,
                 Name = "ROCK PAPER SCISSORS",
-                Description = "",
+                Description = "Bu oyunda taş kağıt ve makas resimleri girildikten sonra girilen resmin taş mı kağıt mı yoksa makas mı olduğu tahmin edilir.",
                 Image = Properties.Resources.rockpaperscissorsLogo
             });
         }
