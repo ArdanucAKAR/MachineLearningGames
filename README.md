@@ -80,3 +80,5 @@ Sonuç görüntülemek için yükleyeceğiniz resmin **geçerli.jpg**, **invalid
 
 # Dökümantasyon
 [Dökümantasyon için buraya tıklayın.](https://cbuedu.sharepoint.com/:w:/r/sites/ProjeEkibi/_layouts/15/doc2.aspx?sourcedoc=%7B35DA43D0-585E-4155-AF96-17521F8FAD2B%7D&file=Proje%20Ekibi%20Do%CC%88ku%CC%88mantasyon.docx&action=default&mobileredirect=true)
+
+[Proje Planlaması ve Görevler için buraya tıklayın.](https://tasks.office.com/cbu.edu.tr/tr-TR/Home/Planner/#/plantaskboard?groupId=11292b15-5474-4fbd-93bc-1576c5edd2cd&planId=rvot59rXykaRW1c8ovhwtZYAEFJY) **(Not: Planlamayı görüntülemek için Celal Bayar Üniversitesi kurumsal maile sahip olunması gerekmektedir.)**
