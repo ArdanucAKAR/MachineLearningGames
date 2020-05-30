@@ -1,5 +1,5 @@
 # Çocuklar İçin Makine Öğrenmesi
-![GitHub Logo](https://lh5.googleusercontent.com/55vilNUd5KsVhcDoD1mH9xW2lEBRQysu3kxNyPXpMygqYhou8uPh5yUxEeI_NR98qibDrwU0YWIP_0LPPXFw=w4096-h2240-rw)
+![GitHub Logo](https://r.resimlink.com/EvOqo.jpg)
 
 ## Problem
 Çocuklara makinenin nasıl öğrendiğini öğretmek başlı başına bir problem olmakla birlikte bu probleme çeşitli çözümler üretilmiştir. Çeşitli kurslar, web siteleri kurulmuştur ama bunlarda da Türkçe kaynak problemi vardır. Bu sorundan yola çıkarak çocuklara makine öğrenmesini temellerini aşılamak için bu programı geliştirdik.
@@ -9,10 +9,10 @@
 2. Bunifu Framework
 
 # Uygulama İçi Ekran Görüntüleri
-![Ekran Görüntüsü 1](https://lh5.googleusercontent.com/ZK9mvijEncSFQsbS0AEZI6raVVZHlmu_Cb4n8tzDmVN2HHMIAI1KMnntI5nMqf1S0aPsExEFlyQ2bnNfoLSI=w4096-h2240-rw)
+![Ekran Görüntüsü 1](https://r.resimlink.com/7T8Am.png)
 <p align="center">Açılış Ekranı</p>
 
-![Ekran Görüntüsü 2](https://lh4.googleusercontent.com/2BmdDTMSSBf2pxxGHICOr3V1ozEl3f7DYT0ec1hO6CE-NVWQD2ik8pT96YWyFPD9W-V9UhKQcaqrZszpkz2w=w4096-h2240-rw)
+![Ekran Görüntüsü 2](https://r.resimlink.com/skgiM.png)
 <p align="center">Oyun Ekranı</p>
 
 # Oyunların Çalışma Prensipleri
