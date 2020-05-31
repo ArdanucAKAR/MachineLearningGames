@@ -50,7 +50,6 @@ namespace MachineLearningGames.Snap.Tabs
                 db.Snap.Diamond = 0;
                 db.Snap.Heart = 0;
                 db.Snap.Spade = 0;
-                db.Snap.Upload = true;
                 tmrLearnTest.Start();
             }
         }
@@ -78,6 +77,7 @@ namespace MachineLearningGames.Snap.Tabs
             else if (prgssbLearnTest.Value >= 90)
             {
                 prgssbLearnTest.Value += (100 - prgssbLearnTest.Value);
+                db.Snap.Upload = true;
                 ProgressTextChangeAndNewLocation("Tamamlandı\nTest Aşamasına Geçebilirsiniz");
                 tmrLearnTest.Stop();
             }

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Test));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.btnTry = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lblResult = new System.Windows.Forms.Label();
             this.txtFriends = new System.Windows.Forms.TextBox();
@@ -38,7 +39,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtAge = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblWarning = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +60,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1500, 605);
             this.panel1.TabIndex = 0;
+            // 
+            // lblWarning
+            // 
+            this.lblWarning.AutoSize = true;
+            this.lblWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.ForeColor = System.Drawing.Color.White;
+            this.lblWarning.Location = new System.Drawing.Point(615, 248);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Size = new System.Drawing.Size(0, 31);
+            this.lblWarning.TabIndex = 39;
+            this.lblWarning.Visible = false;
             // 
             // btnTry
             // 
@@ -95,14 +106,14 @@
             this.lblResult.ForeColor = System.Drawing.Color.Snow;
             this.lblResult.Location = new System.Drawing.Point(723, 248);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(84, 46);
+            this.lblResult.Size = new System.Drawing.Size(0, 46);
             this.lblResult.TabIndex = 29;
-            this.lblResult.Text = "Car";
             this.lblResult.Visible = false;
             // 
             // txtFriends
             // 
             this.txtFriends.Location = new System.Drawing.Point(142, 376);
+            this.txtFriends.MaxLength = 4;
             this.txtFriends.Name = "txtFriends";
             this.txtFriends.Size = new System.Drawing.Size(100, 20);
             this.txtFriends.TabIndex = 28;
@@ -121,6 +132,7 @@
             // txtDistance
             // 
             this.txtDistance.Location = new System.Drawing.Point(142, 288);
+            this.txtDistance.MaxLength = 10;
             this.txtDistance.Name = "txtDistance";
             this.txtDistance.Size = new System.Drawing.Size(100, 20);
             this.txtDistance.TabIndex = 26;
@@ -139,6 +151,7 @@
             // txtAge
             // 
             this.txtAge.Location = new System.Drawing.Point(139, 192);
+            this.txtAge.MaxLength = 3;
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(100, 20);
             this.txtAge.TabIndex = 24;
@@ -154,23 +167,12 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Yaş";
             // 
-            // lblWarning
-            // 
-            this.lblWarning.AutoSize = true;
-            this.lblWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWarning.ForeColor = System.Drawing.Color.White;
-            this.lblWarning.Location = new System.Drawing.Point(615, 248);
-            this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Size = new System.Drawing.Size(0, 31);
-            this.lblWarning.TabIndex = 39;
-            this.lblWarning.Visible = false;
-            // 
-            // TestUc
+            // Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "TestUc";
+            this.Name = "Test";
             this.Size = new System.Drawing.Size(1500, 605);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -99,6 +99,7 @@
             // txtFriends
             // 
             this.txtFriends.Location = new System.Drawing.Point(133, 347);
+            this.txtFriends.MaxLength = 4;
             this.txtFriends.Name = "txtFriends";
             this.txtFriends.Size = new System.Drawing.Size(100, 20);
             this.txtFriends.TabIndex = 36;
@@ -117,6 +118,7 @@
             // txtDistance
             // 
             this.txtDistance.Location = new System.Drawing.Point(133, 259);
+            this.txtDistance.MaxLength = 10;
             this.txtDistance.Name = "txtDistance";
             this.txtDistance.Size = new System.Drawing.Size(100, 20);
             this.txtDistance.TabIndex = 34;
@@ -135,6 +137,7 @@
             // txtAge
             // 
             this.txtAge.Location = new System.Drawing.Point(130, 163);
+            this.txtAge.MaxLength = 3;
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(100, 20);
             this.txtAge.TabIndex = 32;
