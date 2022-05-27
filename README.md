@@ -1,5 +1,5 @@
 # Çocuklar İçin Makine Öğrenmesi
-![GitHub Logo](https://r.resimlink.com/EvOqo.jpg)
+![GitHub Logo](https://github.com/ArdanucAKAR/MachineLearningGames/blob/master/machine-learning-logo.jpg)
 
 ## Problem
 Çocuklara makinenin nasıl öğrendiğini öğretmek başlı başına bir problem olmakla birlikte bu probleme çeşitli çözümler üretilmiştir. Çeşitli kurslar, web siteleri kurulmuştur ama bunlarda da Türkçe kaynak problemi vardır. Bu sorundan yola çıkarak çocuklara makine öğrenmesini temellerini aşılamak için bu programı geliştirdik.
@@ -9,10 +9,10 @@
 2. Bunifu Framework
 
 # Uygulama İçi Ekran Görüntüleri
-![Ekran Görüntüsü 1](https://r.resimlink.com/7T8Am.png)
+![Ekran Görüntüsü 1](https://github.com/ArdanucAKAR/MachineLearningGames/blob/master/ekran%20go%CC%88ru%CC%88ntu%CC%88su%CC%88%201.png)
 <p align="center">Açılış Ekranı</p>
 
-![Ekran Görüntüsü 2](https://r.resimlink.com/skgiM.png)
+![Ekran Görüntüsü 2](https://github.com/ArdanucAKAR/MachineLearningGames/blob/master/ekran%20go%CC%88ru%CC%88ntu%CC%88su%CC%88%202.png)
 <p align="center">Oyun Ekranı</p>
 
 # Oyunların Çalışma Prensipleri
